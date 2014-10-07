@@ -1,0 +1,264 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="current">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/master.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="master.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="current">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="master.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>Prologue
+<ul>
+<li><a href="master/introduction.html">Introduction</a></li>
+<li><a href="master/releases.html">Release Notes</a></li>
+<li><a href="master/upgrade.html">Upgrade Guide</a></li>
+<li><a href="master/contributions.html">Contribution Guide</a></li>
+</ul></li>
+<li>Setup
+<ul>
+<li><a href="master/installation.html">Installation</a></li>
+<li><a href="master/configuration.html">Configuration</a></li>
+<li><a href="master/homestead.html">Homestead</a></li>
+</ul></li>
+<li>Foundations
+<ul>
+<li><a href="master/providers.html">Service Providers</a></li>
+<li><a href="master/container.html">Service Container</a></li>
+<li><a href="master/contracts.html">Contracts</a></li>
+<li><a href="master/lifecycle.html">Request Lifecycle</a></li>
+<li><a href="master/structure.html">Application Structure</a></li>
+</ul></li>
+<li>The HTTP Layer
+<ul>
+<li><a href="master/quick.html">Quickstart</a></li>
+<li><a href="master/routing.html">Routing</a></li>
+<li><a href="master/filters.html">Filters</a></li>
+<li><a href="master/controllers.html">Controllers</a></li>
+<li><a href="master/requests.html">Requests</a></li>
+<li><a href="master/responses.html">Responses</a></li>
+<li><a href="master/views.html">Views</a></li>
+</ul></li>
+<li>Services
+<ul>
+<li><a href="master/authentication.html">Authentication</a></li>
+<li><a href="master/billing.html">Billing</a></li>
+<li><a href="master/cache.html">Cache</a></li>
+<li><a href="master/configuration.html">Configuration</a></li>
+<li><a href="master/extending.html">Core Extension</a></li>
+<li><a href="http://laravel.tw/docs/master/encryption">Encryption</a></li>
+<li><a href="master/errors.html">Errors &amp; Logging</a></li>
+<li><a href="master/events.html">Events</a></li>
+<li><a href="master/facades.html">Facades</a></li>
+<li><a href="http://laravel.tw/docs/master/hashing">Hashing</a></li>
+<li><a href="master/helpers.html">Helpers</a></li>
+<li><a href="master/localization.html">Localization</a></li>
+<li><a href="master/mail.html">Mail</a></li>
+<li><a href="master/packages.html">Package Development</a></li>
+<li><a href="master/pagination.html">Pagination</a></li>
+<li><a href="master/queues.html">Queues</a></li>
+<li><a href="master/session.html">Session</a></li>
+<li><a href="master/templates.html">Templates</a></li>
+<li><a href="master/testing.html">Unit Testing</a></li>
+<li><a href="master/validation.html">Validation</a></li>
+</ul></li>
+<li>Database
+<ul>
+<li><a href="master/database.html">Basic Usage</a></li>
+<li><a href="master/queries.html">Query Builder</a></li>
+<li><a href="master/eloquent.html">Eloquent ORM</a></li>
+<li><a href="master/schema.html">Schema Builder</a></li>
+<li><a href="master/migrations.html">Migrations &amp; Seeding</a></li>
+<li><a href="master/redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan CLI
+<ul>
+<li><a href="master/artisan.html">Overview</a></li>
+<li><a href="master/commands.html">Development</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Introduction</h1>
+<ul>
+<li><a href="master.html#where-to-start">Where To Start</a></li>
+<li><a href="master.html#laravel-philosophy">Laravel Philosophy</a></li>
+</ul>
+<p><a name="where-to-start"></a></p>
+<h2>Where To Start</h2>
+<p>Learning a new framework can be daunting, but it's also exciting. To smooth your transition, we've attempted to create very clear, concise documentation for Laravel. Here are some recommendations for what to read first:</p>
+<ul>
+<li><a href="installation.html">Installation</a> and <a href="configuration.html">Configuration</a></li>
+<li><a href="routing.html">Routing</a></li>
+<li><a href="requests.html">Requests &amp; Input</a></li>
+<li><a href="responses.html">Views &amp; Responses</a></li>
+<li><a href="controllers.html">Controllers</a></li>
+</ul>
+<p>After reading through these documents, you should have a good grasp on basic request / response handling in Laravel. Next, you may wish to read about <a href="database.html">configuring your database</a>, the <a href="queries.html">fluent query builder</a>, and the <a href="eloquent.html">Eloquent ORM</a>. Or, you may wish to read about <a href="security.html">authentication and security</a> so you can start signing people into your application.</p>
+<p><a name="laravel-philosophy"></a></p>
+<h2>Laravel Philosophy</h2>
+<p>Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.</p>
+<p>Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.</p>
+<p>Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/master.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/master.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="master.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

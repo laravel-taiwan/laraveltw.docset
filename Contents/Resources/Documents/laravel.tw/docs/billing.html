@@ -1,0 +1,405 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="billing.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="billing.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Laravel Cashier</h1>
+<ul>
+<li><a href="billing.html#introduction">介紹</a></li>
+<li><a href="billing.html#configuration">設定檔</a></li>
+<li><a href="billing.html#subscribing-to-a-plan">訂購方案</a></li>
+<li><a href="billing.html#no-card-up-front">免信用卡試用</a></li>
+<li><a href="billing.html#swapping-subscriptions">訂購轉換</a></li>
+<li><a href="billing.html#subscription-quantity">訂購數量</a></li>
+<li><a href="billing.html#cancelling-a-subscription">取消訂購</a></li>
+<li><a href="billing.html#resuming-a-subscription">恢復訂購</a></li>
+<li><a href="billing.html#checking-subscription-status">確認訂購狀態</a></li>
+<li><a href="billing.html#handling-failed-payments">處理交易失敗</a></li>
+<li><a href="billing.html#handling-other-stripe-webhooks">處理其它 Stripe Webhooks</a></li>
+<li><a href="billing.html#invoices">收據</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Laravel Cashier 提供口語化，流暢的介面和 <a href="https://stripe.com">Stripe</a> 的訂購管理服務介接。它幾乎處理了所有讓人退步三舍的訂購管理相關邏輯。除了基本的訂購管理，Cashier 還可以處理折價券，訂購轉換，管理訂購「數量」、服務有效期限，甚至產生收據的 PDF。</p>
+<p><a name="configuration"></a></p>
+<h2>設定檔</h2>
+<h4>Composer</h4>
+<p>首先，把 Cashier 套件加到 <code>composer.json</code>：</p>
+<pre><code>"laravel/cashier": "~2.0"</code></pre>
+<h4>服務提供者</h4>
+<p>再來，在 <code>app</code> 設定檔註冊 <code>Laravel\Cashier\CashierServiceProvider</code>。</p>
+<h4>遷移</h4>
+<p>使用 Cashier 前，我們需要增加幾個欄位到資料庫。別擔心，你可以使用 <code>cashier:table</code> Artisan 命令，建立遷移檔來新增必要欄位。例如，要增加欄位到 users 資料表，使用 <code>php artisan cashier:table users</code>。建立完遷移檔後，只要執行 <code>migrate</code> 命令即可。</p>
+<h4>設定模型</h4>
+<p>再來，把 BillableTrait 和日期欄位參數加到模型裡：</p>
+<pre><code>use Laravel\Cashier\BillableTrait;
+use Laravel\Cashier\BillableInterface;
+
+class User extends Eloquent implements BillableInterface {
+
+    use BillableTrait;
+
+    protected $dates = ['trial_ends_at', 'subscription_ends_at'];
+
+}</code></pre>
+<h4>Stripe Key</h4>
+<p>最後，在起始檔裡加入 Stripe key：</p>
+<pre><code>User::setStripeKey('stripe-key');</code></pre>
+<p><a name="subscribing-to-a-plan"></a></p>
+<h2>訂購方案</h2>
+<p>當有了模型實例，你可以很簡單的處理客戶訂購的 Stripe 裡的方案：</p>
+<pre><code>$user = User::find(1);
+
+$user-&gt;subscription('monthly')-&gt;create($creditCardToken);</code></pre>
+<p>如果你想在處理訂購的時候使用折價券，可以使用 <code>withCoupon</code> 方法：</p>
+<pre><code>$user-&gt;subscription('monthly')
+     -&gt;withCoupon('code')
+     -&gt;create($creditCardToken);</code></pre>
+<p><code>subscription</code> 方法會自動建立與 Stripe 的交易，以及將 Stripe customer ID 和其他相關帳款資訊更新到資料庫。如果你的方案有在 Stripe 設定試用期，試用到期日也會自動記錄起來。</p>
+<p>如果你的方案有試用期間，但是<strong>沒有</strong>在 Stripe 裡設定，你必須在訂購後手動儲存試用到期日。</p>
+<pre><code>$user-&gt;trial_ends_at = Carbon::now()-&gt;addDays(14);
+
+$user-&gt;save();</code></pre>
+<h3>自定額外使用者詳細資料</h3>
+<p>如果你想自定額外的顧客詳細資料，你可以將資料陣列作為 <code>create</code> 方法的第二個參數傳入：</p>
+<pre><code>$user-&gt;subscription('monthly')-&gt;create($creditCardToken, [
+    'email' =&gt; $email, 'description' =&gt; 'Our First Customer'
+]);</code></pre>
+<p>想知道更多 Stripe 支援的額外欄位，瞧瞧 Stripe 的線上文件 <a href="https://stripe.com/docs/api#create_customer">建立客戶</a>。</p>
+<p><a name="no-card-up-front"></a></p>
+<h2>免信用卡試用</h2>
+<p>如果你提供免信用卡試用服務，把 <code>cardUpFront</code> 屬性設為 <code>false</code>：</p>
+<pre><code>protected $cardUpFront = false;</code></pre>
+<p>建立帳號時，記得把試用到期日記錄起來：</p>
+<pre><code>$user-&gt;trial_ends_at = Carbon::now()-&gt;addDays(14);
+
+$user-&gt;save();</code></pre>
+<p><a name="swapping-subscriptions"></a></p>
+<h2>訂購轉換</h2>
+<p>使用 <code>swap</code> 方法可以把使用者轉換到新的訂購：</p>
+<pre><code>$user-&gt;subscription('premium')-&gt;swap();</code></pre>
+<p>如果使用者還在試用期間，試用服務會跟之前一樣可用。如果訂單有「數量」，也會和之前一樣。</p>
+<p><a name="subscription-quantity"></a></p>
+<h2>訂購數量</h2>
+<p>有時候訂購行為會跟「數量」有關。例如，你的應用程式可能會跟使用者每個月收取 $10 元。你可以使用 <code>increment</code> 和 <code>decrement</code> 方法簡單的調整訂購數量：</p>
+<pre><code>$user = User::find(1);
+
+$user-&gt;subscription()-&gt;increment();
+
+// Add five to the subscription's current quantity...
+$user-&gt;subscription()-&gt;increment(5);
+
+$user-&gt;subscription-&gt;decrement();
+
+// Subtract five to the subscription's current quantity...
+$user-&gt;subscription()-&gt;decrement(5);</code></pre>
+<p><a name="cancelling-a-subscription"></a></p>
+<h2>取消訂購</h2>
+<p>取消訂購相當簡單：</p>
+<pre><code>$user-&gt;subscription()-&gt;cancel();</code></pre>
+<p>當客戶取消訂購時，Cashier 會自動更新資料庫的 <code>subscription_ends_at</code> 欄位。這個欄位會被用來判斷 <code>subscribed</code> 方法是否該回傳 <code>false</code>。例如，如果顧客在三月一號取消訂購，但是服務可以使用到三月五號為止，那麼 <code>subscribed</code> 方法在三月五號前都會傳回 <code>true</code>。</p>
+<p><a name="resuming-a-subscription"></a></p>
+<h2>恢復訂購</h2>
+<p>如果你想要恢復客戶之前取消的訂購，使用 <code>resume</code> 方法：</p>
+<pre><code>$user-&gt;subscription('monthly')-&gt;resume($creditCardToken);</code></pre>
+<p>如果客戶取消訂購後，在服務過期前恢復，他們不用在當下付款。他們的服務會立刻重啟，而付款則會循平常的流程。</p>
+<p><a name="checking-subscription-status"></a></p>
+<h2>確認訂購狀態</h2>
+<p>要確認使用者是否訂購了服務，使用 <code>subscribed</code> 方法：</p>
+<pre><code>if ($user-&gt;subscribed())
+{
+    //
+}</code></pre>
+<p><code>subscribed</code> 方法很適合用在路由過濾：</p>
+<pre><code>Route::filter('subscribed', function()
+{
+    if (Auth::user() &amp;&amp; ! Auth::user()-&gt;subscribed())
+    {
+        return Redirect::to('billing');
+    }
+});</code></pre>
+<p>你可以使用 <code>onTrial</code> 方法，確認使用者是否還在試用期間：</p>
+<pre><code>if ($user-&gt;onTrial())
+{
+    //
+}</code></pre>
+<p>要確認使用者是否曾經訂購但是已經取消了服務，可已使用 <code>cancelled</code> 方法：</p>
+<pre><code>if ($user-&gt;cancelled())
+{
+    //
+}</code></pre>
+<p>你可以可能想確認使用者是否已經取消訂單，但是服務還沒有到期。例如，如果使用者在三月五號取消了訂購，但是服務會到三月十號才過期。那麼使用者到三月十號前都是有效期間。注意， <code>subscribed</code> 方法在過期前都會回傳 <code>true</code> 。</p>
+<pre><code>if ($user-&gt;onGracePeriod())
+{
+    //
+}</code></pre>
+<p><code>everSubscribed</code> 方法可以用來確認使用者是否訂購過你的方案：</p>
+<pre><code>if ($user-&gt;everSubscribed())
+{
+    //
+}</code></pre>
+<p><code>onPlan</code> 方法可以用方案 ID 來確認使用者是否訂購某方案：</p>
+<pre><code>if ($user-&gt;onPlan('monthly'))
+{
+    //
+}</code></pre>
+<p><a name="handling-failed-payments"></a></p>
+<h2>處理交易失敗</h2>
+<p>如果顧客的信用卡過期了呢？無需擔心，Cashier 包含了 Webhook 控制器，可以幫你簡單的取消顧客的訂單。只要把路由註冊到控制器：</p>
+<pre><code>Route::post('stripe/webhook', 'Laravel\Cashier\WebhookController@handleWebhook');</code></pre>
+<p>這樣就成了！失敗的交易會經由控制器捕捉並進行處理。控制器會進行至多三次再交易嘗試，都失敗後才會取消顧客的訂單。上面的 <code>stripe/webhook</code> URI 只是一個範例，你必須使用設定在 Stripe 裡的 URI 才行。</p>
+<p><a name="handling-other-stripe-webhooks"></a></p>
+<h2>處理其它 Stripe Webhooks</h2>
+<p>如果你想要處理額外的 Stripe webhook 事件，可以繼承 Webhook 控制器。你的方法名稱要對應到 Cashier 預期的名稱，尤其是方法名稱應該使用 <code>handle</code> 前綴，後面接著你想要處理的 Stripe webhook 。例如，如果你想要處理 <code>invoice.payment_succeeded</code> webhook ，你應該增加一個 <code>handleInvoicePaymentSucceeded</code> 方法到控制器。</p>
+<pre><code>class WebhookController extends Laravel\Cashier\WebhookController {
+
+    public function handleInvoicePaymentSucceeded($payload)
+    {
+        // Handle The Event
+    }
+
+}</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 除了更新你資料庫裡的訂購資訊以外， Webhook 控制器也可能會經由 Stripe API 取消你的訂購。</p>
+</blockquote>
+<p><a name="invoices"></a></p>
+<h2>收據</h2>
+<p>你可以很簡單的經由 <code>invoices</code> 方法拿到客戶的收據資料陣列：</p>
+<pre><code>$invoices = $user-&gt;invoices();</code></pre>
+<p>你可以使用這些輔助方法，列出收據的相關資訊給客戶看：</p>
+<pre><code>{{ $invoice-&gt;id }}
+
+{{ $invoice-&gt;dateString() }}
+
+{{ $invoice-&gt;dollars() }}</code></pre>
+<p>使用 <code>downloadInvoice</code> 方法產生收據的 PDF 下載。是的，它非常容易：</p>
+<pre><code>return $user-&gt;downloadInvoice($invoice-&gt;id, [
+    'vendor'  =&gt; 'Your Company',
+    'product' =&gt; 'Your Product',
+]);</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="billing.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

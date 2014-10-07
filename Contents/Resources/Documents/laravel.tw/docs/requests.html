@@ -1,0 +1,374 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="requests.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="requests.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>請求與輸入</h1>
+<ul>
+<li><a href="requests.html#basic-input">基本輸入資料</a></li>
+<li><a href="requests.html#cookies">Cookies</a></li>
+<li><a href="requests.html#old-input">舊輸入資料</a></li>
+<li><a href="requests.html#files">上傳檔案</a></li>
+<li><a href="requests.html#request-information">請求資訊</a></li>
+</ul>
+<p><a name="basic-input"></a></p>
+<h2>基本輸入資料</h2>
+<p>你可以經由幾個簡潔的方法拿到使用者的輸入資料。不需要擔心發出請求時使用的 HTTP 動詞，取得輸入資料的方式都是相同的。</p>
+<h4>取得特定輸入資料</h4>
+<pre><code>$name = Input::get('name');</code></pre>
+<h4>取得特定輸入資料，若沒有則取得預設值</h4>
+<pre><code>$name = Input::get('name', 'Sally');</code></pre>
+<h4>確認是否有輸入資料</h4>
+<pre><code>if (Input::has('name'))
+{
+    //
+}</code></pre>
+<h4>取得所有發出請求時傳入的輸入資料</h4>
+<pre><code>$input = Input::all();</code></pre>
+<h4>取得部分發出請求時傳入的輸入資料</h4>
+<pre><code>$input = Input::only('username', 'password');
+
+$input = Input::except('credit_card');</code></pre>
+<p>如果是「陣列」形式的輸入資料，可以使用「點」語法取得陣列：</p>
+<pre><code>$input = Input::get('products.0.name');</code></pre>
+<blockquote>
+<p><strong>提醒：</strong> 有些 JavaScript 函式庫如 Backbone 可能會送出 JSON 格式的輸入資料，但是一樣可以使用 <code>Input::get</code> 取得資料。</p>
+</blockquote>
+<p><a name="cookies"></a></p>
+<h2>Cookies</h2>
+<p>Laravel 建立的 cookie 會加密並且加上認證記號，意味著如果被客戶端擅改，會造成 cookie 失效。</p>
+<h4>取得 Cookie 值</h4>
+<pre><code>$value = Cookie::get('name');</code></pre>
+<h4>加上新的 Cookie 到回應</h4>
+<pre><code>$response = Response::make('Hello World');
+
+$response-&gt;withCookie(Cookie::make('name', 'value', $minutes));</code></pre>
+<h4>加入 Cookie 隊列到下一個回應</h4>
+<p>如果你想在回應被建立前設定 cookie，使用 <code>Cookie::queue()</code> 方法。 Cookie 會在最後自動加到回應裡。</p>
+<pre><code>Cookie::queue($name, $value, $minutes);</code></pre>
+<h4>建立永久有效的 Cookie</h4>
+<pre><code>$cookie = Cookie::forever('name', 'value');</code></pre>
+<p><a name="old-input"></a></p>
+<h2>舊輸入資料</h2>
+<p>你可能想要在使用者下一次發送請求前，保留這次的輸入資料。例如，你可能需要在表單驗證失敗後重新填入表單值。</p>
+<h4>將輸入資料存成一次性 Session</h4>
+<pre><code>Input::flash();</code></pre>
+<h4>將部分輸入資料存成一次性 Session</h4>
+<pre><code>Input::flashOnly('username', 'email');
+
+Input::flashExcept('password');</code></pre>
+<p>你很可能常常需要在重導至前一頁，並將輸入資料存成一次性 Session。只要在重導方法串接的方法中傳入輸入資料，就能簡單地完成。</p>
+<pre><code>return Redirect::to('form')-&gt;withInput();
+
+return Redirect::to('form')-&gt;withInput(Input::except('password'));</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 你可以使用 <a href="session.html">Session</a> 類別將不同請求資料存成其他一次性 Session。</p>
+</blockquote>
+<h4>取得舊輸入資料</h4>
+<pre><code>Input::old('username');</code></pre>
+<p><a name="files"></a></p>
+<h2>上傳檔案</h2>
+<h4>取得上傳檔案</h4>
+<pre><code>$file = Input::file('photo');</code></pre>
+<h4>確認檔案是否有上傳</h4>
+<pre><code>if (Input::hasFile('photo'))
+{
+    //
+}</code></pre>
+<p><code>file</code> 方法回傳的物件是 <code>Symfony\Component\HttpFoundation\File\UploadedFile</code> 的實例，<code>UploadedFile</code> 繼承了 PHP 的 <code>SplFileInfo</code> 類別並且提供了很多方法和檔案互動。</p>
+<h4>確認上傳的檔案是否有效</h4>
+<pre><code>if (Input::file('photo')-&gt;isValid())
+{
+    //
+}</code></pre>
+<h4>移動上傳檔案</h4>
+<pre><code>Input::file('photo')-&gt;move($destinationPath);
+
+Input::file('photo')-&gt;move($destinationPath, $fileName);</code></pre>
+<h4>取得上傳檔案所在的路徑</h4>
+<pre><code>$path = Input::file('photo')-&gt;getRealPath();</code></pre>
+<h4>取得上傳檔案的原始名稱</h4>
+<pre><code>$name = Input::file('photo')-&gt;getClientOriginalName();</code></pre>
+<h4>取得上傳檔案的副檔名</h4>
+<pre><code>$extension = Input::file('photo')-&gt;getClientOriginalExtension();</code></pre>
+<h4>取得上傳檔案的大小</h4>
+<pre><code>$size = Input::file('photo')-&gt;getSize();</code></pre>
+<h4>取得上傳檔案的 MIME 類型</h4>
+<pre><code>$mime = Input::file('photo')-&gt;getMimeType();</code></pre>
+<p><a name="request-information"></a></p>
+<h2>請求資訊</h2>
+<p><code>Request</code> 類別提供很多方法檢查 HTTP 請求，它繼承了 <code>Symfony\Component\HttpFoundation\Request</code> 類別，下面是一些使用方式。</p>
+<h4>取得請求 URI</h4>
+<pre><code>$uri = Request::path();</code></pre>
+<h4>取得請求方法</h4>
+<pre><code>$method = Request::method();
+
+if (Request::isMethod('post'))
+{
+    //
+}</code></pre>
+<h4>確認請求路徑是否符合特定格式</h4>
+<pre><code>if (Request::is('admin/*'))
+{
+    //
+}</code></pre>
+<h4>取得請求 URL</h4>
+<pre><code>$url = Request::url();</code></pre>
+<h4>取得請求 URI 部分片段</h4>
+<pre><code>$segment = Request::segment(1);</code></pre>
+<h4>取得請求標頭</h4>
+<pre><code>$value = Request::header('Content-Type');</code></pre>
+<h4>從 $_SERVER 取得值</h4>
+<pre><code>$value = Request::server('PATH_INFO');</code></pre>
+<h4>確認是否為 HTTPS 請求</h4>
+<pre><code>if (Request::secure())
+{
+    //
+}</code></pre>
+<h4>確認是否為 AJAX 請求</h4>
+<pre><code>if (Request::ajax())
+{
+    //
+}</code></pre>
+<h4>確認請求是否有 JSON Content Type</h4>
+<pre><code>if (Request::isJson())
+{
+    //
+}</code></pre>
+<h4>確認是否要求 JSON 回應</h4>
+<pre><code>if (Request::wantsJson())
+{
+    //
+}</code></pre>
+<h4>確認要求的回應格式</h4>
+<p><code>Request::format</code> 方法會基於 HTTP Accept 標頭回傳請求的回應格式：</p>
+<pre><code>if (Request::format() == 'json')
+{
+    //
+}</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="requests.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

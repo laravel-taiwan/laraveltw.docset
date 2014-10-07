@@ -1,0 +1,332 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="configuration.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="configuration.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>設定</h1>
+<ul>
+<li><a href="configuration.html#introduction">簡介</a></li>
+<li><a href="configuration.html#environment-configuration">環境設定</a></li>
+<li><a href="configuration.html#provider-configuration">供應商設定</a></li>
+<li><a href="configuration.html#protecting-sensitive-configuration">保護敏感設定</a></li>
+<li><a href="configuration.html#maintenance-mode">維護模式</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>簡介</h2>
+<p>所有關於 Laravel 框架的設定文件都被放置在 <code>app/config</code> 目錄下。每個文件裡的所有選項都有文件，因此你可以輕鬆地察看這些文件，並且熟悉這些選項配置。</p>
+<p>有時候，你可能在運行時需要存取這些設定值，你可以使用 <code>Config</code> 類別：</p>
+<h4>存取一個選項的值</h4>
+<pre><code>Config::get('app.timezone');</code></pre>
+<p>如果選項值不存在，你可以指定一個預設值：</p>
+<pre><code>$timezone = Config::get('app.timezone', 'UTC');</code></pre>
+<h4>設定選項值</h4>
+<p>注意，「點」式語法可以用來存取不同設定文件裡的選項。你還可以在運行階段更改設定值：</p>
+<pre><code>Config::set('database.default', 'sqlite');</code></pre>
+<p>在運行階段設定的選項值只在該次請求中有效，不會對其他的請求造成影響。</p>
+<p><a name="environment-configuration"></a></p>
+<h2>環境配置</h2>
+<p>通常應用程式常常需要根據不同的運行環境而有不同的配置設定值。例如，你會希望在你的本地開發機器上會有與正式環境不同的緩存驅動（cache driver），透過設定檔案，這是非常容易達成的。</p>
+<p>在 <code>config</code> 目錄下建立與環境名稱相同的目錄，例如 <code>local</code>。接下來，創建你想要覆寫的設定文件，並且設定該環境所希望的設定值。例如，你要在 <code>app/config/local</code> 建立 <code>cache.php</code> 檔案，內容如下：</p>
+<pre><code>&lt;?php
+
+return array(
+
+    'driver' =&gt; 'file',
+
+);</code></pre>
+<blockquote>
+<p><strong>註：</strong> 請勿使用「testing」當作環境名稱，它是專門為單元測試保留的。</p>
+</blockquote>
+<p>注意，你不需要為基本設定文件中的_所有_選項設定選項值，只需要指定你需要覆蓋的配置選項即可。環境配置文件將會以「cascade」的方式覆蓋基本設定文件。</p>
+<p>接下來，我們需要讓框架知道如何確認其運行環境。預設環境是 <code>production</code>。然而，你可以在安裝目錄下的 <code>bootstrap/start.php</code> 文件中設定其他環境。在該文件中，你可以找到 <code>$app-&gt;detectEnvironment</code> 函式。該陣列將會用來偵測當前的運行環境。你可以根據你的需求增加環境或者是機器名稱。</p>
+<pre><code>&lt;?php
+
+$env = $app-&gt;detectEnvironment(array(
+
+    'local' =&gt; array('your-machine-name'),
+
+));</code></pre>
+<p>在這個範例中，「local」是運行環境的名稱而「your-machine-name」是你的服務器的主機名稱。在 Linux 和 Mac 上，你可以透過命令列執行 <code>hostsname</code> 查到你的主機名稱。</p>
+<p>如果你想要更靈活的環境偵測方式，可以傳遞一個 <code>閉包（Closure）</code> 給 <code>detectEnvironment</code> 函式，這樣你就可以按照你想要的方式偵測了：</p>
+<pre><code>$env = $app-&gt;detectEnvironment(function()
+{
+    return $_SERVER['MY_LARAVEL_ENV'];
+});</code></pre>
+<h4>存取目前的運行環境</h4>
+<p>你也可以透過 <code>environment</code> 函式來取的目前運行階段的環境：</p>
+<pre><code>$environment = App::environment();</code></pre>
+<p>你也可以傳遞參數至 <code>environment</code> 函式中，來確認目前的環境是否與參數相符合：</p>
+<pre><code>if (App::environment('local'))
+{
+    // 當環境為 local 時
+}
+
+if (App::environment('local', 'staging'))
+{
+    // 環境為 local 或 staging...
+}</code></pre>
+<p><a name="provider-configuration"></a></p>
+<h3>供應商設定</h3>
+<p>當使用環境設定時，你會想要「附加」環境 <a href="ioc.html#service-providers">服務供應商</a> 到你主要的 <code>app</code> 設定檔中。然而，如果你這樣做，你會發現環境 <code>app</code> 供應商將會覆蓋掉你主要 <code>app</code> 設定檔的供應商。如果要附加供應商，在你的環境 <code>app</code> 設定檔中使用 <code>append_config</code> helper 方法：</p>
+<pre><code>'providers' =&gt; append_config(array(
+    'LocalOnlyServiceProvider',
+))</code></pre>
+<p><a name="protecting-sensitive-configuration"></a></p>
+<h2>保護敏感設定</h2>
+<p>對於一個「實際」的應用程式，讓敏感的設定不要放在你的設定檔中才是明智的抉擇。像是資料庫密碼，Stripe API 金鑰和加密金鑰都應該盡可能地不要存在設定檔中。所以，該放在哪裡？很慶幸的，Laravel 提供了一個非常簡單的方式：使用「點開頭」的檔案來保存這種類型的設定。</p>
+<p>首先，<a href="configuration.html#environment-configuration">設定你的應用程式</a> 來識別你的機器是否在 <code>local</code> 環境中。然後創建一個 <code>.env.local.php</code> 檔案在你的專案最上層目錄中（一般而言與 <code>composer.json</code> 檔案同目錄)。<code>.env.local.php</code> 將會回傳一個鍵值組的陣列，類似於一般的 Laravel 設定檔：</p>
+<pre><code>&lt;?php
+
+return array(
+
+    'TEST_STRIPE_KEY' =&gt; 'super-secret-sauce',
+
+);</code></pre>
+<p>所有在這個檔案中的鍵值組將會被回傳，並轉成 PHP 的超級全域變數 <code>$_ENV</code> 和 <code>$_SERVER</code>。你可以在你的設定檔中透過這些全域變數存取：</p>
+<pre><code>'key' =&gt; $_ENV['TEST_STRIPE_KEY']</code></pre>
+<p>請確認將 <code>.env.local.php</code> 加進你的 <code>.gitignore</code> 檔案中。他可以讓你的團隊成員可以創建自己的本機環境設定檔，也可以將敏感設定從版本控制系統中隱藏。</p>
+<p>現在，在你的正式環境中，創建一個包含正式環境敏感設定值的 <code>.env.php</code> 於你專案的最上層目錄。如同 <code>.env.local.php</code>，正式環境的 <code>.env.php</code> 也不應該在版本控制系統中。</p>
+<blockquote>
+<p><strong>附註：</strong> 你可以為每個有支援的環境創建所屬的設定檔案。例如，<code>development</code> 環境下，如果 <code>.env.development.php</code> 檔案若存在將會自動讀取進來。</p>
+</blockquote>
+<p><a name="maintenance-mode"></a></p>
+<h2>維護模式</h2>
+<p>當你的應用程式處於維護模式時，所有的路由都會指向一個自定的視圖。當你要更新或進行維護作業時，「關閉」整個網站是很簡單的。<code>App::down</code> 函式已經定義在你的 <code>app/start/global.php</code> 檔案中。他將會在你的應用程式處於維護模式時將執行該函式，展現在用戶前。</p>
+<p>啟用維護模式，只要執行 Artisan 指令「down」：</p>
+<pre><code>php artisan down</code></pre>
+<p>關閉維護模式，只要執行 Artisan 指令「up」：</p>
+<pre><code>php artisan up</code></pre>
+<p>如果你想要客製化維護模式的視圖，你只需要增加下面內容至應用程式裡的 <code>app/start/global.php</code> 檔案中：</p>
+<pre><code>App::down(function()
+{
+    return Response::view('maintenance', array(), 503);
+});</code></pre>
+<p>如果傳給 <code>down</code> 函式的閉包回傳「NULL」值，該此請求將會略過維護模式。</p>
+<h3>維護模式與隊列</h3>
+<p>當應用程式處於維護模式中，將不會處理任何 <a href="queues.html">隊列工作</a>。所有的隊列工作將會在應用程式離開維護模式後繼續被進行。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="configuration.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

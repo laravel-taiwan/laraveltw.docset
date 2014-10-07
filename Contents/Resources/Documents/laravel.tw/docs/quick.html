@@ -1,0 +1,366 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="quick.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="quick.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Laravel 快速入門</h1>
+<ul>
+<li><a href="quick.html#installation">安裝</a></li>
+<li><a href="quick.html#local-development-environment">本地開發環境</a></li>
+<li><a href="quick.html#routing">路由</a></li>
+<li><a href="quick.html#creating-a-view">建立視圖</a></li>
+<li><a href="quick.html#creating-a-migration">建立遷移資料</a></li>
+<li><a href="quick.html#eloquent-orm">Eloquent ORM</a></li>
+<li><a href="quick.html#displaying-data">顯示資料</a></li>
+<li><a href="quick.html#deploying-your-application">部署應用</a></li>
+</ul>
+<p><a name="installation"></a></p>
+<h2>安裝</h2>
+<h3>透過 Laravel 安裝器</h3>
+<p>首先，使用 <code>Composer</code> 全局下載並安裝 <code>Laravel/installer</code>：</p>
+<pre><code>composer global require "laravel/installer=~1.1"</code></pre>
+<p>請確定把 <code>~/.composer/vendor/bin</code> 路徑放置於您的 <code>PATH</code> 裡，這樣 <code>laravel</code> 可執行文件才能被命令行找到，以後您就可以在命令行下直接使用 <code>laravel</code> 命令。</p>
+<p>安裝並且配置成功後，可以使用命令 <code>laravel new</code> 在您指定的目錄下創建一份全新安裝的 <code>Laravel 應用</code>，如這樣的調用：<code>laravel new blog</code> 將會在當前目錄下創建一個叫 <code>blog</code> 的目錄，此目錄裡面存放着全新安裝的 Laravel 應用，此方法跟其他方法不一樣的地方在於是提前安裝好所有代碼依賴的，您無需再通過 <code>composer install</code> 安裝，速度一下子提高了很多。</p>
+<h3>透過 Composer</h3>
+<p>Laravel 框架使用 <a href="http://getcomposer.org">composer</a> 來執行安裝及相依性管理。如果還沒有安裝它的話，請先從 <a href="http://getcomposer.org/doc/00-intro.md">安裝 Composer</a> 開始吧。</p>
+<p>安裝之後，你可以透過命令列模式執行下列指令來安裝 Laravel：</p>
+<pre><code>composer create-project laravel/laravel your-project-name --prefer-dist</code></pre>
+<p>這個指令會下載並安裝一份乾淨的 Laravel 在你目前所在目錄的 <code>your-project-name</code> 的新建目錄中。</p>
+<p>如果你想要直接從 <a href="https://github.com/laravel/laravel/archive/master.zip">Github 上的 Laravel Respoitory</a> 手動下載 Laravel 也是可以的。只要在解壓後的目錄最頂層，執行 <code>composer install</code> 即可，這個指令會把框架相依的資源下載安裝好。</p>
+<h3>權限設定</h3>
+<p>在安裝 Laravel 之後，你需要讓網頁伺服器有寫入 <code>app/storage</code> 目錄的權限。詳情請見 <a href="installation.html">安裝過程</a> 文件說明。</p>
+<h3>運行 Laravel</h3>
+<p>一般而言，你需要網頁伺服器（如: Apache 或是 Nginx）來運行你的 Laravel 應用。如果你是使用 PHP 5.4 以上版本，那可以使用 PHP 內建的開發伺服器，你只需要使用 Artisan 命令 <code>serve</code>：</p>
+<pre><code>php artisan serve</code></pre>
+<p><a name="directories"></a></p>
+<h3>目錄結構</h3>
+<p>安裝完框架後，可以來了解熟悉一下專案的目錄結構。<code>app</code> 目錄裡面包含了 <code>views（視圖）</code>、<code>controllers（控制器）</code> 還有 <code>models（模型）</code> 等目錄。你的應用程式大多數的程式碼都會在這個目錄中。你也會發現 <code>app/config</code> 這個目錄，設定檔多存在在這目錄之中。</p>
+<p><a name="local-development-environment"></a></p>
+<h2>本地開發環境</h2>
+<p>過去你要在本機上設定本地的 PHP 開發環境是讓人頭痛的事情。要安裝正確的 PHP 版本、必須的套件，還有所需的元件是廢時耗力的。為了解決這狀況，使用 <a href="homestead.html">Laravel Homestead</a> 吧。Homestead 是以 Laravel 和 <a href="http://vagrantup.com">Vagrant</a> 所設計的虛擬機器。而 Homestead Vagrant 封裝預載建立完整 PHP 應用所需的所有軟體。如此一來你可以在瞬間創建一個虛擬化、獨立不受干擾的開發環境。下面列出包裝在 Homestead 裏的軟體：</p>
+<ul>
+<li>Nginx</li>
+<li>PHP 5.5</li>
+<li>MySQL</li>
+<li>Redis</li>
+<li>Memcached</li>
+<li>Beanstalk</li>
+</ul>
+<p>不用擔心，即使「虛擬化」聽起來複雜，但這是無痛的。VirtualBox 和 Vagrant 是 Homestead 的相依軟體，你需要先安裝他們。兩個軟體都有各平台的簡單圖形化安裝介面。請參閱 <a href="homestead.html">Homestead 文件</a> 進行了解。</p>
+<p><a name="routing"></a></p>
+<h2>路由</h2>
+<p>一開始，我們先創建第一個路由。在 Laravel 中，最簡單的路由是封閉性路由。打開 <code>app/routes.php</code> 檔案，並且增加下面的路由在檔案的最下方：</p>
+<pre><code>Route::get('users', function()
+{
+    return 'Users!';
+});</code></pre>
+<p>現在，你在你瀏覽器中輸入 <code>/users</code>，你應該會看到頁面出現 <code>Users!</code>。很好！你已經建立了你的第一個路由。</p>
+<p>路由也可以指向一個控制器類別。例如：</p>
+<pre><code>Route::get('users', 'UserController@getIndex');</code></pre>
+<p>這個路由告訴框架 <code>/users</code> 路由的請求應該使用 <code>UserController</code> 類別的 <code>getIndex</code> 方法。查看更多控制器路由的資訊，請查閱 <a href="controllers.html">控制器文件</a>。</p>
+<p><a name="creating-a-view"></a></p>
+<h2>建立視圖</h2>
+<p>接下來，我們要創建試圖來顯示我們的用戶資料。視圖以 HTML 代碼存放在 <code>app/views</code> 的目錄中。我們來存放兩個視圖進目錄中： <code>layout.blade.php</code> 和 <code>user.blade.php</code>。首先，我們先來建立 <code>layout.blade.php</code> 檔案：</p>
+<pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Laravel Quickstart&lt;/h1&gt;
+
+        @yield('content')
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>接下來，我們建立 <code>users.blade.php</code> 視圖：</p>
+<pre><code>@extends('layout')
+
+@section('content')
+    Users!
+@stop</code></pre>
+<p>這裡有些語法或許讓你感到陌生。因為我們使用的是 Laravel 的模板系統：Blade。Blade 非常快，僅需要少量的正規表示式來幫你的模板編譯成 PHP 代碼。Blade 提供了強大的功能，例如模板的繼承，還有一些常用的 PHP 控制結構語法，如 <code>if</code> 和 <code>for</code>。更多資訊請查閱 <a href="templates.html">Blade 文件</a>。</p>
+<p>現在，我們已經有了自己的視圖，讓我們回到 <code>/users</code> 路由。我們改用視圖來替代顯示出 <code>Users!</code>：</p>
+<pre><code>Route::get('users', function()
+{
+    return View::make('users');
+});</code></pre>
+<p>太棒了！現在你已經成功地建立了一個繼承自 layout 的簡單視圖。接下來，我們開始到資料庫層。</p>
+<p><a name="creating-a-migration"></a></p>
+<h2>建立遷移檔</h2>
+<p>我們使用 Laravel 的遷移(migration)系統來建立資料表以保存我們的資料。遷移記錄著資料庫的改變歷程，這讓團隊成員間的資訊分享更為簡單。</p>
+<p>首先，我們要設定資料庫連接。你可以在 <code>app/config/database.php</code> 檔案配置所有的資料庫連接資訊。預設中，Laravel 使用 MySQL，所以你必須將資料庫連接的機密資訊填入其中。你也可以更改 <code>driver</code> 選項為 <code>sqlite</code>，如此他就會使用放置在 <code>app/database</code> 裡的 SQLite 資料庫。</p>
+<p>接下來，我們來創建遷移檔，我們使用 <a href="artisan.html">Artisan CLI</a>。在專案的根目錄下，在終端裡執行下列指令：</p>
+<pre><code>php artisan migrate:make create_users_table</code></pre>
+<p>然後，在 <code>app/database/migrations</code> 目錄下找到產生的遷移檔。檔案中有一個包含了兩個方法 <code>up</code> 和 <code>down</code> 的類別。在 <code>up</code> 方法中，你必須表明你要對你的資料表做哪些更動，而在 <code>down</code> 的方法裡，你只要回復這些更動。</p>
+<p>我們定義一個遷移檔如下：</p>
+<pre><code>public function up()
+{
+    Schema::create('users', function($table)
+    {
+        $table-&gt;increments('id');
+        $table-&gt;string('email')-&gt;unique();
+        $table-&gt;string('name');
+        $table-&gt;timestamps();
+    });
+}
+
+public function down()
+{
+    Schema::drop('users');
+}</code></pre>
+<p>然後我們從終端裡透過 <code>migrate</code> 指令來執行遷移動作。在專案的根目錄裡執行下列指令：</p>
+<pre><code>php artisan migrate</code></pre>
+<p>如果你想回復遷移，你可以執行 <code>migrate:rollback</code> 指令。現在我們已經建好了資料表了，開始放些資料進去吧。</p>
+<p><a name="eloquent-orm"></a></p>
+<h2>Eloquent ORM</h2>
+<p>Laravel 提供了很棒的 ORM：Eloquent。如果你曾經使用過 Ruby on Rails 框架，那你將會覺得 Eloquent 很熟悉，因為它遵循 ActiveRecord ORM 風格的資料庫互動模式。</p>
+<p>首先，我們先來定義一個模型(model)。一個 Eloquent 模型可以用來查詢關聯的資料表，以及表內的某一行。別擔心，我們很快就會了解了。模型通常存放在 <code>app/models</code> 目錄中。讓我們先來在這目錄裡定義一個 <code>User.php</code> 的模型檔如下：</p>
+<pre><code>class User extends Eloquent {}</code></pre>
+<p>注意，我們並未告訴 Eloquent 使用哪個表。Eloquent 有多種慣例，一種就是使用模型的複數形態作為該模型的資料表名稱，非常方便。</p>
+<p>使用你喜歡的資料庫管理工具，插入幾筆資料到 <code>users</code> 資料表，我們將使用 Eloquent 來取得這些資料並且傳遞到視圖當中。</p>
+<p>現在我們修改我們的 <code>/users</code> 路由，如下：</p>
+<pre><code>Route::get('users', function()
+{
+    $users = User::all();
+
+    return View::make('users')-&gt;with('users', $users);
+});</code></pre>
+<p>我們來看看這個路由。首先，<code>User</code> 模型裡的 <code>all</code> 方法會將 <code>users</code> 表裡取得所有的記錄。接下來，我們透過 <code>with</code> 方法將這些記錄傳遞到視圖裡。<code>with</code> 方法接受一個鍵和一個值，如此該鍵值就可以在視圖中被使用了。</p>
+<p><a name="displaying-data"></a></p>
+<h2>顯示資料</h2>
+<p>現在，我們視圖中已經可以存取到 <code>users</code> 類別了，我們可以顯示出來，如下：</p>
+<pre><code>@extends('layout')
+
+@section('content')
+    @foreach($users as $user)
+        &lt;p&gt;{{ $user-&gt;name }}&lt;/p&gt;
+    @endforeach
+@stop</code></pre>
+<p>你會發現沒有看到任何 <code>echo</code> 語句。當使用 Blade 時，你可以使用兩個大括號來輸出資料。很容易的，你應該可以透過 <code>/users</code> 路由來看到你的用戶資料。</p>
+<p>這僅僅只是開始。在本系列教學中，你已經了解了 Laravel 基礎部分，但是還有更多令人興奮的東西等著你學習。繼續閱讀文件且更深入的了解 <a href="eloquent.html">Eloquent</a> 和 <a href="templates.html">Blade</a> 的強大特性。或許，你也更有興趣去了解 <a href="queues.html">隊列</a> 和 <a href="testing.html">單元測試</a>。也或許，你更想要了解 <a href="ioc.html">IoC Container</a> 來展現實力，選擇在你。</p>
+<p><a name="deploying-your-application"></a></p>
+<h2>部署應用程式</h2>
+<p>Laravel 的其中一個目標就是讓 PHP 應用程式開發從下載到部署都輕鬆化，而 <a href="https://forge.laravel.com">Laravel Forge</a> 提供了一個簡單的方式去部署你的 Laravel 應用到快速的服務器上。Forge 可以設定並供應在 DigitalOcean、 Linode、Rackspace 和 Amazon EC2 上的機器群。如同 Homestead 一樣，所有必須的最新版軟體都已安裝在內：Nginx、PHP 5.5、MySQL、Postgres、Redis、Memcached 等等。Forge 的「快速部署」可以讓你在每次發布更新至 Github 或是 Bitbucket 時自動部署應用。</p>
+<p>更重要的是，Forge 能幫助你設定 queue workers、SSL、Cron jobs、子網域等等。更多的資訊請參閱 <a href="https://forge.laravel.com">Forge 網站</a>。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="quick.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

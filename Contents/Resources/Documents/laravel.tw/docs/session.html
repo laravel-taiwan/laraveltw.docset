@@ -1,0 +1,308 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="session.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="session.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Session</h1>
+<ul>
+<li><a href="session.html#configuration">組態</a></li>
+<li><a href="session.html#session-usage">Session 用法</a></li>
+<li><a href="session.html#flash-data">快閃資料（Flash Data）</a></li>
+<li><a href="session.html#database-sessions">資料庫 Sessions</a></li>
+<li><a href="session.html#session-drivers">Session 驅動</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>組態</h2>
+<p>由於 HTTP 協定是無狀態（Stateless）的，所以 session 提供一種儲存用戶資料的方法。Laravel 支援了多種 session 後端驅動，並透過清楚、統一的 API 提供使用。也內建支援像是 <a href="http://memcached.org">Memcached</a>、<a href="http://redis.io">Redis</a> 和資料庫的後端驅動。</p>
+<p>session 的設定檔配置在 <code>app/config/session.php</code> 中，請務必看一下 session 設定檔中可用的選項設定及註解。Laravel 預設使用 <code>file</code> 的 session 驅動，它在大多的應用中可以良好運作。</p>
+<h4>保留鍵值</h4>
+<p>Laravel 框架在內部有使用 <code>flash</code> 作為 session 的鍵值，所以應該避免 session 使用此名稱。</p>
+<p><a name="session-usage"></a></p>
+<h2>Session 用法</h2>
+<h4>儲存項目到 Session 中</h4>
+<pre><code>Session::put('key', 'value');</code></pre>
+<h4>儲存項目進 Session 陣列值中</h4>
+<pre><code>Session::push('user.teams', 'developers');</code></pre>
+<h4>從 Session 取回項目</h4>
+<pre><code>$value = Session::get('key');</code></pre>
+<h4>從 Session 取回項目，若無則回傳預設值</h4>
+<pre><code>$value = Session::get('key', 'default');
+
+$value = Session::get('key', function() { return 'default'; });</code></pre>
+<h4>從 Session 取回項目，並刪除</h4>
+<pre><code>$value = Session::pull('key', 'default');</code></pre>
+<h4>從 Session 取出所有項目</h4>
+<pre><code>$data = Session::all();</code></pre>
+<h4>判斷項目在 Session 中是否存在</h4>
+<pre><code>if (Session::has('users'))
+{
+    //
+}</code></pre>
+<h4>移除 Session 中指定的項目</h4>
+<pre><code>Session::forget('key');</code></pre>
+<h4>清空整個 Session</h4>
+<pre><code>Session::flush();</code></pre>
+<h4>重新產生 Session ID</h4>
+<pre><code>Session::regenerate();</code></pre>
+<p><a name="flash-data"></a></p>
+<h2>快閃資料（Flash Data）</h2>
+<p>有時你可能希望暫存一些資料，並只在下次請求有效。你可以使用 <code>Session::flash</code> 方法來達成目的：</p>
+<pre><code>Session::flash('key', 'value');</code></pre>
+<h4>刷新當前快閃資料，延長到下次請求</h4>
+<pre><code>Session::reflash();</code></pre>
+<h4>只刷新指定快閃資料</h4>
+<pre><code>Session::keep(array('username', 'email'));</code></pre>
+<p><a name="database-sessions"></a></p>
+<h2>資料庫 Sessions</h2>
+<p>當使用 <code>database</code> session 驅動時，你必需建置一張儲存 session 的資料表。下方範例使用 <code>Schema</code> 來建表：</p>
+<pre><code>Schema::create('sessions', function($table)
+{
+    $table-&gt;string('id')-&gt;unique();
+    $table-&gt;text('payload');
+    $table-&gt;integer('last_activity');
+});</code></pre>
+<p>當然你也可以使用 Artisan 指令 <code>session:table</code> 來建表：</p>
+<pre><code>php artisan session:table
+
+composer dump-autoload
+
+php artisan migrate</code></pre>
+<p><a name="session-drivers"></a></p>
+<h2>Session 驅動</h2>
+<p>session 設定檔中的「driver」定義了 session 資料將以哪種方式被儲存。Laravel 提供了許多良好的驅動：</p>
+<ul>
+<li><code>file</code> - sessions 將儲存在 <code>app/storage/sessions</code> 資料夾中。</li>
+<li><code>cookie</code> - sessions 將安全儲存在加密的 cookies 中。</li>
+<li><code>database</code> - sessions 將儲存在你的應用程式資料庫中。</li>
+<li><code>memcached</code> / <code>redis</code> - sessions 將儲存在一個高速快取的系統中。</li>
+<li><code>array</code> - sessions 將單純的以 PHP 陣列儲存，只存在當次請求。</li>
+</ul>
+<blockquote>
+<p><strong>注意：</strong> 運行 <a href="testing.html">unit tests</a> 時，session 驅動會被設定為 <code>array</code>，所以不會留下任何 session 資料。</p>
+</blockquote>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="session.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

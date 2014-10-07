@@ -1,0 +1,483 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="helpers.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="helpers.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>輔助方法</h1>
+<ul>
+<li><a href="helpers.html#arrays">陣列</a></li>
+<li><a href="helpers.html#paths">路徑</a></li>
+<li><a href="helpers.html#strings">字串</a></li>
+<li><a href="helpers.html#urls">網址</a></li>
+<li><a href="helpers.html#miscellaneous">其他</a></li>
+</ul>
+<p><a name="arrays"></a></p>
+<h2>陣列</h2>
+<h3>array_add</h3>
+<p>如果給定的鍵不在陣列中，<code>array_add</code> 函式會把給定的鍵值對加到陣列中。</p>
+<pre><code>$array = array('foo' =&gt; 'bar');
+
+$array = array_add($array, 'key', 'value');</code></pre>
+<h3>array_divide</h3>
+<p><code>array_divide</code> 函式回傳兩個陣列，一個包含原本陣列的鍵，另一個包含原本陣列的值。</p>
+<pre><code>$array = array('foo' =&gt; 'bar');
+
+list($keys, $values) = array_divide($array);</code></pre>
+<h3>array_dot</h3>
+<p><code>array_dot</code> 函式把多維陣列扁平化成一維陣列，並用「點」符號表示深度。</p>
+<pre><code>$array = array('foo' =&gt; array('bar' =&gt; 'baz'));
+
+$array = array_dot($array);
+
+// array('foo.bar' =&gt; 'baz');</code></pre>
+<h3>array_except</h3>
+<p><code>array_except</code> 函式從陣列移除給定的鍵值對。</p>
+<pre><code>$array = array_except($array, array('keys', 'to', 'remove'));</code></pre>
+<h3>array_fetch</h3>
+<p><code>array_fetch</code> 函式回傳包含被選擇的巢狀元素的扁平化陣列。</p>
+<pre><code>$array = array(
+    array('developer' =&gt; array('name' =&gt; 'Taylor')),
+    array('developer' =&gt; array('name' =&gt; 'Dayle')),
+);
+
+$array = array_fetch($array, 'developer.name');
+
+// array('Taylor', 'Dayle');</code></pre>
+<h3>array_first</h3>
+<p><code>array_first</code> 函式回傳陣列中第一個通過給定的測試為真的元素。</p>
+<pre><code>$array = array(100, 200, 300);
+
+$value = array_first($array, function($key, $value)
+{
+    return $value &gt;= 150;
+});</code></pre>
+<p>也可以傳遞預設值當作第三個參數：</p>
+<pre><code>$value = array_first($array, $callback, $default);</code></pre>
+<h3>array_last</h3>
+<p><code>array_last</code> 函式回傳陣列中最後一個通過給定的測試為真的元素。</p>
+<pre><code>$array = array(350, 400, 500, 300, 200, 100);
+
+$value = array_last($array, function($key, $value)
+{
+    return $value &gt; 350;
+});
+
+// 500</code></pre>
+<p>也可以傳遞預設值當作第三個參數：</p>
+<pre><code>$value = array_last($array, $callback, $default);</code></pre>
+<h3>array_flatten</h3>
+<p><code>array_flatten</code> 函式將會把多維陣列扁平化成一維。</p>
+<pre><code>$array = array('name' =&gt; 'Joe', 'languages' =&gt; array('PHP', 'Ruby'));
+
+$array = array_flatten($array);
+
+// array('Joe', 'PHP', 'Ruby');</code></pre>
+<h3>array_forget</h3>
+<p><code>array_forget</code> 函式將會用「點」符號從深度巢狀陣列移除給定的鍵值對。</p>
+<pre><code>$array = array('names' =&gt; array('joe' =&gt; array('programmer')));
+
+array_forget($array, 'names.joe');</code></pre>
+<h3>array_get</h3>
+<p><code>array_get</code> 函式將會使用「點」符號從深度巢狀陣列取回給定的值。</p>
+<pre><code>$array = array('names' =&gt; array('joe' =&gt; array('programmer')));
+
+$value = array_get($array, 'names.joe');</code></pre>
+<blockquote>
+<p><strong>備註:</strong> 想要把 <code>array_get</code> 用在物件上？ 請使用 <code>object_get</code>。</p>
+</blockquote>
+<h3>array_only</h3>
+<p><code>array_only</code> 函式將會只從陣列回傳給定的鍵值對。</p>
+<pre><code>$array = array('name' =&gt; 'Joe', 'age' =&gt; 27, 'votes' =&gt; 1);
+
+$array = array_only($array, array('name', 'votes'));</code></pre>
+<h3>array_pluck</h3>
+<p><code>array_pluck</code> 函式將會從陣列拉出給定鍵值對的清單。</p>
+<pre><code>$array = array(array('name' =&gt; 'Taylor'), array('name' =&gt; 'Dayle'));
+
+$array = array_pluck($array, 'name');
+
+// array('Taylor', 'Dayle');</code></pre>
+<h3>array_pull</h3>
+<p><code>array_pull</code> 函式將會從陣列回傳給定的鍵值對，並移除它。</p>
+<pre><code>$array = array('name' =&gt; 'Taylor', 'age' =&gt; 27);
+
+$name = array_pull($array, 'name');</code></pre>
+<h3>array_set</h3>
+<p><code>array_set</code> 函式將會使用「點」符號在深度巢狀陣列中指定值。</p>
+<pre><code>$array = array('names' =&gt; array('programmer' =&gt; 'Joe'));
+
+array_set($array, 'names.editor', 'Taylor');</code></pre>
+<h3>array_sort</h3>
+<p><code>array_sort</code> 函式借由給定閉包的結果來排序陣列。</p>
+<pre><code>$array = array(
+    array('name' =&gt; 'Jill'),
+    array('name' =&gt; 'Barry'),
+);
+
+$array = array_values(array_sort($array, function($value)
+{
+    return $value['name'];
+}));</code></pre>
+<h3>array_where</h3>
+<p>使用給定的閉包過濾陣列。</p>
+<pre><code>$array = array(100, '200', 300, '400', 500);
+
+$array = array_where($array, function($key, $value)
+{
+    return is_string($value);
+});
+
+// Array ( [1] =&gt; 200 [3] =&gt; 400 )</code></pre>
+<h3>head</h3>
+<p>回傳陣列中第一個元素。對 PHP 5.3.x 的方法鏈很有用。</p>
+<pre><code>$first = head($this-&gt;returnsArray('foo'));</code></pre>
+<h3>last</h3>
+<p>回傳陣列中最後一個元素。對方法鏈很有用。</p>
+<pre><code>$last = last($this-&gt;returnsArray('foo'));</code></pre>
+<p><a name="paths"></a></p>
+<h2>路徑</h2>
+<h3>app_path</h3>
+<p>取得 <code>app</code> 資料夾的完整路徑。</p>
+<pre><code>$path = app_path();</code></pre>
+<h3>base_path</h3>
+<p>取得應用程式安裝根目錄的完整路徑。</p>
+<h3>public_path</h3>
+<p>取得 <code>public</code> 資料夾的完整路徑。</p>
+<h3>storage_path</h3>
+<p>取得 <code>app/storage</code> 資料夾的完整路徑。</p>
+<p><a name="strings"></a></p>
+<h2>字串</h2>
+<h3>camel_case</h3>
+<p>把給定的字串轉換成 <code>駝峰式命名</code>。</p>
+<pre><code>$camel = camel_case('foo_bar');
+
+// fooBar</code></pre>
+<h3>class_basename</h3>
+<p>取得給定類別的類別名稱，不含任何命名空間的名稱。</p>
+<pre><code>$class = class_basename('Foo\Bar\Baz');
+
+// Baz</code></pre>
+<h3>e</h3>
+<p>對給定字串執行 <code>htmlentities</code>，並支援 UTF-8。</p>
+<pre><code>$entities = e('&lt;html&gt;foo&lt;/html&gt;');</code></pre>
+<h3>ends_with</h3>
+<p>判斷句子結尾是否有給定的字串。</p>
+<pre><code>$value = ends_with('This is my name', 'name');</code></pre>
+<h3>snake_case</h3>
+<p>把給定的字串轉換成 <code>蛇形命名</code>。</p>
+<pre><code>$snake = snake_case('fooBar');
+
+// foo_bar</code></pre>
+<h3>str_limit</h3>
+<p>限制字串的字元數量。</p>
+<pre><code>str_limit($value, $limit = 100, $end = '...')</code></pre>
+<p>例子：</p>
+<pre><code>$value = str_limit('The PHP framework for web artisans.', 7);
+
+// The PHP...</code></pre>
+<h3>starts_with</h3>
+<p>判斷句子是否開頭有給定的字串。</p>
+<pre><code>$value = starts_with('This is my name', 'This');</code></pre>
+<h3>str_contains</h3>
+<p>判斷句子是否有給定的字串。</p>
+<pre><code>$value = str_contains('This is my name', 'my');</code></pre>
+<h3>str_finish</h3>
+<p>加一個給定字串到句子結尾。多餘一個的給定字串則移除。</p>
+<pre><code>$string = str_finish('this/string', '/');
+
+// this/string/</code></pre>
+<h3>str_is</h3>
+<p>判斷字串是否符合給定的模式。星號可以用來當作萬用字元。</p>
+<pre><code>$value = str_is('foo*', 'foobar');</code></pre>
+<h3>str_plural</h3>
+<p>把字串轉換成它的多數形態 (只有英文)。</p>
+<pre><code>$plural = str_plural('car');</code></pre>
+<h3>str_random</h3>
+<p>產生給定長度的隨機字串。</p>
+<pre><code>$string = str_random(40);</code></pre>
+<h3>str_singular</h3>
+<p>把字串轉換成它的單數形態 (只有英文)。</p>
+<pre><code>$singular = str_singular('cars');</code></pre>
+<h3>studly_case</h3>
+<p>把給定字串轉換成 <code>首字大寫命名</code>。</p>
+<pre><code>$value = studly_case('foo_bar');
+
+// FooBar</code></pre>
+<h3>trans</h3>
+<p>翻譯給定的語句。等同 <code>Lang::get</code>。</p>
+<pre><code>$value = trans('validation.required'):</code></pre>
+<h3>trans_choice</h3>
+<p>隨著詞形變化翻譯給定的語句。等同 <code>Lang::choice</code>。</p>
+<pre><code>$value = trans_choice('foo.bar', $count);</code></pre>
+<p><a name="urls"></a></p>
+<h2>網址</h2>
+<h3>action</h3>
+<p>產生給定控制器行為的網址。</p>
+<pre><code>$url = action('HomeController@getIndex', $params);</code></pre>
+<h3>route</h3>
+<p>產生給定路由名稱的網址。</p>
+<pre><code>$url = route('routeName', $params);</code></pre>
+<h3>asset</h3>
+<p>產生資產的網址。</p>
+<pre><code>$url = asset('img/photo.jpg');</code></pre>
+<h3>link_to</h3>
+<p>產生給定網址的 HTML 連結。</p>
+<pre><code>echo link_to('foo/bar', $title, $attributes = array(), $secure = null);</code></pre>
+<h3>link_to_asset</h3>
+<p>產生給定資產的 HTML 連結。</p>
+<pre><code>echo link_to_asset('foo/bar.zip', $title, $attributes = array(), $secure = null);</code></pre>
+<h3>link_to_route</h3>
+<p>產生給定路由的 HTML 連結。</p>
+<pre><code>echo link_to_route('route.name', $title, $parameters = array(), $attributes = array());</code></pre>
+<h3>link_to_action</h3>
+<p>產生給定控制器行為的 HTML 連結。</p>
+<pre><code>echo link_to_action('HomeController@getIndex', $title, $parameters = array(), $attributes = array());</code></pre>
+<h3>secure_asset</h3>
+<p>產生給定資產的 HTTPS HTML 連結。</p>
+<pre><code>echo secure_asset('foo/bar.zip', $title, $attributes = array());</code></pre>
+<h3>secure_url</h3>
+<p>產生給定路徑的 HTTPS 完整網址。</p>
+<pre><code>echo secure_url('foo/bar', $parameters = array());</code></pre>
+<h3>url</h3>
+<p>產生給定路徑的完整網址。</p>
+<pre><code>echo url('foo/bar', $parameters = array(), $secure = null);</code></pre>
+<p><a name="miscellaneous"></a></p>
+<h2>其他</h2>
+<h3>csrf_token</h3>
+<p>取得現在 CSRF token 的值。</p>
+<pre><code>$token = csrf_token();</code></pre>
+<h3>dd</h3>
+<p>印出給定變數並結束腳本執行。</p>
+<pre><code>dd($value);</code></pre>
+<h3>value</h3>
+<p>如果給定的值是個 <code>閉包</code>，回傳 <code>閉包</code> 的回傳值。不是的話，則回傳值。</p>
+<pre><code>$value = value(function() { return 'bar'; });</code></pre>
+<h3>with</h3>
+<p>回傳給定物件。對 PHP 5.3.x 的建構式方法鏈很有用。</p>
+<pre><code>$value = with(new Foo)-&gt;doWork();</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="helpers.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="responses.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="responses.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>視圖（ View ）與回應（ Response ）</h1>
+<ul>
+<li><a href="responses.html#basic-responses">基本回應</a></li>
+<li><a href="responses.html#redirects">重導</a></li>
+<li><a href="responses.html#views">視圖</a></li>
+<li><a href="responses.html#view-composers">視圖組件</a></li>
+<li><a href="responses.html#special-responses">特殊回應</a></li>
+<li><a href="responses.html#response-macros">回應巨集</a></li>
+</ul>
+<p><a name="basic-responses"></a></p>
+<h2>基本回應</h2>
+<h4>從路由回傳字串</h4>
+<pre><code>Route::get('/', function()
+{
+    return 'Hello World';
+});</code></pre>
+<h4>建立自定回應</h4>
+<p><code>Response</code> 實例繼承了 <code>Symfony\Component\HttpFoundation\Response</code> 類別，其提供了很多方法建立 HTTP 回應。</p>
+<pre><code>$response = Response::make($contents, $statusCode);
+
+$response-&gt;header('Content-Type', $value);
+
+return $response;</code></pre>
+<p>如果想要使用 <code>Response</code> 類別的方法，但最終回傳視圖給使用者，你可以使用簡便的 <code>Response::view</code> 方法：</p>
+<pre><code>return Response::view('hello')-&gt;header('Content-Type', $type);</code></pre>
+<h4>附加 Cookies 到回應</h4>
+<pre><code>$cookie = Cookie::make('name', 'value');
+
+return Response::make($content)-&gt;withCookie($cookie);</code></pre>
+<p><a name="redirects"></a></p>
+<h2>重導</h2>
+<h4>回傳重導</h4>
+<pre><code>return Redirect::to('user/login');</code></pre>
+<h4>回傳重導並且加上快閃資料（ Flash Data ）</h4>
+<pre><code>return Redirect::to('user/login')-&gt;with('message', 'Login Failed');</code></pre>
+<blockquote>
+<p><strong>提示：</strong> <code>with</code> 方法會設定快閃資料到 session，所以可以使用 <code>Session::get</code> 取得資料。</p>
+</blockquote>
+<h4>回傳根據路由名稱的重導</h4>
+<pre><code>return Redirect::route('login');</code></pre>
+<h4>回傳根據路由名稱的重導，並給予路由參數賦值</h4>
+<pre><code>return Redirect::route('profile', array(1));</code></pre>
+<h4>回傳根據路由名稱的重導，並給予特定名稱路由參數賦值</h4>
+<pre><code>return Redirect::route('profile', array('user' =&gt; 1));</code></pre>
+<h4>回傳根據控制器動作的重導</h4>
+<pre><code>return Redirect::action('HomeController@index');</code></pre>
+<h4>回傳根據控制器動作的重導，並給予參數賦值</h4>
+<pre><code>return Redirect::action('UserController@profile', array(1));</code></pre>
+<h4>回傳根據控制器動作的重導，並給予特定名稱參數賦值</h4>
+<pre><code>return Redirect::action('UserController@profile', array('user' =&gt; 1));</code></pre>
+<p><a name="views"></a></p>
+<h2>Views</h2>
+<p>視圖通常包含 HTML，並且提供便利的方式分開控制器和表現層的領域邏輯。視圖儲存在 <code>app/views</code> 目錄下。</p>
+<p>一個簡單的視圖可能看起來如下：</p>
+<pre><code>&lt;!-- View stored in app/views/greeting.php --&gt;
+
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, &lt;?php echo $name; ?&gt;&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>視圖可以像這樣回傳到使用者瀏覽器：</p>
+<pre><code>Route::get('/', function()
+{
+    return View::make('greeting', array('name' =&gt; 'Taylor'));
+});</code></pre>
+<p><code>View::make</code> 方法傳入的第二個參數是可以在視圖裡使用的陣列資料。</p>
+<h4>傳遞資料到視圖</h4>
+<pre><code>// 使用通用方式
+$view = View::make('greeting')-&gt;with('name', 'Steve');
+
+// 使用魔術方法
+$view = View::make('greeting')-&gt;withName('steve');</code></pre>
+<p>上面的範例裡，將可以在視圖裡使用變數 <code>$name</code>，其值為 <code>Steve</code>。</p>
+<p>如果你想，可以傳入資料陣列作為 <code>make</code> 方法第二個參數：</p>
+<pre><code>$view = View::make('greetings', $data);</code></pre>
+<p>你也可以設定所有視圖共用資料：</p>
+<pre><code>View::share('name', 'Steve');</code></pre>
+<h4>傳遞子視圖到視圖</h4>
+<p>有時候你可能想要傳遞子視圖到另一個視圖。例如，有一個子視圖存在 <code>app/views/child/view.php</code>，可以像這樣將它傳遞到另一個視圖：</p>
+<pre><code>$view = View::make('greeting')-&gt;nest('child', 'child.view');
+
+$view = View::make('greeting')-&gt;nest('child', 'child.view', $data);</code></pre>
+<p>如此可以在視圖裡渲染子視圖：</p>
+<pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello!&lt;/h1&gt;
+        &lt;?php echo $child; ?&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h4>確認視圖是否存在</h4>
+<p>如果你需要確認視圖是否存在，使用 <code>View::exists</code> 方法：</p>
+<pre><code>if (View::exists('emails.customer'))
+{
+    //
+}</code></pre>
+<p><a name="view-composers"></a></p>
+<h2>視圖組件</h2>
+<p>視圖組件是當渲染視圖時呼叫的回呼函數或類別方法。如果你想在每次渲染某些視圖時綁定資料，視圖組件可以把這樣的邏輯組織在同一個地方。因此，視圖組件的作用可能像是「view models」或是「presenters」。</p>
+<h4>定義一個組件</h4>
+<pre><code>View::composer('profile', function($view)
+{
+    $view-&gt;with('count', User::count());
+});</code></pre>
+<p>之後每當 <code>profile</code> 視圖被渲染時，<code>count</code> 變數就會被綁定到視圖。</p>
+<p>你也可以把一個組件同時附加到很多視圖。</p>
+<pre><code>View::composer(array('profile','dashboard'), function($view)
+{
+    $view-&gt;with('count', User::count());
+});</code></pre>
+<p>如使用類別作為組件，提供了可以從 <a href="ioc.html">IoC 容器</a> 自動解析組件的好處，你可以像這樣做：</p>
+<pre><code>View::composer('profile', 'ProfileComposer');</code></pre>
+<p>一個視圖組件類別應該像這樣定義：</p>
+<pre><code>class ProfileComposer {
+
+    public function compose($view)
+    {
+        $view-&gt;with('count', User::count());
+    }
+
+}</code></pre>
+<h4>定義很多組件</h4>
+<p>你可以使用 <code>composers</code> 方法群組視圖組件：</p>
+<pre><code>View::composers(array(
+    'AdminComposer' =&gt; array('admin.index', 'admin.profile'),
+    'UserComposer' =&gt; 'user',
+));</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 組件類別沒有一定要放在什麼地方，你可以將它們放在任何地方，只要可以使用 <code>composer.json</code> 自動載入即可。</p>
+</blockquote>
+<h3>視圖創建者</h3>
+<p>視圖 <strong>創建者</strong> 幾乎和組件運作方式一樣；只是他們會在視圖初始化時就立刻建立起來。要註冊一個創建者，只要使用 <code>creator</code> 方法：</p>
+<pre><code>View::creator('profile', function($view)
+{
+    $view-&gt;with('count', User::count());
+});</code></pre>
+<p><a name="special-responses"></a></p>
+<h2>特殊回應</h2>
+<h4>建立 JSON 回應</h4>
+<pre><code>return Response::json(array('name' =&gt; 'Steve', 'state' =&gt; 'CA'));</code></pre>
+<h4>建立 JSONP 回應</h4>
+<pre><code>return Response::json(array('name' =&gt; 'Steve', 'state' =&gt; 'CA'))-&gt;setCallback(Input::get('callback'));</code></pre>
+<h4>建立下載檔案回應</h4>
+<pre><code>return Response::download($pathToFile);
+
+return Response::download($pathToFile, $name, $headers);</code></pre>
+<blockquote>
+<p><strong>提醒：</strong> 管理檔案下載的套件，Symfony HttpFoundation，要求下載檔名必須為 ASCII。</p>
+</blockquote>
+<p><a name="response-macros"></a></p>
+<h2>回應巨集</h2>
+<p>如果你想要自定可以在很多路由和控制器重複使用的回應，可以使用 <code>Response::macro</code> 方法：</p>
+<pre><code>Response::macro('caps', function($value)
+{
+    return Response::make(strtoupper($value));
+});</code></pre>
+<p><code>macro</code> 方法第一個參數為巨集名稱，第二個參數為閉合函數。閉合函數會在 <code>Response</code> 呼叫巨集名稱的時候被執行：</p>
+<pre><code>return Response::caps('foo');</code></pre>
+<p>你可以把定義自己的巨集放在 <code>app/start</code> 裡面的文件。又或者，你可以將巨集組織成獨立的文件，並且從其中一個 <code>start</code> 文件裡引入。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="responses.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

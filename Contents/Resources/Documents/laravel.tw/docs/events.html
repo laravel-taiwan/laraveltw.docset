@@ -1,0 +1,352 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="events.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="events.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Events</h1>
+<ul>
+<li><a href="events.html#basic-usage">基本用法</a></li>
+<li><a href="events.html#wildcard-listeners">萬用字元監聽者</a></li>
+<li><a href="events.html#using-classes-as-listeners">使用類別作為監聽者</a></li>
+<li><a href="events.html#queued-events">事件隊列</a></li>
+<li><a href="events.html#event-subscribers">事件訂閱者</a></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p>Laravel 的 <code>Event</code> 類別提供一個簡單的觀察者實作，允許你在應用程式裡訂閱與監聽事件。</p>
+<h4>訂閱事件</h4>
+<pre><code>Event::listen('auth.login', function($user)
+{
+    $user-&gt;last_login = new DateTime;
+
+    $user-&gt;save();
+});</code></pre>
+<h4>觸發事件</h4>
+<pre><code>$event = Event::fire('auth.login', array($user));</code></pre>
+<h4>訂閱有優先順序的事件</h4>
+<p>你也可以在訂閱事件的時候指定一個優先順序。有較高優先權的監聽者會先被執行，當監聽者有一樣的優先權時將會依照訂閱的順序執行。</p>
+<pre><code>Event::listen('auth.login', 'LoginHandler', 10);
+
+Event::listen('auth.login', 'OtherHandler', 5);</code></pre>
+<h4>停止繼續傳遞事件</h4>
+<p>你有時候會希望停止繼續傳遞事件到其他監聽者。你可以藉由從監聽者回傳 <code>false</code> 來做到這件事：</p>
+<pre><code>Event::listen('auth.login', function($event)
+{
+    // Handle the event...
+
+    return false;
+});</code></pre>
+<h3>在哪裡註冊事件</h3>
+<p>現在你知道怎麼註冊事件了，但是你或許會想知道要在 <em>哪裡</em> 註冊它們。不要擔心，這是一個常見的問題。不幸地，這是一個很難回答的問題，因為你幾乎可以在任何地方註冊事件！但是，這裡有一些提示。 一樣的，你可以在你的其中一個 <code>start</code> 檔案註冊事件，就像其他大部份的啟動程式碼，例如：<code>app/start/global.php</code>。</p>
+<p>如果你的 <code>start</code> 檔案變得越來越擁擠，你可以建立一個分離的 <code>app/events.php</code> 檔案，並從 <code>start</code> 檔案引入它。這是個簡單的解決方案，它保持你的事件註冊與剩餘的啟動程式碼乾淨地分離。如果你喜歡基於類別的方法，你可以在 <a href="ioc.html#service-providers">服務提供者</a> 註冊你的事件。 因為這些方法中沒有一個是絕對正確的方案，基於你的應用程式大小選擇一個讓你感到舒服的方法。</p>
+<p><a name="wildcard-listeners"></a></p>
+<h2>萬用字元監聽者</h2>
+<h4>註冊萬用字元事件監聽者</h4>
+<p>當註冊事件監聽者，你可以使用星號(*) 指定萬用字元監聽者：</p>
+<pre><code>Event::listen('foo.*', function($param)
+{
+    // Handle the event...
+});</code></pre>
+<p>這個監聽者將會處理所有 <code>foo.</code> 開頭的事件。</p>
+<p>你可以使用 <code>Event::firing</code> 方法準確的判定是什麼事件被觸發：</p>
+<pre><code>Event::listen('foo.*', function($param)
+{
+    if (Event::firing() == 'foo.bar')
+    {
+        //
+    }
+});</code></pre>
+<p><a name="using-classes-as-listeners"></a></p>
+<h2>使用類別作為監聽者</h2>
+<p>在一些案例中，你或許會希望使用類別取代閉包來處理事件。類別事件監聽者將會被 <a href="ioc.html">Laravel IoC container</a> 處理，提供依賴注入的全部功能給你的監聽者。</p>
+<h4>註冊類別監聽者</h4>
+<pre><code>Event::listen('auth.login', 'LoginHandler');</code></pre>
+<h4>定義事件監聽者類別</h4>
+<p><code>LoginHandler</code> 類別預設將會呼叫 <code>handle</code> 方法：</p>
+<pre><code>class LoginHandler {
+
+    public function handle($data)
+    {
+        //
+    }
+
+}</code></pre>
+<h4>指定用哪個方法訂閱</h4>
+<p>如果你不希望使用預設的 <code>handle</code> 方法，你可以指定應該被訂閱的方法：</p>
+<pre><code>Event::listen('auth.login', 'LoginHandler@onLogin');</code></pre>
+<p><a name="queued-events"></a></p>
+<h2>事件隊列</h2>
+<h4>註冊事件隊列</h4>
+<p>使用 <code>queue</code> 和 <code>flush</code> 方法，你可以把事件加到隊列等待觸發，但是不立即觸發它：</p>
+<pre><code>Event::queue('foo', array($user));</code></pre>
+<p>你可以執行「flusher」並觸發全部的事件隊列，使用 <code>flush</code> 方法：</p>
+<pre><code>Event::flush('foo');</code></pre>
+<p><a name="event-subscribers"></a></p>
+<h2>事件訂閱者</h2>
+<h4>定義事件訂閱者</h4>
+<p>事件訂閱者是個可以從類別自身裡面訂閱多個事件的類別。訂閱者應該定義 <code>subscribe</code> 方法，它將會被傳遞到事件配送器實體：</p>
+<pre><code>class UserEventHandler {
+
+    /**
+     * Handle user login events.
+     */
+    public function onUserLogin($event)
+    {
+        //
+    }
+
+    /**
+     * Handle user logout events.
+     */
+    public function onUserLogout($event)
+    {
+        //
+    }
+
+    /**
+     * Register the listeners for the subscriber.
+     *
+     * @param  Illuminate\Events\Dispatcher  $events
+     * @return array
+     */
+    public function subscribe($events)
+    {
+        $events-&gt;listen('auth.login', 'UserEventHandler@onUserLogin');
+
+        $events-&gt;listen('auth.logout', 'UserEventHandler@onUserLogout');
+    }
+
+}</code></pre>
+<h4>註冊事件訂閱者</h4>
+<p>當訂閱者被定義時，它或許會使用 <code>Event</code> 類別註冊。</p>
+<pre><code>$subscriber = new UserEventHandler;
+
+Event::subscribe($subscriber);</code></pre>
+<p>你也可以使用 <a href="ioc.html">Laravel IoC container</a> 去處理你的訂閱者。簡單地傳遞訂閱者的名字給 <code>subscribe</code> 方法就可以做到：</p>
+<pre><code>Event::subscribe('UserEventHandler');</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="events.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

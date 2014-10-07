@@ -1,0 +1,308 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="migrations.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="migrations.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>遷移和資料填充</h1>
+<ul>
+<li><a href="migrations.html#introduction">介紹</a></li>
+<li><a href="migrations.html#creating-migrations">建立遷移檔</a></li>
+<li><a href="migrations.html#running-migrations">執行遷移</a></li>
+<li><a href="migrations.html#rolling-back-migrations">推回遷移</a></li>
+<li><a href="migrations.html#database-seeding">資料填充</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>遷移是一種資料庫的版本控制。可以讓團隊在修改資料庫結構的同時，保持彼此的進度一致。遷移通常會和 <a href="schema.html">結構生成器</a> 一起使用，可以簡單的管理資料庫結構。</p>
+<p><a name="creating-migrations"></a></p>
+<h2>建立遷移檔</h2>
+<p>使用 Artisan CLI 的 <code>migrate:make</code> 命令建立遷移檔：</p>
+<pre><code>php artisan migrate:make create_users_table</code></pre>
+<p>遷移檔會建立在 <code>app/database/migrations</code> 目錄下，檔名會包含時間戳記，在執行遷移時用來決定順序。</p>
+<p>你也可以在建立遷移命令加上 <code>--path</code> 參數。路徑要相對於應用程式所在的根目錄。</p>
+<pre><code>php artisan migrate:make foo --path=app/migrations</code></pre>
+<p><code>--table</code> 和 <code>--create</code> 參數可以用來指定資料表名稱，以及遷移檔是否要建立新的資料表。</p>
+<pre><code>php artisan migrate:make add_votes_to_user_table --table=users
+
+php artisan migrate:make create_users_table --create=users</code></pre>
+<p><a name="running-migrations"></a></p>
+<h2>執行遷移</h2>
+<h4>執行所有未執行遷移</h4>
+<pre><code>php artisan migrate</code></pre>
+<h4>執行指定路徑下所有未執行遷移</h4>
+<pre><code>php artisan migrate --path=app/foo/migrations</code></pre>
+<h4>執行特定套件的所有未執行遷移</h4>
+<pre><code>php artisan migrate --package=vendor/package</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 如果在執行遷移時發生「class not found」錯誤，試著先執行 <code>composer dump-autoload</code> 命令後再進行一次。</p>
+</blockquote>
+<h3>在上線（ Production ）環境執行強制遷移</h3>
+<p>有些遷移操作是具有破壞性的，意味著可能讓你遺失原本儲存的資料。為了防止你在上線環境執行到這些遷移命令，你會被提示要在執行遷移前進行確認。加上 <code>--force</code> 參數執行強制遷移：</p>
+<pre><code>php artisan migrate --force</code></pre>
+<p><a name="rolling-back-migrations"></a></p>
+<h2>推回遷移</h2>
+<h4>推回上一次的遷移</h4>
+<pre><code>php artisan migrate:rollback</code></pre>
+<h4>推回所有遷移</h4>
+<pre><code>php artisan migrate:reset</code></pre>
+<h4>推回所有遷移並且再執行一次</h4>
+<pre><code>php artisan migrate:refresh
+
+php artisan migrate:refresh --seed</code></pre>
+<p><a name="database-seeding"></a></p>
+<h2>資料填充</h2>
+<p>Laravel 可以簡單的使用 seed 類別，填充測試資料到資料庫。所有的 seed 類別放在 <code>app/database/seeds</code> 目錄下。可以使用任何你想要的類別名稱，但是應該遵守某些大小寫規範，像是 <code>UserTableSeeder</code> 之類。預設已經有一個 <code>DatabaseSeeder</code> 類別。在這個類別裡，使用 <code>call</code> 方法執行其他的 seed 類別，讓你控制填充的順序。</p>
+<h4>Seed 類別範例</h4>
+<pre><code>class DatabaseSeeder extends Seeder {
+
+    public function run()
+    {
+        $this-&gt;call('UserTableSeeder');
+
+        $this-&gt;command-&gt;info('User table seeded!');
+    }
+
+}
+
+class UserTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('users')-&gt;delete();
+
+        User::create(array('email' =&gt; 'foo@bar.com'));
+    }
+
+}</code></pre>
+<p>要執行資料填充，可以使用 Artisan CLI 的 <code>db:seed</code> 命令：</p>
+<pre><code>php artisan db:seed</code></pre>
+<p>預設 <code>db:seed</code> 命令會執行 <code>DatabaseSeeder</code>，可以使用它來呼叫其他 seed 類別，不過，也可以使用 <code>--class</code> 參數指定要單獨執行的類別：</p>
+<pre><code>php artisan db:seed --class=UserTableSeeder</code></pre>
+<p>你可以也使用 <code>migrate:refresh</code> 命令填充資料，它會推回並且再次執行所有遷移：</p>
+<pre><code>php artisan migrate:refresh --seed</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="migrations.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

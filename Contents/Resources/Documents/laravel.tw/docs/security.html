@@ -1,0 +1,441 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="security.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="security.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>認證與安全性</h1>
+<ul>
+<li><a href="security.html#configuration">設定</a></li>
+<li><a href="security.html#storing-passwords">儲存密碼</a></li>
+<li><a href="security.html#authenticating-users">使用者認證</a></li>
+<li><a href="security.html#manually">手動登入使用者</a></li>
+<li><a href="security.html#protecting-routes">保護路由</a></li>
+<li><a href="security.html#http-basic-authentication">HTTP 簡易認證</a></li>
+<li><a href="security.html#password-reminders-and-reset">忘記密碼與密碼重設</a></li>
+<li><a href="security.html#encryption">加密</a></li>
+<li><a href="security.html#authentication-drivers">認證驅動</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設定</h2>
+<p>Laravel 的目標就是要讓實作認證機制變得簡單。事實上，幾乎所有的設定預設就已經完成了。有關認證的設定檔都放在 <code>app/config/auth.php</code> 裡，而在這些檔案裡也都包含了良好的註解說明每一個選項的所對應的認證行為及動作。</p>
+<p>Laravel 預設在 <code>app/models</code> 資料夾內就包含了一個使用 Eloquent 認證驅動的<code>User</code> 模型。請記得在建立模型結構時，密碼欄位至少要有 60 個字元寬度。</p>
+<p>假如您的應用程式並不是使用 Eloquent，你也可以使用 Laravel 的查尋產生器做 <code>database</code> 認證驅動。</p>
+<blockquote>
+<p><strong>注意：</strong> 在開始之前，請先確認您的 <code>users</code> (或其他同義) 資料表包含一個名為 <code>remember_token</code> 的欄位，欄寬 100 字元、字串型態、可接受 null。這個欄位將會被用來儲存「記住我」的 session token。</p>
+</blockquote>
+<p><a name="storing-passwords"></a></p>
+<h2>儲存密碼</h2>
+<p>Laravel 的 <code>Hash</code> 類別提供了安全的 Bcrypt 雜湊演算法：</p>
+<h4>對密碼加密</h4>
+<pre><code>$password = Hash::make('secret');</code></pre>
+<h4>驗證密碼</h4>
+<pre><code>if (Hash::check('secret', $hashedPassword))
+{
+    // The passwords match...
+}</code></pre>
+<h4>確認密碼是否需要重新加密</h4>
+<pre><code>if (Hash::needsRehash($hashed))
+{
+    $hashed = Hash::make('secret');
+}</code></pre>
+<p><a name="authenticating-users"></a></p>
+<h2>使用者認證</h2>
+<p>要讓使用者登入，你可以使用 <code>Auth::attempt</code> 方法：</p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password)))
+{
+    return Redirect::intended('dashboard');
+}</code></pre>
+<p>需提醒的是 <code>email</code> 並不是一個必要的欄位，在這裡僅用於示範。你可以使用資料庫裡任何類似於「使用者名稱」的欄位做為帳號值。若使用者尚未登入的話，認證篩選器會使用 <code>Redirect::intended</code> 方法重導使用者至指定的 URL。我們可指定一個備用 URI，假如預定的位置不存在時使用。</p>
+<p>當 <code>attempt</code> 方法被呼叫時，<code>auth.attempt</code> <a href="events.html">事件</a> 將會被觸發。假如認證成功的話，則 <code>auth.login</code> 事件會接著被觸發。</p>
+<h4>判定使用者是否已登入</h4>
+<p>判定一個使用者是否已經登入您的應用程式，您可以使用 <code>check</code> 這個方法：</p>
+<pre><code>if (Auth::check())
+{
+    // The user is logged in...
+}</code></pre>
+<h4>認證一個使用者並且「記住」他</h4>
+<p>假如您想要在您的應用程式內提供「記住我」的選項，您可以在 <code>attempt</code> 方法的第二個參數給 <code>true</code> 值，這樣就可以保留使用者的認證身份 (或直到他手動登出為止)。當然，您的 <code>users</code> 資料表必需包括一個字串型態的 <code>remember_token</code> 欄位來儲存「記住我」的標記。</p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password), true))
+{
+    // The user is being remembered...
+}</code></pre>
+<p><strong>注意：</strong> 假如 <code>attempt</code> 方法回傳 <code>true</code>，則表示使用者已經登入您的應用程式。</p>
+<h4>透過記住我來認證使用者</h4>
+<p>假如您讓使用者透過「記住我」的方式來登入，則您可以使用 <code>viaRemember</code> 方法來判定使用者是否擁有「記住我」cookie 來認證使用者登入：</p>
+<pre><code>if (Auth::viaRemember())
+{
+    //
+}</code></pre>
+<h4>條件認證使用者</h4>
+<p>在認證過程中，您可能會想要增加額外的認證條件：</p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password, 'active' =&gt; 1)))
+{
+    // The user is active, not suspended, and exists.
+}</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 為了增加對 session 的保護，使用者的 session ID 將會在使用者認證完成後自動重新產生。</p>
+</blockquote>
+<h4>取得已登入的使用者資訊</h4>
+<p>當使用者完成認證後，你就可以透過模型來取得相關的資料：</p>
+<pre><code>$email = Auth::user()-&gt;email;</code></pre>
+<p>取得登入使用者的 ID，你可以使用 <code>id</code> 方法：</p>
+<pre><code>$id = Auth::id();</code></pre>
+<p>若想要透過使用者的 ID 來登入應用程式，可直接使用 <code>loginUsingId</code> 方法：</p>
+<pre><code>Auth::loginUsingId(1);</code></pre>
+<h4>驗證使用者資訊而不要登入</h4>
+<p><code>validate</code> 方法可以讓您驗證使用者資訊而不真的登入應用程式：</p>
+<pre><code>if (Auth::validate($credentials))
+{
+    //
+}</code></pre>
+<h4>在單一請求內登入使用者</h4>
+<p>您也可以使用 <code>once</code> 方法來讓使用者在單一請求內登入。不會有任何 session 或 cookie 被產生：</p>
+<pre><code>if (Auth::once($credentials))
+{
+    //
+}</code></pre>
+<h4>將使用者登出</h4>
+<pre><code>Auth::logout();</code></pre>
+<p><a name="manually"></a></p>
+<h2>手動登入使用者</h2>
+<p>假如您需要將一個已存在的使用者實體登入您的應用程式，您可以用該實體很簡單的呼叫 <code>login</code> 方法：</p>
+<pre><code>$user = User::find(1);
+
+Auth::login($user);</code></pre>
+<p>這個方式和用使用者帳號密碼來 <code>attempt</code> 的功能是一樣的。</p>
+<p><a name="protecting-routes"></a></p>
+<h2>保護路由</h2>
+<p>路由過濾器可讓特定的路由僅能讓已認證的使用者連結。Laravel 預設提供 <code>auth</code> 過濾器，其被定義在 <code>app/filters.php</code> 檔案內。</p>
+<h4>保護特定路由</h4>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth', function()
+{
+    // Only authenticated users may enter...
+}));</code></pre>
+<h3>CSRF 保護</h3>
+<p>Laravel 提供一個簡易的方式來保護您的應用程式免於跨站攻擊。</p>
+<h4>在表單內引入 CSRF 標記</h4>
+<pre><code>&lt;input type="hidden" name="_token" value="&lt;?php echo csrf_token(); ?&gt;"&gt;</code></pre>
+<h4>驗證表單的 CSRF 標記</h4>
+<pre><code>Route::post('register', array('before' =&gt; 'csrf', function()
+{
+    return 'You gave a valid CSRF token!';
+}));</code></pre>
+<p><a name="http-basic-authentication"></a></p>
+<h2>HTTP 簡易認證</h2>
+<p>HTTP 簡易認證提供了一個快速的方式來認證使用者而不用特定設置一個「登入」頁。在您的路由內設定 <code>auth.basic</code> 過濾器則可啟動這個功能：</p>
+<h4>用 HTTP 簡易認證保護您的路由</h4>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth.basic', function()
+{
+    // Only authenticated users may enter...
+}));</code></pre>
+<p><code>basic</code> 過濾器預設將會使用 <code>email</code> 欄位來做使用者認證，假如您想要使用其他欄位來做認證的話，可在您的 <code>app/filters.php</code> 檔案內將想要拿來做認證的欄位當成第一個參數傳給 <code>basic</code> 方法：</p>
+<pre><code>Route::filter('auth.basic', function()
+{
+    return Auth::basic('username');
+});</code></pre>
+<h4>設定無狀態的 HTTP 簡易過濾器</h4>
+<p>一般在實作 API 認證時，往往會想要使用 HTTP 簡易認證而不要產生任何 session 或 cookie。我們可以透過定義一個過濾器並回傳 <code>onceBasic</code> 方法來達成：</p>
+<pre><code>Route::filter('basic.once', function()
+{
+    return Auth::onceBasic();
+});</code></pre>
+<p>假如您是使用 PHP FastCGI，HTTP 簡易認證預設是無法正常運作的。請在你的 <code>.htaccess</code> 檔案內新增以下程式碼來啟動這個功能：</p>
+<pre><code>RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]</code></pre>
+<p><a name="password-reminders-and-reset"></a></p>
+<h2>忘記密碼與重設</h2>
+<h3>模型與資料表</h3>
+<p>大多數的網路應用程式都會提供使用者忘記密碼的功能。為了不讓開發者重複實作這個功能，Laravel 提供了方便的方法來寄送忘記密碼通知及密碼重設的功能。在開始之前，請先確認您的 <code>User</code> 模型有實作 <code>Illuminate\Auth\Reminders\RemindableInterface</code>。當然，預設 Laravel 的 <code>User</code> 模型本身就已實作，並且引入<code>Illuminate\Auth\Reminders\RemindableTrait</code> 來包括所有需要實作的介面方法。</p>
+<h4>實作 RemindableInterface</h4>
+<pre><code>use Illuminate\Auth\Reminders\RemindableTrait;
+use Illuminate\Auth\Reminders\RemindableInterface;
+
+class User extends Eloquent implements RemindableInterface {
+
+    use RemindableTrait;
+
+}</code></pre>
+<h4>產生 Reminder 資料表遷移</h4>
+<p>接下來，我們需要產生一個資料表來儲存重設密碼標記。為了產生這個資料表的遷移檔，需要執行 <code>auth:reminders-table</code> artisan 指令：</p>
+<pre><code>php artisan auth:reminders-table
+
+php artisan migrate</code></pre>
+<h3>密碼重設控制器</h3>
+<p>然後我們已經準備好產生密碼重設控制器，您可以使用 <code>auth:reminders-controller</code> artisan 指令來自動產生這個控制器，它會產生出一個 <code>RemindersController.php</code> 檔案在您的 <code>app/controllers</code> 資料夾內。</p>
+<pre><code>php artisan auth:reminders-controller</code></pre>
+<p>產生出來的控制器已經具備 <code>getRemind</code> 方法來顯示您的忘記密碼表單。您所需要做就是建立一個 <code>password.remind</code> <a href="responses.html#views">視圖</a>。這個視圖需要具備一個 <code>email</code> 欄位的表單，且這個表單應該要 POST 到 <code>RemindersController@postRemind</code> 動作。</p>
+<p>一個簡單的 <code>password.remind</code> 表單視圖應該看起來像這樣：</p>
+<pre><code>&lt;form action="{{ action('RemindersController@postRemind') }}" method="POST"&gt;
+    &lt;input type="email" name="email"&gt;
+    &lt;input type="submit" value="Send Reminder"&gt;
+&lt;/form&gt;</code></pre>
+<p>除了 <code>getRemind</code> 外，控制器還包括了一個 <code>postRemind</code> 方法來處理寄送忘記密碼通知信給您的使用者。這個方法會預期在 <code>POST</code> 參數內會有 <code>email</code> 欄位。假如忘記密碼通知信成功的寄發給使用者，則會有一個 <code>status</code> 訊息被暫存在 session 內；假如寄發失敗的話，則取而代之的會有一個 <code>error</code> 訊息被暫存。</p>
+<p>在 <code>postRemind</code> 方法內，你可以在發送出去前修改訊息的內容：</p>
+<pre><code>Password::remind(Input::only('email'), function($message)
+{
+    $message-&gt;subject('Password Reminder');
+});</code></pre>
+<p>您的使用者將會收到一封電子郵件內有一個重設密碼的連結指向 <code>getReset</code> 控制器方法。忘記密碼標記是用來驗證密碼重設程序是否正確，也會傳遞給對應的控制器方法。這個動作已經設定會回傳一個 <code>password.reset</code> 視圖。這個 <code>token</code> 會被傳遞給視圖，而您需要將這個 <code>token</code> 放在一個隱形的表單欄位內。另外，您的重設密碼表單應該包括 <code>email</code>、<code>password</code> 和 <code>password_confirmation</code> 欄位。這個表單應該 POST 到 <code>RemindersController@postReset</code> 方法。</p>
+<p>一個 <code>password.reset</code> 視圖表單應該看起來像這樣：</p>
+<pre><code>&lt;form action="{{ action('RemindersController@postReset') }}" method="POST"&gt;
+    &lt;input type="hidden" name="token" value="{{ $token }}"&gt;
+    &lt;input type="email" name="email"&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;input type="password" name="password_confirmation"&gt;
+    &lt;input type="submit" value="Reset Password"&gt;
+&lt;/form&gt;</code></pre>
+<p>最後，<code>postReset</code> 方法則是專職處理重設過後的密碼。在這個控制器方法裡，Closure 傳遞 <code>Password::reset</code> 方法並且設定 <code>User</code> 內的 <code>password</code> 屬性後呼叫 <code>save</code> 方法。當然，這個 Closure 會假定您的 <code>User</code> 模型是一個 <a href="eloquent.html">Eloquent 模型</a>。當然，您可以自由地修改這個 Closure 內容來符合您的應用程式資料庫儲存方式。</p>
+<p>假如密碼成功的重設，則使用者會被重導至您的應用程式根目錄。同樣的，您可以自由的更改重導的 URL；假如密碼重設失敗的話，使用者會被重導至重設密碼表單頁，而且會有 <code>error</code> 訊息被暫存在 session 內。</p>
+<h3>密碼驗證</h3>
+<p>預設 <code>Password::reset</code> 方法會驗證密碼符合且大於等於六個字元。您可以用 <code>Password::validator</code> 方法 (接受 Closure) 來調整這些預設值。透過這個 Closure，您可以用任何方式來做密碼驗證。需提醒的是，你不一定要驗證密碼是否符合，因為框架自動會幫您完成這項工作。</p>
+<pre><code>Password::validator(function($credentials)
+{
+    return strlen($credentials['password']) &gt;= 6;
+});</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 密碼重設標記預設會在一個小時後過期。您可以透過 <code>app/config/auth.php</code> 案內的 <code>reminder.expire</code> 選項來調整這個設定。</p>
+</blockquote>
+<p><a name="encryption"></a></p>
+<h2>加密</h2>
+<p>Laravel 透過 mcrypt PHP 外掛來提供 AES 強度的加密演算：</p>
+<h4>加密一個值</h4>
+<pre><code>$encrypted = Crypt::encrypt('secret');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 記得在 <code>app/config/app.php</code> 檔案裡設定一個 16, 24 或 32 字元的隨機字做 <code>key</code>，否則這個加密演算結果將不夠安全。</p>
+</blockquote>
+<h4>解密一個值</h4>
+<pre><code>$decrypted = Crypt::decrypt($encryptedValue);</code></pre>
+<h4>設定暗號及模式</h4>
+<p>您可以設定加密器的暗號及模式：</p>
+<pre><code>Crypt::setMode('ctr');
+
+Crypt::setCipher($cipher);</code></pre>
+<p><a name="authentication-drivers"></a></p>
+<h2>認證驅動</h2>
+<p>Laravel 預設提供 <code>database</code> 及 <code>eloquent</code> 兩種認證驅動。假如您需要更多有關增加額外認證驅動的詳細資訊，請參考 <a href="extending.html#authentication">認證擴充文件</a></p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="security.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

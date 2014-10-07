@@ -1,0 +1,388 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="packages.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="packages.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>套件開發</h1>
+<ul>
+<li><a href="packages.html#introduction">簡介</a></li>
+<li><a href="packages.html#creating-a-package">建立一個套件</a></li>
+<li><a href="packages.html#package-structure">套件結構</a></li>
+<li><a href="packages.html#service-providers">服務提供者</a></li>
+<li><a href="packages.html#deferred-providers">緩載提供者</a></li>
+<li><a href="packages.html#package-conventions">套件慣例</a></li>
+<li><a href="packages.html#development-workflow">開發工作流程</a></li>
+<li><a href="packages.html#package-routing">套件路由</a></li>
+<li><a href="packages.html#package-configuration">套件設定</a></li>
+<li><a href="packages.html#package-views">套件視圖</a></li>
+<li><a href="packages.html#package-migrations">套件遷移</a></li>
+<li><a href="packages.html#package-assets">套件資產</a></li>
+<li><a href="packages.html#publishing-packages">發佈套件</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>簡介</h2>
+<p>套件是擴增 Laravel 的主要方式。套件可以是任何功能，比方說處理時間像 <a href="https://github.com/briannesbitt/Carbon">Carbon</a> 或是 BDD 測試框架如 <a href="https://github.com/Behat/Behat">Behat</a>。</p>
+<p>當然，有各式各樣的套件。有些套件是獨立運作 (stand-alone) 的，意思是指他們並不相依任何框架，包括 Laravel 。剛提到的 Carbon 及 Behat 就是這種套件。要使用這種套件只需要在 <code>composer.json</code> 檔案裡引入它們即可。</p>
+<p>另一方面，有些套件特別指定要與 Laravel 整合。這種型式的套件在前一代的 Laravel 裡稱做 Bundle。這種套件可能有路由、控制器、視圖、設定以及遷移，目標是增強 Laravel 本身的功能。由於沒有特別需求要開發獨立運作的套件，因此在這份指南裡將主要以開發 Laravel 專屬的套件為目標進行說明。</p>
+<p>所有的 Laravel 套件都透過 <a href="http://packagist.org">Packagist</a> 及 <a href="http://getcomposer.org">Composer</a> 進行散佈，因此學習如何使用這些美好的 PHP 散佈工具是一個必經的過程。</p>
+<p><a name="creating-a-package"></a></p>
+<h2>建立一個套件</h2>
+<p>建立一個新套件最簡單的方式就是透過 <code>workbench</code> 這個 artisan 指令。首先，你需要先在 <code>app/config/workbench.php</code> 裡設定一些選項。在這個檔案裡，你會找到 <code>name</code> 及 <code>email</code> 這兩個選項。這些選項裡的值將會被用來產生套件裡的 <code>composer.json</code> 檔。當您設定好這些前置作業後，就已經可以開始打造您的 workbench 套件了！</p>
+<h4>啟始一個 workbench artisan 指令</h4>
+<pre><code>php artisan workbench vendor/package --resources</code></pre>
+<p>發行商 (vendor) 名稱是為了識別不同作者發行相同名稱的套件而設計。比方說，我 (Taylor Otwell) 建立了一個新的套件名稱為「Zapper」，而發行商的名稱就是 <code>Taylor</code>。預設 workbench 指令會建立框架獨立 (framework agnostic) 的套件結構；然後，<code>resources</code> 參數則會讓 workbench 在產生套件結構時，額外針對 Laravel 產生特定的資料夾，包括 <code>migrations</code>、<code>views</code>、<code>config</code> 等。</p>
+<p>當 <code>workbench</code> 指令被執行後，你的套件就可以在 <code>workbench</code> 資料夾內存取。接著，您需要為您的套件 <code>註冊服務提供者 (ServiceProvider)</code>。您可以透過在 <code>app/config/app.php</code> 的 <code>providers</code> 陣列裡新增您套件的服務提供者名稱進行註冊，這個動作將會讓 Laravel 啟動時載入您的套件。服務提供者使用 <code>[Package]ServiceProvider</code> 這種命名慣例來為程式命名，以上述的例子來說，我們將會新增一行 <code>Taylor\Zapper\ZapperServiceProvider</code> 到 <code>providers</code> 陣列裡。</p>
+<p>當提供者被註冊後，你就已經完成套件開發的前置作業了！不過，建議您在深入開發工作前，先熟悉一下以下章節要介面的套件資料結構及開發工作流程。</p>
+<blockquote>
+<p><strong>注意：</strong> 假如您的服務提供者無法被載入，記得在你的應用程式根目錄底下執行 <code>php artisan dump-autoload</code> 指令。</p>
+</blockquote>
+<p><a name="package-structure"></a></p>
+<h2>套件結構</h2>
+<p>當使用 <code>workbench</code> 指令後，您的套件將依照以下慣例進行初始化，這是為了讓您的套件能與 Laravel 協同工作：</p>
+<h4>基本的套件結構</h4>
+<pre><code>/src
+    /Vendor
+        /Package
+            PackageServiceProvider.php
+    /config
+    /lang
+    /migrations
+    /views
+/tests
+/public</code></pre>
+<p>讓我們繼續探索下去。<code>src/Vendor/Package</code> 資料夾是存放這個套件所有的相關類別程式碼，包括 <code>ServiceProvider</code>。而 <code>config</code>、<code>lang</code>、<code>migrations</code>、<code>views</code> 資料夾，就如同您預想的一樣，存放關於您的套件的相關資源，一個套件可以包含任何種類的資源，就像「一般」的應用程式一樣。</p>
+<p><a name="service-providers"></a></p>
+<h2>服務提供者</h2>
+<p>服務提供者就是一個套件的啟始類別。預設來說，他包含兩個方法：<code>boot</code> 和 <code>register</code>。透過這兩個方法，你可以做任何你需要做的事，比方說：引入路由檔、註冊 IoC 容器、銜接事件或是任何其他您想要做的事。</p>
+<p><code>register</code> 這個方法則是當服務提供者被註冊時馬上被呼叫，而 <code>boot</code> 指令則是僅當一個請求被路由時才會被執行。所以，假如您的服務提供者相依於其他已經註冊的服務提供者，或是你想要覆寫由其他服務提供者所做的綁定，則您應該使用 <code>boot</code> 方法。</p>
+<p>當使用 <code>workbench</code> 新建一個套件時，<code>boot</code> 指令就已經包括以下動作：</p>
+<pre><code>$this-&gt;package('vendor/package');</code></pre>
+<p>這個方法讓 Laravel 知道如何載入視圖、設定及其他您的應用程式所需的資源。在大多數的情況下，跟隨這個 workbench 的慣例即可，並不需要特別修改這一行。</p>
+<p>在預設的情況下，當註冊完套件後，其資源就可以透過 <code>vendor/package</code> 取得。然後，您可以透過 package 方法的第二個參數來覆寫其動作，就方說：</p>
+<pre><code>// 將 custom-namespace 傳給 package 方法
+$this-&gt;package('vendor/package', 'custom-namespace');
+
+// 則套件資源可透過 custom-namespace 取得
+$view = View::make('custom-namespace::foo');</code></pre>
+<p>服務提供者類別並沒有「預設」的存放位置，您可以把它放在任何您喜歡的地方，或許可以將它們統一整理在 <code>Providers</code> 命名空間後，放到您的 <code>app</code> 資料夾裡。只要 Composer <a href="http://getcomposer.org/doc/01-basic-usage.md#autoloading">知道如何載入它們的話</a>，您就可以把這些檔案放在任何地方。</p>
+<p>假如您更改了您套件資源存放的位置，可能是設定檔或是視圖，那您就應該在 <code>package</code> 方法呼叫時，傳第第三個參考來指定您的資源位置：</p>
+<pre><code>$this-&gt;package('vendor/package', null, '/path/to/resources');</code></pre>
+<p><a name="deferred-providers"></a></p>
+<h2>緩載提供者</h2>
+<p>假如您正在開發的服務提供者並沒有註冊任何型式的資源如設定檔或視圖等，那您就可以考慮將您的服務提供者設定為「緩載」提供者。一個緩載提供者的特性就是只有需要它的功能時才載入，假如在當次的請求循環內不需要這個服務，則這個提供者就不會被載入。</p>
+<p>要設定您的服務提供者採用緩載設定，只需要將 <code>defer</code> 屬性設定為 <code>true</code> 即可：</p>
+<pre><code>protected $defer = true;</code></pre>
+<p>接下來你應該從 <code>Illuminate\Support\ServiceProvider</code> 基礎類別覆寫 provides 方法，並回傳一個陣列包含所有您需要綁定到 IoC 容器的服務。舉例來說，假如您的提供者註冊 <code>package.service</code> 和 <code>package.another-service</code> 給 IoC 容器，您的 <code>provides</code> 方法應該長得像這樣：</p>
+<pre><code>public function provides()
+{
+    return array('package.service', 'package.another-service');
+}</code></pre>
+<p><a name="package-conventions"></a></p>
+<h2>套件慣例</h2>
+<p>當想要取用套件的資源如設定檔或是視圖時，需要如下的方法使用雙分號來取得：</p>
+<h4>載入套件的視圖</h4>
+<pre><code>return View::make('package::view.name');</code></pre>
+<h4>取得套件的設定檔</h4>
+<pre><code>return Config::get('package::group.option');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 假如您的套件包括遷移，可以考慮在套件的遷移檔命名時加上您的套件名稱，以避開遷移檔與其他套件在類別命名時可能產生的衝突。</p>
+</blockquote>
+<p><a name="development-workflow"></a></p>
+<h2>開發工作流程</h2>
+<p>當您開發一個套件時，透過如同開發一個應用程式一樣的脈絡來進行往往是很有幫助的，這樣能讓您簡單的觀看及實驗您的樣板…等。因此，安裝一個新的 Laravel 框架，然後使用 <code>workbench</code> 指令來建立您的套件結構。</p>
+<p>當 <code>workbench</code> 指令建立好您的套件結構後，您可以直接在 <code>workbench/[vendor]/[package]</code> 資料夾底下執行 <code>git init</code> 和 <code>git push</code> 進行開發過程的版本控制。這樣可以讓你很方便的在一個完整的應用程式脈絡下開發您的套件，而不會受到 <code>composer update</code> 干擾而越陷越深。</p>
+<p>既然您的套件在 <code>workbench</code> 資料夾內，您可能會很好奇 Composer 是怎麼知道該如何載入您的套件檔案？當 <code>workbench</code> 資料夾存在的話，Laravel 會很聰明的掃描底下的套件內容，並在應用程式啟動時自動載入！</p>
+<p>假如您需要重新產生您的套件自動載入檔案，您可以使用 <code>php artisan dump-autoload</code> 指令。這個指令會重新產生自動載入檔案在您的根目錄專案內。</p>
+<h4>執行 artisan 自動載入指令</h4>
+<pre><code>php artisan dump-autoload</code></pre>
+<p><a name="package-routing"></a></p>
+<h2>套件路由</h2>
+<p>在早先的 Laravel 裡是使用 <code>handles</code> 的方式來指定哪些 URI 會由套件進行回應。但在 Laravel 4 裡，一個套件可以對任何 URI 進行回應。在您的套件裡載入路由檔案，只需要在您的服務提供者的 <code>boot</code> 方法裡 <code>include</code> 即可。</p>
+<h4>從服務提供者引入一個路由檔</h4>
+<pre><code>public function boot()
+{
+    $this-&gt;package('vendor/package');
+
+    include __DIR__.'/../../routes.php';
+}</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 假如您的套件有使用控制器，您會需要確定您的 <code>composer.json</code> 裡的 auto-load 區塊有正確的設定。</p>
+</blockquote>
+<p><a name="package-configuration"></a></p>
+<h2>套件設定</h2>
+<h4>取用套件設定檔案</h4>
+<p>有些套件需要設定檔，這些檔案就如同應用程式設定檔一樣的方式定義。而當您的服務提供者在註冊資源時，透過 <code>$this-&gt;package</code> 方法後，即可透過「雙冒號」語法取得其值：</p>
+<pre><code>Config::get('package::file.option');</code></pre>
+<h4>取得套件的單一設定檔</h4>
+<p>假如您的套件僅包括一個單一設定檔，則您可以直接將檔案名稱命名為 <code>config.php</code>。當您完成這個步驟後，您就可以直接取得值而不需要指定名：</p>
+<pre><code>Config::get('package::option');</code></pre>
+<h4>手動註冊資源的命名空間</h4>
+<p>有時候您或許會希望可以 <code>$this-&gt;package</code> 方法外，註冊一個套件資源 (或許是視圖等)。一般來說，這通常只有在資源不是放在慣例的位置時才需要這樣做。您可以在使用 <code>View</code>、<code>Lang</code>、<code>Config</code> 等類別時，透過呼叫 <code>addNamespace</code> 方法來手動註冊資源：</p>
+<pre><code>View::addNamespace('package', __DIR__.'/path/to/views');</code></pre>
+<p>當命名空間被註冊後，您就可以透過「雙冒號」來取得資源：</p>
+<pre><code>return View::make('package::view.name');</code></pre>
+<p><code>addNamespace</code> 方法在 <code>View</code>、<code>Lang</code>、<code>Config</code> 等類別上的實作是相同的。</p>
+<h3>串接設定</h3>
+<p>當其他的開發者安裝了您的套件後，他們或許會希望可以覆寫部份的設定值。但假如他們直接修改您的套件原始碼，則當他們下次次執行 composer update 時，這些設定值就又會被覆寫回來。取而代之，應該使用 <code>config:publish</code> 指令來發佈設定檔：</p>
+<pre><code>php artisan config:publish vendor/package</code></pre>
+<p>當這個指令被執行後，所有您的套件的設定檔都會被複製一份到 <code>app/config/packages/vendor/package</code> 底下，這樣設定檔的內容就可以安全的被其他開發人員修改！</p>
+<blockquote>
+<p><strong>注意：</strong> 開發者也有可能會建立環境設定檔，這些設定檔則會被放在 <code>app/config/package/vendor/package/environment</code> 底下。</p>
+</blockquote>
+<p><a name="package-views"></a></p>
+<h2>套件視圖</h2>
+<p>假如您在應用程式裡使用套件，你偶爾會希望可以客製化套件的視圖。您可以非常容易的透過 <code>view:publish</code> 指令將套件的視圖輸出到您的 <code>app/views</code> 資料夾底下。</p>
+<pre><code>php artisan view:publish vendor/package</code></pre>
+<p>這個指令會將套件的視圖移到 <code>app/views/packages</code> 資料夾內。假如這個資料夾還不存在的話，這個指令會自動幫您建立。當這些視圖被輸出後，你就可以依您所意進行調整。而當應用程式執行時，這些被調整過的視圖就會被優先使用於套件的預設值。</p>
+<p><a name="package-migrations"></a></p>
+<h2>套件遷移</h2>
+<h4>為套件進行遷移檔</h4>
+<p>您的套件可以非常容易的建立與執行遷移。當您想要為您的套件新增遷移檔時，只需要在指令後面加上 <code>--bench</code> 參數：</p>
+<pre><code>php artisan migrate:make create_users_table --bench="vendor/package"</code></pre>
+<h4>為套件執行遷移</h4>
+<pre><code>php artisan migrate --bench="vendor/package"</code></pre>
+<h4>為已安裝的套件執行遷移</h4>
+<p>為透過 Composer 安裝的套件 (安裝於 <code>vendor</code> 資料夾底下) 執行遷移，僅需加上 <code>--package</code> 參數：</p>
+<pre><code>php artisan migrate --package="vendor/package"</code></pre>
+<p><a name="package-assets"></a></p>
+<h2>套件資產</h2>
+<h4>把套件資產移到 public</h4>
+<p>有些套件會帶有諸多資產如 Javascript、CSS 和圖片。然而，我們沒有辦法取用這些在 <code>vendor</code> 或 <code>workbench</code> 資料夾裡的資產，所以我們需要一個把它們移到 <code>public</code> 資料夾的方法。而 <code>asset:publish</code> 這個指令就是為了這個目的而存在：</p>
+<pre><code>php artisan asset:publish
+
+php artisan asset:publish vendor/package</code></pre>
+<p>假如套件仍在 <code>workbench</code> 階段，記得加上 <code>--bench</code> 參數</p>
+<pre><code>php artisan asset:publish --bench="vendor/package"</code></pre>
+<p>這個指令將會把資產依照供應商及套件名稱移至 <code>public/packages</code> 底下。因此，一個叫 <code>userscape/kudos</code> 的套件資產就會被移到 <code>public/packages/userscape/kudos</code>。使用這個慣例可以讓您安全地在您的套件視圖引入資產。</p>
+<p><a name="publishing-packages"></a></p>
+<h2>發佈套件</h2>
+<p>當您的套件已經準備好可以發佈時，您應該先將您的套件送至 <a href="http://packagist.org">Packagist</a> 。假如這個套件是專屬於 Laravel 的話，您可以考慮在您的 <code>composer.json</code> 檔裡加上 <code>laravel</code> 的標籤。</p>
+<p>同時，標記您的版本對其他開發者來說也是很有用的。當開發者安裝您的套件時，可以設定其偏好的版本 (stable, dev)。假如您的套件還沒有穩定的版本，您可以考慮使用 <code>branch-alias</code>。</p>
+<p>當您的套件發佈後，仍可以繼續透過原本的 <code>workbench</code> 應用程式脈絡持續開發。這是當一個套件發佈後，持續更新的最好方法。</p>
+<p>有些組織選擇自行建立他們內部使用的私有套件儲存庫給他們的開發者。假如您對這種作法也有興趣，歡迎瀏覽由 Composer 釋出的 <a href="http://github.com/composer/satis">Satis</a> 專案文件。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="packages.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="facades.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="facades.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Facades</h1>
+<ul>
+<li><a href="facades.html#introduction">介紹</a></li>
+<li><a href="facades.html#explanation">解釋</a></li>
+<li><a href="facades.html#practical-usage">實際用法</a></li>
+<li><a href="facades.html#creating-facades">建立 Facades</a></li>
+<li><a href="facades.html#mocking-facades">模擬 Facades</a></li>
+<li><a href="facades.html#facade-class-reference">Facade 類別參考</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Facades 提供一個靜態介面讓類別可以在應用程式的 <a href="ioc.html">IoC 容器</a> 裡運用。Laravel 附帶許多 facades，甚至你可能已經在使用它們即使你並不知道！Laravel 的「facades」在 IoC 容器裡面作為的基底類別的靜態代理，提供有簡潔、易表達優點的語法，同時維持比傳統的靜態方法更高的可測試性和彈性。</p>
+<p>你偶爾或許會希望為你的應用程式和套件建立自己的 facades，所以讓我們來探索這些類別的概念、開發和用法。</p>
+<blockquote>
+<p><strong>備註:</strong> 在深入 facades 之前，強烈建議你先熟悉 Laravel <a href="ioc.html">IoC 容器</a>。</p>
+</blockquote>
+<p><a name="explanation"></a></p>
+<h2>解釋</h2>
+<p>在 Laravel 應用程式的環境中，facade 是個提供從容器存取物件的類別。使這個機制可以運作的原因在 <code>Facade</code> 類別中。Laravel 的 facades 和任何你建立的客製化 facades，將會繼承基本的 <code>Facade</code> 類別。</p>
+<p>你的 facade 類別只需要去實作一個方法：<code>getFacadeAccessor</code>。<code>getFacadeAccessor</code> 方法的工作是定義要從容器解析什麼。基本的 <code>Facade</code> 類別利用 <code>__callStatic()</code> 魔術方法去從你的 facade 呼叫到解析物件。</p>
+<p>所以當你對 facade 呼叫，例如 <code>Cache::get</code>，Laravel 從 IoC 容器解析快取管理類別出來，並對類別呼叫 <code>get</code> 方法。用科技術語來說，Laravel Facades 是使用 Laravel IoC 容器作為服務定位器的便捷語法。</p>
+<p><a name="practical-usage"></a></p>
+<h2>實際用法</h2>
+<p>在下面的例子，對 Laravel 快取系統進行呼叫。簡單看過這程式碼，有人可能會以為靜態方法 <code>get</code> 是被 <code>Cache</code> 類別呼叫。</p>
+<pre><code>$value = Cache::get('key');</code></pre>
+<p>然而，如果我們去看 <code>Illuminate\Support\Facades\Cache</code> 類別，你將會看到他沒有靜態方法 <code>get</code>:</p>
+<pre><code>class Cache extends Facade {
+
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor() { return 'cache'; }
+
+}</code></pre>
+<p>Cache 類別繼承基本的 <code>Facade</code> 類別並定義方法 <code>getFacadeAccessor()</code>。記住，這個方法的工作是回傳 IoC 綁定的名稱。</p>
+<p>當使用者參考 <code>Cache</code> facade 的任何靜態方法，Laravel 會從 IoC 容器解析被綁定 <code>cache</code>，並對該物件執行被請求的方法 (在這個例子，<code>get</code>)。</p>
+<p>所以我們的 <code>Cache::get</code> 呼叫可以被重寫成這樣：</p>
+<pre><code>$value = $app-&gt;make('cache')-&gt;get('key');</code></pre>
+<p><a name="creating-facades"></a></p>
+<h2>建立 Facades</h2>
+<p>為你的應用程式或套件建立 facade 是很簡單的。你只需要 3 個東西：</p>
+<ul>
+<li>一個 IoC 綁定。</li>
+<li>一個 facade 類別。</li>
+<li>一個 facade 別名設定。</li>
+</ul>
+<p>讓我們來看個例子。這裡我們有一個定義為 <code>PaymentGateway\Payment</code> 的類別。</p>
+<pre><code>namespace PaymentGateway;
+
+class Payment {
+
+    public function process()
+    {
+        //
+    }
+
+}</code></pre>
+<p>這個類別可以存在在你的 <code>app/models</code> 資料夾，或者任何其他 Composer 知道如何自動載入的資料夾。</p>
+<p>我們需要可以從 IoC 容器解析出這個類別。所以，讓我們來加個綁定：</p>
+<pre><code>App::bind('payment', function()
+{
+    return new \PaymentGateway\Payment;
+});</code></pre>
+<p>註冊這個綁定的好方式是建立新的 <a href="ioc.html#service-providers">服務提供者</a> 命名為 <code>PaymentServiceProvider</code>，並把這個綁定加到 <code>register</code> 方法。再來你可以從 <code>app/config/app.php</code> 檔案設定讓 Laravel 載入你的服務提供者。</p>
+<p>接下來，我們可以建立我們自己的 facade 類別：</p>
+<pre><code>use Illuminate\Support\Facades\Facade;
+
+class Payment extends Facade {
+
+    protected static function getFacadeAccessor() { return 'payment'; }
+
+}</code></pre>
+<p>最後，如果我們希望，我們可以在 <code>app/config/app.php</code> 設定檔案為我們的 facade 加個別名到 <code>aliases</code> 陣列。現在我們可以對 <code>Payment</code> 類別的實體呼叫 <code>process</code> 方法。</p>
+<pre><code>Payment::process();</code></pre>
+<h3>自動載入別名的附註</h3>
+<p>在 <code>aliases</code> 陣列中的類別在某些實體中不能使用，因為 <a href="https://bugs.php.net/bug.php?id=39003">PHP 將不會嘗試去自動載入未定義的類型暗示類別</a>。如果 <code>\ServiceWrapper\ApiTimeoutException</code> 命別名為 <code>ApiTimeoutException</code>，即便有例外被拋出，在 <code>\ServiceWrapper</code> 命名空間外面的 <code>catch(ApiTimeoutException $e)</code> 將永遠捕捉不到例外。類似的問題在有類型暗示的別名類別模型一樣會發生。 唯一的解決辦法就是放棄別名並用 <code>use</code> 在每一個檔案的最上面引入你希望暗示類型的類別。</p>
+<p><a name="mocking-facades"></a></p>
+<h2>模擬 Facades</h2>
+<p>單元測試是為什麼現在 facades 採用這樣的工作方式的重要面向。事實上，可測試性甚至是 facades 存在的主要理由。想要獲得更多資訊，請查看文件的 <a href="testing.html#mocking-facades">mocking facades</a> 部分。</p>
+<p><a name="facade-class-reference"></a></p>
+<h2>Facade 類別參考</h2>
+<p>你將會在下面找到每一個 facade 和它的基底類別。這是個可以從一個給定的 facade 根源快速地深入 API 文件的有用工具。可應用的 <a href="ioc.html">IoC 綁定</a> 關鍵字也包含在裡面。</p>
+<table>
+<thead>
+<tr>
+<th>Facade</th>
+<th>Class</th>
+<th>IoC Binding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Foundation/Application.html">Illuminate\Foundation\Application</a></td>
+<td><code>app</code></td>
+</tr>
+<tr>
+<td>Artisan</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Console/Application.html">Illuminate\Console\Application</a></td>
+<td><code>artisan</code></td>
+</tr>
+<tr>
+<td>Auth</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Auth/AuthManager.html">Illuminate\Auth\AuthManager</a></td>
+<td><code>auth</code></td>
+</tr>
+<tr>
+<td>Auth (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Auth/Guard.html">Illuminate\Auth\Guard</a></td>
+</tr>
+<tr>
+<td>Blade</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/View/Compilers/BladeCompiler.html">Illuminate\View\Compilers\BladeCompiler</a></td>
+<td><code>blade.compiler</code></td>
+</tr>
+<tr>
+<td>Cache</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Cache/Repository.html">Illuminate\Cache\Repository</a></td>
+<td><code>cache</code></td>
+</tr>
+<tr>
+<td>Config</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Config/Repository.html">Illuminate\Config\Repository</a></td>
+<td><code>config</code></td>
+</tr>
+<tr>
+<td>Cookie</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Cookie/CookieJar.html">Illuminate\Cookie\CookieJar</a></td>
+<td><code>cookie</code></td>
+</tr>
+<tr>
+<td>Crypt</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Encryption/Encrypter.html">Illuminate\Encryption\Encrypter</a></td>
+<td><code>encrypter</code></td>
+</tr>
+<tr>
+<td>DB</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Database/DatabaseManager.html">Illuminate\Database\DatabaseManager</a></td>
+<td><code>db</code></td>
+</tr>
+<tr>
+<td>DB (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Database/Connection.html">Illuminate\Database\Connection</a></td>
+</tr>
+<tr>
+<td>Event</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Events/Dispatcher.html">Illuminate\Events\Dispatcher</a></td>
+<td><code>events</code></td>
+</tr>
+<tr>
+<td>File</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Filesystem/Filesystem.html">Illuminate\Filesystem\Filesystem</a></td>
+<td><code>files</code></td>
+</tr>
+<tr>
+<td>Form</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Html/FormBuilder.html">Illuminate\Html\FormBuilder</a></td>
+<td><code>form</code></td>
+</tr>
+<tr>
+<td>Hash</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Hashing/HasherInterface.html">Illuminate\Hashing\HasherInterface</a></td>
+<td><code>hash</code></td>
+</tr>
+<tr>
+<td>HTML</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Html/HtmlBuilder.html">Illuminate\Html\HtmlBuilder</a></td>
+<td><code>html</code></td>
+</tr>
+<tr>
+<td>Input</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Http/Request.html">Illuminate\Http\Request</a></td>
+<td><code>request</code></td>
+</tr>
+<tr>
+<td>Lang</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Translation/Translator.html">Illuminate\Translation\Translator</a></td>
+<td><code>translator</code></td>
+</tr>
+<tr>
+<td>Log</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Log/Writer.html">Illuminate\Log\Writer</a></td>
+<td><code>log</code></td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Mail/Mailer.html">Illuminate\Mail\Mailer</a></td>
+<td><code>mailer</code></td>
+</tr>
+<tr>
+<td>Paginator</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Pagination/Factory.html">Illuminate\Pagination\Factory</a></td>
+<td><code>paginator</code></td>
+</tr>
+<tr>
+<td>Paginator (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Pagination/Paginator.html">Illuminate\Pagination\Paginator</a></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Auth/Reminders/PasswordBroker.html">Illuminate\Auth\Reminders\PasswordBroker</a></td>
+<td><code>auth.reminder</code></td>
+</tr>
+<tr>
+<td>Queue</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Queue/QueueManager.html">Illuminate\Queue\QueueManager</a></td>
+<td><code>queue</code></td>
+</tr>
+<tr>
+<td>Queue (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Queue/QueueInterface.html">Illuminate\Queue\QueueInterface</a></td>
+</tr>
+<tr>
+<td>Queue (Base Class)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Queue/Queue.html">Illuminate\Queue\Queue</a></td>
+</tr>
+<tr>
+<td>Redirect</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Routing/Redirector.html">Illuminate\Routing\Redirector</a></td>
+<td><code>redirect</code></td>
+</tr>
+<tr>
+<td>Redis</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Redis/Database.html">Illuminate\Redis\Database</a></td>
+<td><code>redis</code></td>
+</tr>
+<tr>
+<td>Request</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Http/Request.html">Illuminate\Http\Request</a></td>
+<td><code>request</code></td>
+</tr>
+<tr>
+<td>Response</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Support/Facades/Response.html">Illuminate\Support\Facades\Response</a></td>
+</tr>
+<tr>
+<td>Route</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Routing/Router.html">Illuminate\Routing\Router</a></td>
+<td><code>router</code></td>
+</tr>
+<tr>
+<td>Schema</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Database/Schema/Blueprint.html">Illuminate\Database\Schema\Blueprint</a></td>
+</tr>
+<tr>
+<td>Session</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Session/SessionManager.html">Illuminate\Session\SessionManager</a></td>
+<td><code>session</code></td>
+</tr>
+<tr>
+<td>Session (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Session/Store.html">Illuminate\Session\Store</a></td>
+</tr>
+<tr>
+<td>SSH</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Remote/RemoteManager.html">Illuminate\Remote\RemoteManager</a></td>
+<td><code>remote</code></td>
+</tr>
+<tr>
+<td>SSH (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Remote/Connection.html">Illuminate\Remote\Connection</a></td>
+</tr>
+<tr>
+<td>URL</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Routing/UrlGenerator.html">Illuminate\Routing\UrlGenerator</a></td>
+<td><code>url</code></td>
+</tr>
+<tr>
+<td>Validator</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Validation/Factory.html">Illuminate\Validation\Factory</a></td>
+<td><code>validator</code></td>
+</tr>
+<tr>
+<td>Validator (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/Validation/Validator.html">Illuminate\Validation\Validator</a></td>
+</tr>
+<tr>
+<td>View</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/View/Factory.html">Illuminate\View\Factory</a></td>
+<td><code>view</code></td>
+</tr>
+<tr>
+<td>View (Instance)</td>
+<td><a href="http://laravel.com/api/4.2/Illuminate/View/View.html">Illuminate\View\View</a></td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="facades.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

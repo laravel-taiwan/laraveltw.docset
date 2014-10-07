@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Illuminate\Container\Container | Laravel API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Laravel API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Illuminate/Container.html">Illuminate\Container</a>\Container</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>Container</strong>        implements
+        <a href="http://php.net/ArrayAccess"><abbr title="ArrayAccess">ArrayAccess</abbr></a></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_bound">bound</a>(string $abstract)
+                    <p>Determine if the given abstract type has been bound.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_resolved">resolved</a>(string $abstract)
+                    <p>Determine if the given abstract type has been resolved.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isAlias">isAlias</a>(string $name)
+                    <p>Determine if a given string is an alias.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_bind">bind</a>(string|array $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null, bool $shared = false)
+                    <p>Register a binding with the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_bindIf">bindIf</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null, bool $shared = false)
+                    <p>Register a binding if it hasn't already been registered.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_singleton">singleton</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null)
+                    <p>Register a shared binding in the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_share">share</a>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)
+                    <p>Wrap a Closure such that it is shared.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_bindShared">bindShared</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)
+                    <p>Bind a shared Closure into the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_extend">extend</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)
+                    <p>"Extend" an abstract type in the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_instance">instance</a>(string $abstract, mixed $instance)
+                    <p>Register an existing instance as shared in the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_alias">alias</a>(string $abstract, string $alias)
+                    <p>Alias a type to a shorter name.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_rebinding">rebinding</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)
+                    <p>Bind a new callback to an abstract's rebind event.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_refresh">refresh</a>(string $abstract, mixed $target, string $method)
+                    <p>Refresh an instance on the given target and method.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_make">make</a>(string $abstract, array $parameters = array())
+                    <p>Resolve the given type from the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_build">build</a>(string $concrete, array $parameters = array())
+                    <p>Instantiate a concrete instance of the given type.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_resolving">resolving</a>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)
+                    <p>Register a new resolving callback.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_resolvingAny">resolvingAny</a>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)
+                    <p>Register a new resolving callback for all types.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_isShared">isShared</a>(string $abstract)
+                    <p>Determine if a given type is shared.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array
+                </td>
+                <td class="last">
+                    <a href="#method_getBindings">getBindings</a>()
+                    <p>Get the container's bindings.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_forgetInstance">forgetInstance</a>(string $abstract)
+                    <p>Remove a resolved instance from the instance cache.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_forgetInstances">forgetInstances</a>()
+                    <p>Clear all of the instances from the container.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_offsetExists">offsetExists</a>(string $key)
+                    <p>Determine if a given offset exists.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_offsetGet">offsetGet</a>(string $key)
+                    <p>Get the value at a given offset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_offsetSet">offsetSet</a>(string $key, mixed $value)
+                    <p>Set the value at a given offset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $key)
+                    <p>Unset the value at a given offset.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method___get">__get</a>(string $key)
+                    <p>Dynamically access container services.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method___set">__set</a>(string $key, mixed $value)
+                    <p>Dynamically set container services.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_bound">
+        <div class="location">at line 76</div>
+        <code>                    bool
+    <strong>bound</strong>(string $abstract)</code>
+    </h3>
+    <div class="details">
+        <p>Determine if the given abstract type has been bound.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_resolved">
+        <div class="location">at line 87</div>
+        <code>                    bool
+    <strong>resolved</strong>(string $abstract)</code>
+    </h3>
+    <div class="details">
+        <p>Determine if the given abstract type has been resolved.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isAlias">
+        <div class="location">at line 98</div>
+        <code>                    bool
+    <strong>isAlias</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+        <p>Determine if a given string is an alias.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_bind">
+        <div class="location">at line 111</div>
+        <code>                    void
+    <strong>bind</strong>(string|array $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null, bool $shared = false)</code>
+    </h3>
+    <div class="details">
+        <p>Register a binding with the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|array</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null</td>
+                <td>$concrete</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_bindIf">
+        <div class="location">at line 177</div>
+        <code>                    void
+    <strong>bindIf</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null, bool $shared = false)</code>
+    </h3>
+    <div class="details">
+        <p>Register a binding if it hasn't already been registered.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null</td>
+                <td>$concrete</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_singleton">
+        <div class="location">at line 192</div>
+        <code>                    void
+    <strong>singleton</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null $concrete = null)</code>
+    </h3>
+    <div class="details">
+        <p>Register a shared binding in the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>|string|null</td>
+                <td>$concrete</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_share">
+        <div class="location">at line 203</div>
+        <code>                    <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>share</strong>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)</code>
+    </h3>
+    <div class="details">
+        <p>Wrap a Closure such that it is shared.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$closure</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_bindShared">
+        <div class="location">at line 228</div>
+        <code>                    void
+    <strong>bindShared</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)</code>
+    </h3>
+    <div class="details">
+        <p>Bind a shared Closure into the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$closure</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_extend">
+        <div class="location">at line 242</div>
+        <code>                    void
+    <strong>extend</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $closure)</code>
+    </h3>
+    <div class="details">
+        <p>"Extend" an abstract type in the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$closure</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_instance">
+        <div class="location">at line 290</div>
+        <code>                    void
+    <strong>instance</strong>(string $abstract, mixed $instance)</code>
+    </h3>
+    <div class="details">
+        <p>Register an existing instance as shared in the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$instance</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_alias">
+        <div class="location">at line 324</div>
+        <code>                    void
+    <strong>alias</strong>(string $abstract, string $alias)</code>
+    </h3>
+    <div class="details">
+        <p>Alias a type to a shorter name.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_rebinding">
+        <div class="location">at line 347</div>
+        <code>                    mixed
+    <strong>rebinding</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)</code>
+    </h3>
+    <div class="details">
+        <p>Bind a new callback to an abstract's rebind event.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_refresh">
+        <div class="location">at line 362</div>
+        <code>                    mixed
+    <strong>refresh</strong>(string $abstract, mixed $target, string $method)</code>
+    </h3>
+    <div class="details">
+        <p>Refresh an instance on the given target and method.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$target</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_make">
+        <div class="location">at line 409</div>
+        <code>                    mixed
+    <strong>make</strong>(string $abstract, array $parameters = array())</code>
+    </h3>
+    <div class="details">
+        <p>Resolve the given type from the container.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_build">
+        <div class="location">at line 494</div>
+        <code>                    mixed
+    <strong>build</strong>(string $concrete, array $parameters = array())</code>
+    </h3>
+    <div class="details">
+        <p>Instantiate a concrete instance of the given type.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$concrete</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../Illuminate/Container/BindingResolutionException.html"><abbr title="Illuminate\Container\BindingResolutionException">BindingResolutionException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_resolving">
+        <div class="location">at line 655</div>
+        <code>                    void
+    <strong>resolving</strong>(string $abstract, <a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)</code>
+    </h3>
+    <div class="details">
+        <p>Register a new resolving callback.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_resolvingAny">
+        <div class="location">at line 666</div>
+        <code>                    void
+    <strong>resolvingAny</strong>(<a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback)</code>
+    </h3>
+    <div class="details">
+        <p>Register a new resolving callback for all types.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isShared">
+        <div class="location">at line 708</div>
+        <code>                    bool
+    <strong>isShared</strong>(string $abstract)</code>
+    </h3>
+    <div class="details">
+        <p>Determine if a given type is shared.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBindings">
+        <div class="location">at line 750</div>
+        <code>                    array
+    <strong>getBindings</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the container's bindings.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_forgetInstance">
+        <div class="location">at line 772</div>
+        <code>                    void
+    <strong>forgetInstance</strong>(string $abstract)</code>
+    </h3>
+    <div class="details">
+        <p>Remove a resolved instance from the instance cache.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$abstract</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_forgetInstances">
+        <div class="location">at line 782</div>
+        <code>                    void
+    <strong>forgetInstances</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Clear all of the instances from the container.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetExists">
+        <div class="location">at line 793</div>
+        <code>                    bool
+    <strong>offsetExists</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Determine if a given offset exists.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetGet">
+        <div class="location">at line 804</div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Get the value at a given offset.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetSet">
+        <div class="location">at line 816</div>
+        <code>                    void
+    <strong>offsetSet</strong>(string $key, mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Set the value at a given offset.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_offsetUnset">
+        <div class="location">at line 838</div>
+        <code>                    void
+    <strong>offsetUnset</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Unset the value at a given offset.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___get">
+        <div class="location">at line 849</div>
+        <code>                    mixed
+    <strong>__get</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Dynamically access container services.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___set">
+        <div class="location">at line 861</div>
+        <code>                    void
+    <strong>__set</strong>(string $key, mixed $value)</code>
+    </h3>
+    <div class="details">
+        <p>Dynamically set container services.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

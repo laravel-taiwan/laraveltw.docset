@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Illuminate\Support\ViewErrorBag | Laravel API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Laravel API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Illuminate/Support.html">Illuminate\Support</a>\ViewErrorBag</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>ViewErrorBag</strong>        implements
+        <a href="http://php.net/Countable"><abbr title="Countable">Countable</abbr></a></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_hasBag">hasBag</a>(string $key = &#039;default&#039;)
+                    <p>Checks if a named MessageBag exists in the bags.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_getBag">getBag</a>(string $key)
+                    <p>Get a MessageBag instance from the bags.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Illuminate\Support\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_put">put</a>(string $key, <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a> $bag)
+                    <p>Add a new MessageBag instance to the bags.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_count">count</a>()
+                    <p>Get the number of messages in the default bag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method___call">__call</a>(string $method, array $parameters)
+                    <p>Dynamically call methods on the default bag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method___get">__get</a>(string $key)
+                    <p>Dynamically access a view error bag.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method___set">__set</a>(string $key, <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a> $value)
+                    <p>Dynamically set a view error bag.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_hasBag">
+        <div class="location">at line 20</div>
+        <code>                    bool
+    <strong>hasBag</strong>(string $key = &#039;default&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Checks if a named MessageBag exists in the bags.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getBag">
+        <div class="location">at line 31</div>
+        <code>                    <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a>
+    <strong>getBag</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Get a MessageBag instance from the bags.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_put">
+        <div class="location">at line 43</div>
+        <code>                    <abbr title="Illuminate\Support\$this">$this</abbr>
+    <strong>put</strong>(string $key, <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a> $bag)</code>
+    </h3>
+    <div class="details">
+        <p>Add a new MessageBag instance to the bags.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></td>
+                <td>$bag</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Illuminate\Support\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_count">
+        <div class="location">at line 55</div>
+        <code>                    int
+    <strong>count</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the number of messages in the default bag.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___call">
+        <div class="location">at line 67</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $parameters)</code>
+    </h3>
+    <div class="details">
+        <p>Dynamically call methods on the default bag.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___get">
+        <div class="location">at line 78</div>
+        <code>                    <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a>
+    <strong>__get</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+        <p>Dynamically access a view error bag.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method___set">
+        <div class="location">at line 90</div>
+        <code>                    void
+    <strong>__set</strong>(string $key, <a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a> $value)</code>
+    </h3>
+    <div class="details">
+        <p>Dynamically set a view error bag.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Illuminate/Support/MessageBag.html"><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></a></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

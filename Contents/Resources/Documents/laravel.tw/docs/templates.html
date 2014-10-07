@@ -1,0 +1,370 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="templates.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="templates.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>模板</h1>
+<ul>
+<li><a href="templates.html#controller-layouts">控制器版面佈局</a></li>
+<li><a href="templates.html#blade-templating">Blade 模板</a></li>
+<li><a href="templates.html#other-blade-control-structures">其他 Blade 控制語法結構</a></li>
+<li><a href="templates.html#extending-blade">擴展 Blade</a></li>
+</ul>
+<p><a name="controller-layouts"></a></p>
+<h2>控制器版面佈局</h2>
+<p>在 Laravel 中使用模板的其中一個方法就是利用控制器中的 <code>layout</code> 版面佈局屬性。藉由指定控制器中的 <code>layout</code> 屬性值，被指定使用的視圖將會被自動創建出來，並作為控制器中動作的回應。</p>
+<h4>在控制器中定義一個版面佈局</h4>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * The layout that should be used for responses.
+     */
+    protected $layout = 'layouts.master';
+
+    /**
+     * Show the user profile.
+     */
+    public function showProfile()
+    {
+        $this-&gt;layout-&gt;content = View::make('user.profile');
+    }
+
+}</code></pre>
+<p><a name="blade-templating"></a></p>
+<h2>Blade 模板</h2>
+<p>Blade 是 Laravel 所提供的一個簡單卻又非常強大的模板引擎。與制器版面佈局不同的地方在於 Blade 是使用 <em>模板繼承（template inheritance）</em> 及 <em>區塊（sections）</em> 來創建出視圖。所有的 Blade 模板的副檔名都要命名為 <code>.blade.php</code>。</p>
+<h4>定義一個 Blade 版面佈局</h4>
+<pre><code>&lt;!-- Stored in app/views/layouts/master.blade.php --&gt;
+
+&lt;html&gt;
+    &lt;body&gt;
+        @section('sidebar')
+            This is the master sidebar.
+        @show
+
+        &lt;div class="container"&gt;
+            @yield('content')
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h4>在視圖模板中使用 Blade 版面佈局</h4>
+<pre><code>@extends('layouts.master')
+
+@section('sidebar')
+    
+
+    &lt;p&gt;This is appended to the master sidebar.&lt;/p&gt;
+@stop
+
+@section('content')
+    &lt;p&gt;This is my body content.&lt;/p&gt;
+@stop</code></pre>
+<p>請注意在視圖中 <code>extend</code> 一個 Blade 版面佈局會直接將版面佈局中定義的區塊部分用視圖的區塊部份覆寫掉。如果想要將版面佈局中的區塊內容也能在繼承此版面佈局的視圖中呈現，那就要在區塊中使用 <code></code> 語法，這樣就可以讓你將視圖的區塊內容附加到版面佈局區塊的內容，而不會是用覆寫的方式。我們可能會在側邊欄區塊或是頁尾區塊使用類似的技巧。</p>
+<p>有時候，像是你不確定這個區塊內容有沒有被定義，你可能會想要傳一個預設的內容給 <code>@yield</code>。你可以使用第二個參數傳入一個預設值給 <code>@yield</code>：</p>
+<pre><code>@yield('section', 'Default Content');</code></pre>
+<p><a name="other-blade-control-structures"></a></p>
+<h2>其他 Blade 控制語法結構</h2>
+<h4>在 Blade 視圖中印出（Echoing）資料</h4>
+<pre><code>Hello, {{{ $name }}}.
+
+The current UNIX timestamp is {{{ time() }}}.</code></pre>
+<h4>檢查資料是否存在後再印出資料</h4>
+<p>有時候你想要印出一個變數，但你不確定這個變數有沒有被設定，基本上，你會想要這樣寫：</p>
+<pre><code>{{{ isset($name) ? $name : 'Default' }}}</code></pre>
+<p>然而，除了寫這種三元敘述語法之外，Blade 讓你可以使用下面這種更簡便的語法：</p>
+<pre><code>{{{ $name or 'Default' }}}</code></pre>
+<h4>使用花括號顯示文字</h4>
+<p>如果你需要顯示一串字串剛好被花刮號包起來，你可以在花刮號之前加上 <code>@</code> 符號前綴來跳脫 Blade 引擎的行為：</p>
+<pre><code>@{{ This will not be processed by Blade }}</code></pre>
+<p>當然，所有使用者所提供的資料應該都要被處理過以避免一些安全性問題。所以你可以使用三重花刮號來跳脫使用者輸入的危險字元：</p>
+<pre><code>Hello, {{{ $name }}}.</code></pre>
+<p>如果你希望印出使用者輸入的原生文字而不希望跳脫這些字元，你可以使用雙重花刮號來印出原生文字：</p>
+<pre><code>Hello, {{ $name }}.</code></pre>
+<blockquote>
+<p><strong>特別注意：</strong> 在你的應用程式印出使用者所提供的內容時要非常小心！請記得永遠使用三重花刮號的語法來跳脫內容中的 HTML 字元實體。</p>
+</blockquote>
+<h4>If 敘述語法</h4>
+<pre><code>@if (count($records) === 1)
+    I have one record!
+@elseif (count($records) &gt; 1)
+    I have multiple records!
+@else
+    I don't have any records!
+@endif
+
+@unless (Auth::check())
+    You are not signed in.
+@endunless</code></pre>
+<h4>迴圈</h4>
+<pre><code>@for ($i = 0; $i &lt; 10; $i++)
+    The current value is {{ $i }}
+@endfor
+
+@foreach ($users as $user)
+    &lt;p&gt;This is user {{ $user-&gt;id }}&lt;/p&gt;
+@endforeach
+
+@forelse($users as $user)
+    &lt;li&gt;{{ $user-&gt;name }}&lt;/li&gt;
+@empty
+    &lt;p&gt;No users&lt;/p&gt;
+@endforelse
+
+@while (true)
+    &lt;p&gt;I'm looping forever.&lt;/p&gt;
+@endwhile</code></pre>
+<h4>包含子視圖</h4>
+<pre><code>@include('view.name')</code></pre>
+<p>你可以利用傳陣列的方式將資料傳給包含進來的子視圖：</p>
+<pre><code>@include('view.name', array('some'=&gt;'data'))</code></pre>
+<h4>覆寫區塊</h4>
+<p>在預設的情況中，區塊的內容會附加進去之前的同一個區塊內容裡，如果想要覆寫掉前面區塊中的內容，你可以使用 <code>overwrite</code> 敘述語法：</p>
+<pre><code>@extends('list.item.container')
+
+@section('list.item.content')
+    &lt;p&gt;This is an item of type {{ $item-&gt;type }}&lt;/p&gt;
+@overwrite</code></pre>
+<h4>顯示語言行</h4>
+<pre><code>@lang('language.line')
+
+@choice('language.line', 1);</code></pre>
+<h4>註解</h4>
+<pre><code>{{-- This comment will not be in the rendered HTML --}}</code></pre>
+<p><a name="extending-blade"></a></p>
+<h2>擴展 Blade</h2>
+<p>Blade 甚至讓你可以定義自己的客製化控制語法結構。當一個 Blade 檔案被編譯時，每一個客製化擴展語法會與視圖內容一起被呼叫，讓你可以做任何像是單純的 <code>str_replace</code> 操作至更為複雜的正規表達式操作。</p>
+<p>Blade 的編譯器帶有一些輔助方法 <code>createMatcher</code> 及 <code>createPlainMatcher</code>，這些輔助方法可以產生你需要的表達式幫助你建制自己的客製化擴展語法。</p>
+<p>其中 <code>createPlainMatcher</code> 方法是用在沒有參數的語法指令像是 <code>@endif</code> 及 <code>@stop</code> 等，而 <code>createMatcher</code> 方法是用在有參數的語法指令。</p>
+<p>下面的例子創建了一個 <code>@datetime($var)</code> 語法指令，這個指令單純是讓 <code>$var</code> 呼叫 <code>-&gt;format()</code>：</p>
+<pre><code>Blade::extend(function($view, $compiler)
+{
+    $pattern = $compiler-&gt;createMatcher('datetime');
+
+    return preg_replace($pattern, '$1&lt;?php echo $2-&gt;format(\'m/d/Y H:i\'); ?&gt;', $view);
+});</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="templates.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

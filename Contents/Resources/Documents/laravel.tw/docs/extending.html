@@ -1,0 +1,404 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="extending.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="extending.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>擴展框架</h1>
+<ul>
+<li><a href="extending.html#introduction">介紹</a></li>
+<li><a href="extending.html#managers-and-factories">管理者和工廠</a></li>
+<li><a href="extending.html#where-to-extend">在哪裡擴展</a></li>
+<li><a href="extending.html#cache">快取</a></li>
+<li><a href="extending.html#session">Session</a></li>
+<li><a href="extending.html#authentication">認證</a></li>
+<li><a href="extending.html#ioc-based-extension">基於 IoC 的擴展</a></li>
+<li><a href="extending.html#request-extension">擴展請求</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Laravel 提供許多可擴展的地方讓你客製化框架核心元件的行為，或甚至完全地取代它們。 例如，<code>HasherInterface</code> 契約定義了雜湊工具，你可以基於應用程式的需求來實作它。你也可以擴展 <code>Request</code> 物件，讓你加入自己的便利「輔助」方法。甚至你可以加入全新的認證、快取和 session 驅動！</p>
+<p>Laravel 元件一般以兩種方式來擴展：在 IoC 容器裡綁定新的實作，或用「工廠」設計模式實作的 <code>Manager</code> 類別來註冊擴展。在這個章節我們將會探索多種擴展框架的方法和查看必要的程式碼。</p>
+<blockquote>
+<p><strong>備註：</strong> 記住，Laravel 元件通常用兩種方法的其中之一來擴展：IoC 綁定和 <code>Manager</code> 類別。 管理者類別作為「工廠」設計模式的實作，並負責實體化基於驅動的工具，例如：快取和 session。</p>
+</blockquote>
+<p><a name="managers-and-factories"></a></p>
+<h2>管理者和工廠</h2>
+<p>Laravel 有幾個 <code>Manager</code> 類別用來管理建立基於驅動的元件。 這些類別包括快取、session、認證和隊列元件。 管理者類別負責基於應用程式的設定建立一個特定的驅動實作。 例如， <code>CacheManager</code> 類別可以建立 APC、 Memcached 、檔案和各種其他的快取驅動實作.</p>
+<p>這些管理者都擁有 <code>extend</code> 方法，它可以簡單地用來注入新的驅動解析功能到管理者。 我們將會在下面隨著如何注入客製化驅動支援給它們的例子，涵蓋這些管理者的內容。</p>
+<blockquote>
+<p><strong>備註：</strong> 建議花點時間來探索 Laravel 附帶的各種 <code>Manager</code> 類別，例如：<code>CacheManager</code> 和 <code>SessionManager</code>。看過這些類別將會讓你更徹底了解 Laravel 表面下是如何運作。所有的管理者類別繼承 <code>Illuminate\Support\Manager</code> 基底類別，它提供一些有用、常見的功能給每一個管理者。</p>
+</blockquote>
+<p><a name="where-to-extend"></a></p>
+<h2>在哪裡擴展</h2>
+<p>這份文件涵蓋如何擴展各種 Laravel 的元件，但是你可能想知道要在哪裡放置你的擴展程式碼。就像其他大部分的啟動程式碼，你可以自由的在你的 <code>start</code> 檔案放置一些擴展，快取和認證擴展是這個方法的好例子。 其他擴展，像 <code>Session</code>，必須放置到服務提供者的 <code>register</code> 方法中，因為他們在請求生命週期的非常早期就被需要。</p>
+<p><a name="cache"></a></p>
+<h2>快取</h2>
+<p>為了擴展 Laravel 快取工具，我們將會對 <code>CacheManager</code> 使用 <code>extend</code> 方法，它被用來綁定一個客製化驅動解析器到管理者，並且是全部的管理者類別通用的。例如，註冊一個新的快取驅動命名為 「mongo」，我們將執行以下操作：</p>
+<pre><code>Cache::extend('mongo', function($app)
+{
+    // Return Illuminate\Cache\Repository instance...
+});</code></pre>
+<p>傳遞到 <code>extend</code> 方法的第一個參數是驅動的名稱。這將會對應到你的 <code>app/config/cache.php</code> 設定檔裡的 <code>driver</code> 選項。第二個參數是個應該回傳 <code>Illuminate\Cache\Repository</code> 實體的閉包。<code>$app</code> 實體將被傳遞到閉包，它是 <code>Illuminate\Foundation\Application</code> 和 IoC 容器的實體。</p>
+<p>要建立我們的客製化快取驅動，首先需要實作 <code>Illuminate\Cache\StoreInterface</code> 契約。所以，我們的 MongoDB 快取實作將會看起來像這樣：</p>
+<pre><code>class MongoStore implements Illuminate\Cache\StoreInterface {
+
+    public function get($key) {}
+    public function put($key, $value, $minutes) {}
+    public function increment($key, $value = 1) {}
+    public function decrement($key, $value = 1) {}
+    public function forever($key, $value) {}
+    public function forget($key) {}
+    public function flush() {}
+
+}</code></pre>
+<p>我們只需要使用 MongoDB 連接來實作這些方法。當我們的實作完成，我們可以完成我們的客製化驅動註冊：</p>
+<pre><code>use Illuminate\Cache\Repository;
+
+Cache::extend('mongo', function($app)
+{
+    return new Repository(new MongoStore);
+});</code></pre>
+<p>就像你可以在上面的例子看到的，當在建立客製化快取驅動的時候，你可以使用基本的 <code>Illuminate\Cache\Repository</code> 類別。通常不需要建立你自己的儲存庫類別。</p>
+<p>如果你在考慮要把你的客製化快取驅動程式碼放在哪裡，請考慮把它放上 Packagist！或者，你可以在你的應用程式的主要資料夾中建立一個 <code>Extensions</code> 命名空間。例如，如果應用程式命名為 <code>Snappy</code>，你可以在 <code>app/Snappy/Extensions/MongoStore.php</code> 放置快取擴展。然而，必須牢記在心 Laravel 沒有嚴格的應用程式架構，你可以依照喜好自由的組織你的應用程式。</p>
+<blockquote>
+<p><strong>備註：</strong> 如果你曾經考慮要在哪放置一段程式碼，請總是考慮服務提供者。就像我們曾經討論過的，用服務提供者來組織框架擴展是個組織你的程式碼的好方法。</p>
+</blockquote>
+<p><a name="session"></a></p>
+<h2>Session</h2>
+<p>以客製化 session 驅動來擴展 Laravel 跟擴展快取系統一樣簡單。再一次的，我們將會使用 <code>extend</code> 方法來註冊我們的客製化程式碼：</p>
+<pre><code>Session::extend('mongo', function($app)
+{
+    // Return implementation of SessionHandlerInterface
+});</code></pre>
+<h3>在哪裡擴展 Session</h3>
+<p>Session 需要用與其他擴展如 Cache 和 Auth 不同地方式擴展。因為 sessions 在請求生命週期的非常早期就被啟用，註冊擴展在 <code>start</code> 檔案將會太晚。作為替代，將會需要 <a href="ioc.html#service-providers">服務提供者</a>。你應該放置你的 session 擴展程式碼在你的服務提供者的 <code>register</code> 方法，並且提供者應該被放置在 <code>providers</code> 設定陣列裡、預設的 <code>Illuminate\Session\SessionServiceProvider</code> <strong>下面</strong>。</p>
+<h3>實作 Session 擴展</h3>
+<p>要注意我們的客製化快取驅動應該實作 <code>SessionHandlerInterface</code>。這個介面在 PHP 5.4+ 核心被引入。如果你使用 PHP 5.3，Laravel 將會為你定義這個介面，所以你可以向下相容。 這個介面只包含少數我們需要實作的簡單方法。一個空的 MongoDB 實作將會看起來像這樣：</p>
+<pre><code>class MongoHandler implements SessionHandlerInterface {
+
+    public function open($savePath, $sessionName) {}
+    public function close() {}
+    public function read($sessionId) {}
+    public function write($sessionId, $data) {}
+    public function destroy($sessionId) {}
+    public function gc($lifetime) {}
+
+}</code></pre>
+<p>因為這些方法不像快取 <code>StoreInterface</code> 一樣容易理解，讓我們快速地看過這些方法做些什麼：</p>
+<ul>
+<li><code>open</code> 方法通常會被用在基於檔案的 session 儲存系統。 因為 Laravel 附帶一個 <code>file</code> session 驅動，你幾乎不需要在這個方法放任何東西。 你可以讓它留空。 PHP 要求我們去實作這個方法，事實上明顯的是個差勁的介面設計 (我們將會晚點討論它)。</li>
+<li><code>close</code> 方法，就像 <code>open</code> 方法，通常也可以忽略。 對大部份的驅動來說，並不需要它。</li>
+<li><code>read</code> 方法應該回傳與給定 <code>$sessionId</code> 關聯的 session 資料的字串形態。 當你的驅動取回或儲存 session 資料時不需要做任何序列化或進行其他編碼，因為 Laravel 將會為你進行序列化。</li>
+<li><code>write</code> 方法應該寫入給定 <code>$data</code> 字串與 <code>$sessionId</code> 的關聯到一些永久存儲系統，例如 MongoDB、 Dynamo、等等。</li>
+<li><code>destroy</code> 方法應該從永久存儲移除與 <code>$sessionId</code> 關聯的資料。</li>
+<li><code>gc</code> 方法應該銷毀所有比給定 <code>$lifetime</code> UNIX 時間戳記還舊的 session 資料。 對於會自己到期的系統如 Memcached 和 Redis，這個方法可以留空。</li>
+</ul>
+<p>當 <code>SessionHandlerInterface</code> 被實作完成，我們已經準備好用 Session 管理者註冊它：</p>
+<pre><code>Session::extend('mongo', function($app)
+{
+    return new MongoHandler;
+});</code></pre>
+<p>當 session 驅動已經被註冊，我們可以在我們的 <code>app/config/session.php</code> 設定檔使用 <code>mongo</code> 驅動。</p>
+<blockquote>
+<p><strong>備註:</strong> 記住，如果你寫了個客製化 session 處理器，請在 Packagist 分享它！</p>
+</blockquote>
+<p><a name="authentication"></a></p>
+<h2>認證</h2>
+<p>認證可以用與快取和 session 工具相同的方法擴展。再一次的，我們將會使用我們已經熟悉的 <code>extend</code> 方法：</p>
+<pre><code>Auth::extend('riak', function($app)
+{
+    // Return implementation of Illuminate\Auth\UserProviderInterface
+});</code></pre>
+<p><code>UserProviderInterface</code> 實作只負責從永久存儲系統抓取 <code>UserInterface</code> 實作，例如：MySQL、 Riak，等等。這兩個介面讓 Laravel 認證機制無論使用者資料如何儲存或用什麼種類的類別來代表它都能繼續運作。</p>
+<p>讓我們來看一下 <code>UserProviderInterface</code>：</p>
+<pre><code>interface UserProviderInterface {
+
+    public function retrieveById($identifier);
+    public function retrieveByToken($identifier, $token);
+    public function updateRememberToken(UserInterface $user, $token);
+    public function retrieveByCredentials(array $credentials);
+    public function validateCredentials(UserInterface $user, array $credentials);
+
+}</code></pre>
+<p><code>retrieveById</code> 函式通常接收一個代表使用者的數字鍵，例如：MySQL 資料庫的自動遞增 ID。符合 ID 的 <code>UserInterface</code> 實作應該被取回並被方法回傳。</p>
+<p><code>retrieveByToken</code> 函式用使用者唯一的 <code>$identifier</code> 和儲存在 <code>remember_token</code> 欄位的「記住我」<code>$token</code> 取得使用者。跟前面的方法一樣，應該回傳 <code>UserInterface</code> 實作。</p>
+<p><code>updateRememberToken</code> 方法用新的 <code>$token</code> 更新 <code>$user</code> 的 <code>remember_token</code> 欄位。新 token 可以是在「記住我」成功地登入時發一個新的 token，或當使用者登出時為 null。</p>
+<p><code>retrieveByCredentials</code> 方法接收當嘗試登入應用程式時，傳遞到 <code>Auth::attempt</code> 方法的憑證陣列。這個方法應該接著「查詢」背後的永久存儲，看使用者是否符合這些憑證。這個方法通常會對 <code>$credentials['username']</code> 用「where」條件查詢。<strong>這個方法不應該嘗試做任何密碼驗證或認證。</strong></p>
+<p><code>validateCredentials</code> 方法應該借由比較給定 <code>$user</code> 與 <code>$credentials</code> 來驗證使用者。舉例來說，這個方法可以比較 <code>$user-&gt;getAuthPassword()</code> 字串跟 <code>Hash::make</code> 後的 <code>$credentials['password']</code>。</p>
+<p>現在我們已經看過 <code>UserProviderInterface</code> 的每個方法，接著我們來看一下 <code>UserInterface</code>。記住，提供者應該從 <code>retrieveById</code> 和 <code>retrieveByCredentials</code> 方法回傳這個介面的實作：</p>
+<pre><code>interface UserInterface {
+
+    public function getAuthIdentifier();
+    public function getAuthPassword();
+
+}</code></pre>
+<p>這個介面很簡單。<code>getAuthIdentifier</code> 方法應該回傳使用者的「主鍵」。在 MySQL 後台，同樣，這將會是個自動遞增的主鍵。<code>getAuthPassword</code> 應該回傳使用者雜湊過的密碼。 這個介面讓認證系統可以與任何使用者類別一起運作，無論你使用什麼 ORM 或儲存抽象層。預設，Laravel 包含一個實作這個介面的 <code>User</code> 類別在 <code>app/models</code> 資料夾裡，所以你可以參考這個類別當作實作的例子。</p>
+<p>最後，當我們已經實作了 <code>UserProviderInterface</code>，我們準備好用 <code>Auth</code> facade 來註冊我們的擴展：</p>
+<pre><code>Auth::extend('riak', function($app)
+{
+    return new RiakUserProvider($app['riak.connection']);
+});</code></pre>
+<p>在你用 <code>extend</code> 方法註冊驅動之後，在你的 <code>app/config/auth.php</code> 設定檔切換到新驅動。
+<a name="ioc-based-extension"></a></p>
+<h2>基於 IoC 的擴展</h2>
+<p>幾乎每個 Laravel 框架引入的服務提供者會綁定物件到 IoC 容器中。你可以在 <code>app/config/app.php</code> 設定檔中找到應用程式的服務提供者清單。當你有時間的時候，你應該瀏覽過這裡面每一個提供者的原始碼。 借由這樣做，你將會對每一個提供者加了什麼到框架有更多的了解，以及各種服務用什麼鍵來綁定到 IoC 容器。</p>
+<p>舉個例子，<code>HashServiceProvider</code> 綁定一個 <code>hash</code> 鍵到 IoC 容器，它將解析成 <code>Illuminate\Hashing\BcryptHasher</code> 實體。你可以輕鬆地借由在你的應用程式中覆寫這個 IoC 綁定，擴展並覆寫這個類別。例如：</p>
+<pre><code>class SnappyHashProvider extends Illuminate\Hashing\HashServiceProvider {
+
+    public function boot()
+    {
+        App::bindShared('hash', function()
+        {
+            return new Snappy\Hashing\ScryptHasher;
+        });
+
+        parent::boot();
+    }
+
+}</code></pre>
+<p>要注意的是這個類別擴展 <code>HashServiceProvider</code>，不是預設的 <code>ServiceProvider</code> 基底類別。當你擴展了服務提供者，在你的 <code>app/config/app.php</code> 設定檔把 <code>HashServiceProvider</code> 換成你擴展的提供者名稱。</p>
+<p>這是擴展任何被綁定在容器的核心類別的普遍方法。實際上，每個被以這種方式綁定在容器的核心類別都可以被覆寫。再次強調，看過被框架引入的服務提供者將會使你熟悉每個類別被綁在容器的哪裡，還有它們是用什麼鍵綁。 這是個好方法可以了解更多關於 Laravel 如何結合它們。</p>
+<p><a name="request-extension"></a></p>
+<h2>擴展請求</h2>
+<p>因為它是框架非常基礎的部件並且在請求週期的非常早期就被實體化，擴展 <code>Request</code> 類別跟前面的例子有一點不同。</p>
+<p>首先，像一般一樣擴展類別：</p>
+<pre><code>&lt;?php namespace QuickBill\Extensions;
+
+class Request extends \Illuminate\Http\Request {
+
+    // Custom, helpful methods here...
+
+}</code></pre>
+<p>當你擴展了類別，打開 <code>bootstrap/start.php</code> 檔案。 這個檔案是當應用程式受到請求後非常早被引入的檔案之一。需要注意的是第一個被執行的動作是建立 Laravel <code>$app</code> 實體：</p>
+<pre><code>$app = new \Illuminate\Foundation\Application;</code></pre>
+<p>當一個新的應用程式實體被建立，它將會建立一個新的 <code>Illuminate\Http\Request</code> 實體並用 <code>request</code> 鍵把它綁定到 IoC 容器。所以，我們需要一個方法去指定一個應該被用作「預設」請求類型的客製化類別，對吧？ 並且值得慶幸的是，應用程式實體的 <code>requestClass</code> 方法就做了這件事！所以，我們可以在 <code>bootstrap/start.php</code> 檔案的最上面加這行：</p>
+<pre><code>use Illuminate\Foundation\Application;
+
+Application::requestClass('QuickBill\Extensions\Request');</code></pre>
+<p>每當你指定了客製化請求類別，Laravel 將會在任何建立 <code>Request</code> 實體的時候使用這個類別，便利地讓你總是有一個可用的你的客製化請求類別實體，甚至在單元測試也有！</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="extending.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

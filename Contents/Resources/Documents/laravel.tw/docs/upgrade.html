@@ -1,0 +1,348 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="upgrade.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="upgrade.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>升級導引</h1>
+<ul>
+<li><a href="upgrade.html#upgrade-4.3">從 4.2 升級到 4.3</a></li>
+<li><a href="upgrade.html#upgrade-4.2">從 4.1 升級到 4.2</a></li>
+<li><a href="upgrade.html#upgrade-4.1.29">從 4.1.x 升級到 4.1.29</a></li>
+<li><a href="upgrade.html#upgrade-4.1.26">從 4.1.25 升級到 4.1.26</a></li>
+<li><a href="upgrade.html#upgrade-4.1">從 4.0 升級至 4.1</a></li>
+</ul>
+<p><a name="upgrade-4.3"></a></p>
+<h2>從 4.2 升級到 4.3</h2>
+<h3>Beanstalk Queuing</h3>
+<p>Laravel 4.3 開始預設載入 <code>"pda/pheanstalk": "~3.0"</code> 取代 Laravel 4.2 <code>"pda/pheanstalk": "~2.1"</code>。</p>
+<p><a name="upgrade-4.2"></a></p>
+<h2>從 4.1 升級到 4.2</h2>
+<h3>PHP 5.4+</h3>
+<p>Laravel 4.2 需要 PHP 5.4.0 以上。</p>
+<h3>預設加密</h3>
+<p>增加一個新的 <code>cipher</code> 選項在你的 <code>app/config/app.php</code> 設定檔中。其選項值應為 <code>MCRYPT_RIJNDAEL_256</code>。</p>
+<pre><code>'cipher' =&gt; MCRYPT_RIJNDAEL_256</code></pre>
+<p>該設置可用於設定所使用的 Laravel 加密工具的預設加密方法。</p>
+<blockquote>
+<p><strong>附註:</strong> 在 Laravel 4.2，預設加密方法為<code>MCRYPT_RIJNDAEL_128</code> (AES)，被認為是最安全的加密。必須將加密改回<code>MCRYPT_RIJNDAEL_256</code> 來解密在 Laravel &lt;= 4.1 下加密的 cookies/values</p>
+</blockquote>
+<h3>軟刪除模型現在改使用特性</h3>
+<p>如果你在模型下有使用軟刪除，現在 <code>softDeletes</code> 的屬性已經被移除。你現在要使用 <code>SoftDeletingTrait</code> 如下：</p>
+<pre><code>use Illuminate\Database\Eloquent\SoftDeletingTrait;
+
+class User extends Eloquent {
+    use SoftDeletingTrait;
+}</code></pre>
+<p>你一樣必須手動增加 <code>deleted_at</code> 欄位到你的 <code>dates</code> 屬性中：</p>
+<pre><code>class User extends Eloquent {
+    use SoftDeletingTrait;
+
+    protected $dates = ['deleted_at'];
+}</code></pre>
+<p>而所有軟刪除的 API 使用方式維持相同。</p>
+<blockquote>
+<p><strong>附註:</strong> <code>SoftDeletingTrait</code> 無法在基本模型下被使用。他只能在一個實際模型類別中使用。</p>
+</blockquote>
+<h3>視圖 / 分頁 / 環境 類別改名</h3>
+<p>如果你直接使用 <code>Illuminate\View\Environment</code> 或 <code>Illuminate\Pagination\Environment</code> 類別，請更新你的程式碼將其改為參照 <code>Illuminate\View\Factory</code> 和 <code>Illuminate\Pagination\Factory</code>。改名後的這兩個類別更可以代表他們的功能。</p>
+<h3>Additional Parameter On Pagination Presenter</h3>
+<p>如果你擴展了 <code>Illuminate\Pagination\Presenter</code> 類別，抽象方法 <code>getPageLinkWrapper</code> 參數列變成要加上 <code>rel</code> 參數：</p>
+<pre><code>abstract public function getPageLinkWrapper($url, $page, $rel = null);</code></pre>
+<h3>Iron.Io Queue 加密</h3>
+<p>如果你使用 Iron.io queue 驅動，你將需要增加一個新的 <code>encrypt</code> 選項到你的 queue 設定檔中：</p>
+<pre><code>'encrypt' =&gt; true</code></pre>
+<p><a name="upgrade-4.1.29"></a></p>
+<h2>從 4.1.x 升級到 4.1.29</h2>
+<p>Laravel 4.1.29 對於所有的資料庫驅動加強了 column quoting 的部分。當你的模型中<strong>沒有</strong>使用 <code>fillable</code> 屬性，他保護你的應用程式不會受到 mass assignment 漏洞影響。如果你在模型中使用 <code>fillable</code> 屬性來防範 mass assignment，你的應用程式將不會有漏洞。如果你使用 <code>guarded</code> 且在「更新」或「儲存」類型的函式中，傳遞了末端使用者控制的陣列，那你應該立即升級到 <code>4.1.29</code> 以避免 mass assignment 的風險。</p>
+<p>升級到 Laravel 4.1.29，只要 <code>composer update</code> 即可。在這個發行版本中沒有重大的更新。</p>
+<p><a name="upgrade-4.1.26"></a></p>
+<h2>從 4.1.25 升級到 4.1.26</h2>
+<p>Laravel 4.1.26 採用了針對「記得我」cookies 的安全性更新。在此更新之前，如果一個記得我的 cookies 被惡意使用者劫持，該 cookie 將還可以生存很長一段時間，即使真實用戶重設密碼或者登出亦同。</p>
+<p>此更動需要在你的 <code>users</code> (或者類似的) 的資料表中增加一個額外的 <code>remember_token</code> 欄位。在更新之後，當用戶每次登入你的應用程式將會有一個全新的 token 將會被指派。這個 token 也會在使用者登出應用程式後被更新。這個更新的影響為：如果一個「記得我」的 cookie 被劫持，只要使用者登出應用程式將會廢除該 cookie。</p>
+<h3>升級路徑</h3>
+<p>首先，增加一個新的欄位，可空值、屬性為 VARCHAR(100)、TEXT 或同類型的欄位 <code>remember_token</code> 到你的 <code>users</code> 資料表中。</p>
+<p>然後，如果你使用 Eloquent 認證驅動，依照下面更新你的 <code>User</code> 類別的三個方法：</p>
+<pre><code>public function getRememberToken()
+{
+    return $this-&gt;remember_token;
+}
+
+public function setRememberToken($value)
+{
+    $this-&gt;remember_token = $value;
+}
+
+public function getRememberTokenName()
+{
+    return 'remember_token';
+}</code></pre>
+<blockquote>
+<p><strong>附註:</strong> 所有現存的「記得我」sessions 在此更新後將會失效，所以應用程式的所有使用者將會被迫重新登入。</p>
+</blockquote>
+<h3>套件管理者</h3>
+<p>兩個新的方法被加入到 <code>Illuminate\Auth\UserProviderInterface</code> 介面。範例實作方式可以在預設驅動中找到：</p>
+<pre><code>public function retrieveByToken($identifier, $token);
+
+public function updateRememberToken(UserInterface $user, $token);</code></pre>
+<p><code>Illuminate\Auth\UserInterface</code> 也加了三個新方法描述在「升級路徑」。</p>
+<p><a name="upgrade-4.1"></a></p>
+<h2>從 4.0 升級至 4.1</h2>
+<h3>升級你的 Composer 相依性</h3>
+<p>升級你的應用程式至 Laravel 4.1，將 <code>composer.json</code> 裡的 <code>laravel/framework</code> 版本更改至 <code>4.1.*</code>。</p>
+<h3>檔案置換</h3>
+<p>將你的 <code>public/index.php</code> 置換成 <a href="https://github.com/laravel/laravel/blob/master/public/index.php">這個 repository 的乾淨版本</a>。</p>
+<p>同樣的，將你的 <code>artisan</code> 置換成 <a href="https://github.com/laravel/laravel/blob/master/artisan">這個 repository 的乾淨版本</a>。</p>
+<h3>新增設定檔案及選項</h3>
+<p>更新你在設定檔 <code>app/config/app.php</code> 裡的 <code>aliases</code> 和 <code>providers</code> 陣列。而更新的選項值可以在 <a href="https://github.com/laravel/laravel/blob/master/app/config/app.php">這個檔案</a> 中找到。請確定將你後來加入自定和套件所需的 providers / aliases 加回陣列中。</p>
+<p>從 <a href="https://github.com/laravel/laravel/blob/master/app/config/remote.php">這個 repository</a> 增加 <code>app/config/remote.php</code> 檔案。</p>
+<p>在你的 <code>app/config/session.php</code> 增加新的選項 <code>expire_on_close</code>。而預設值為 <code>false</code>。</p>
+<p>在你的 <code>app/config/queue.php</code> 檔案裡新增 <code>failed</code> 設定區塊。以下為區塊的預設值：</p>
+<pre><code>'failed' =&gt; array(
+    'database' =&gt; 'mysql', 'table' =&gt; 'failed_jobs',
+),</code></pre>
+<p><strong>（非必要）</strong> 在你的 <code>app/config/view.php</code> 裡，將 <code>pagination</code> 設定選項更新為 <code>pagination::slider-3</code>。</p>
+<h3>更新控制器（Controllers）</h3>
+<p>如果 <code>app/controllers/BaseController.php</code> 有 <code>use</code> 語句在最上面，將 <code>use Illuminate\Routing\Controllers\Controller;</code> 改為 <code>use Illuminate\Routing\Controller;</code>。</p>
+<h3>更新密碼提醒</h3>
+<p>密碼提醒功能已經大幅修正擁有更大的彈性。你可以執行 Artisan 指令 <code>php artisan auth:reminders-controller</code> 來檢查新的存根控制器。你也可以瀏覽 <a href="security.html#password-reminders-and-reset">更新文檔</a> 然後相應的更新你的應用程式。</p>
+<p>更新你的 <code>app/lang/en/reminders.php</code> 語系檔案來符合 <a href="https://github.com/laravel/laravel/blob/master/app/lang/en/reminders.php">這個新版檔案</a>。</p>
+<h3>更新環境偵測</h3>
+<p>為了安全因素，不再使用網域網址來偵測辨別應用程式的環境。因為這些直很容易被偽造欺騙，繼而讓攻擊者透過請求來達到變更環境。所以你必須改為使用機器的 hostname（在 Mac &amp; Ubuntu 下執行 <code>hostname</code> 出來的值）</p>
+<p>（譯按：的確原有方式有安全性考量，但對於現行 VirtualHost 大量使用下，反而這樣改會造成不便）</p>
+<h3>更簡單的日誌文件</h3>
+<p>Laravel 目前只會產生單一的日誌文件：<code>app/storage/logs/laravel.log</code>。然而，你還是可以透過設定你的 <code>app/start/global.php</code> 檔案來更改他的行為。</p>
+<h3>刪除重定向結尾的斜線</h3>
+<p>在你的 <code>bootstrap/start.php</code> 檔案中，移除呼叫 <code>$app-&gt;redirectIfTrailingSlash()</code>。這個方法已不再需要了，因為之後將會改以框架內的 <code>.htaccess</code> 來處理。</p>
+<p>然後，用 <a href="https://github.com/laravel/laravel/blob/master/public/.htaccess">新版</a> 替換掉你 Apache 中的 <code>.htaccess</code> 檔案，來處理結尾的斜線問題。</p>
+<h3>取得目前路由</h3>
+<p>取得目前路由的方法由 <code>Route::getCurrentRoute()</code> 改為 <code>Route::current()</code>。</p>
+<h3>Composer 更新</h3>
+<p>一旦你完成以上的更新，你可以執行 <code>composer update</code> 來更新應用程式的核心檔案。如果有 class load 錯誤，請在 <code>update</code> 之後加上 <code>--no-scripts</code>，如：<code>composer update --no-scripts</code>。</p>
+<h3>萬用字元事件監聽者</h3>
+<p>萬用字元事件監聽者不再添加事件為參數到你的處理函數。如果你需要尋找你觸發的事件你應該用 <code>Event::firing()</code>.</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="upgrade.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

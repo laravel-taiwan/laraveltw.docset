@@ -1,0 +1,548 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="schema.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="schema.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>結構生成器</h1>
+<ul>
+<li><a href="schema.html#introduction">介紹</a></li>
+<li><a href="schema.html#creating-and-dropping-tables">建立與刪除資料表</a></li>
+<li><a href="schema.html#adding-columns">加入欄位</a></li>
+<li><a href="schema.html#renaming-columns">修改欄位名稱</a></li>
+<li><a href="schema.html#dropping-columns">移除欄位</a></li>
+<li><a href="schema.html#checking-existence">檢查是否存在</a></li>
+<li><a href="schema.html#adding-indexes">加入索引</a></li>
+<li><a href="schema.html#foreign-keys">外鍵</a></li>
+<li><a href="schema.html#dropping-indexes">移除索引</a></li>
+<li><a href="schema.html#dropping-timestamps">移除時間戳記和軟刪除</a></li>
+<li><a href="schema.html#storage-engines">儲存引擎</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Laravel 的 <code>結構生成器</code> 提供一個產生資料表可與資料庫無關的方法，它可以很好的處理 Laravel 支援的各種資料庫類型，並且在不同系統間提供一致性的 API 操作。</p>
+<p><a name="creating-and-dropping-tables"></a></p>
+<h2>建立與刪除資料表</h2>
+<p>要建立一個新的資料表，可使用 <code>Schema::create</code> 方法：</p>
+<pre><code>Schema::create('users', function($table)
+{
+    $table-&gt;increments('id');
+});</code></pre>
+<p>傳入 <code>create</code> 方法的第一個參數是資料表名稱，第二個參數是 <code>Closure</code> 並接收 <code>Blueprint</code> 物件被用來定義新的資料表。</p>
+<p>要修改資料表名稱，可使用 <code>rename</code> 方法：</p>
+<pre><code>Schema::rename($from, $to);</code></pre>
+<p>要指定特定連線來操作，可使用 <code>Schema::connection</code> 方法：</p>
+<pre><code>Schema::connection('foo')-&gt;create('users', function($table)
+{
+    $table-&gt;increments('id');
+});</code></pre>
+<p>要移除資料表，可使用 <code>Schema::drop</code> 方法：</p>
+<pre><code>Schema::drop('users');
+
+Schema::dropIfExists('users');</code></pre>
+<p><a name="adding-columns"></a></p>
+<h2>加入欄位</h2>
+<p>更新現有的資料表，可使用 <code>Schema::table</code> 方法：</p>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;string('email');
+});</code></pre>
+<p>資料表產生器提供多種欄位型態可使用，在您建立資料表時也許會用到：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;bigIncrements('id');</code></td>
+<td>ID 自動增量，使用相當於「big integer」型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;bigInteger('votes');</code></td>
+<td>相當於 BIGINT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;binary('data');</code></td>
+<td>相當於 BLOB 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;boolean('confirmed');</code></td>
+<td>相當於 BOOLEAN 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;char('name', 4);</code></td>
+<td>相當於 CHAR 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;date('created_at');</code></td>
+<td>相當於 DATE 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dateTime('created_at');</code></td>
+<td>相當於 DATETIME 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;decimal('amount', 5, 2);</code></td>
+<td>相當於 DECIMAL 型態，並帶有精度與尺度</td>
+</tr>
+<tr>
+<td><code>$table-&gt;double('column', 15, 8);</code></td>
+<td>相當於 DOUBLE 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;enum('choices', array('foo', 'bar'));</code></td>
+<td>相當於 ENUM 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;float('amount');</code></td>
+<td>相當於 FLOAT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;increments('id');</code></td>
+<td>相當於 Incrementing 型態(資料表主鍵)</td>
+</tr>
+<tr>
+<td><code>$table-&gt;integer('votes');</code></td>
+<td>相當於 INTEGER 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;longText('description');</code></td>
+<td>相當於 LONGTEXT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;mediumInteger('numbers');</code></td>
+<td>相當於 MEDIUMINT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;mediumText('description');</code></td>
+<td>相當於 MEDIUMTEXT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;morphs('taggable');</code></td>
+<td>加入整數 <code>taggable_id</code> 與字串 <code>taggable_type</code></td>
+</tr>
+<tr>
+<td><code>$table-&gt;nullableTimestamps();</code></td>
+<td>與 <code>timestamps()</code> 相同，但允許 NULL</td>
+</tr>
+<tr>
+<td><code>$table-&gt;smallInteger('votes');</code></td>
+<td>相當於 SMALLINT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;tinyInteger('numbers');</code></td>
+<td>相當於 TINYINT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;softDeletes();</code></td>
+<td>加入 <strong>deleted_at</strong> 欄位於軟刪除使用</td>
+</tr>
+<tr>
+<td><code>$table-&gt;string('email');</code></td>
+<td>相當於 VARCHAR 型態  equivalent column</td>
+</tr>
+<tr>
+<td><code>$table-&gt;string('name', 100);</code></td>
+<td>相當於 VARCHAR 型態，並指定長度</td>
+</tr>
+<tr>
+<td><code>$table-&gt;text('description');</code></td>
+<td>相當於 TEXT 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;time('sunrise');</code></td>
+<td>相當於 TIME 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;timestamp('added_on');</code></td>
+<td>相當於 TIMESTAMP 型態</td>
+</tr>
+<tr>
+<td><code>$table-&gt;timestamps();</code></td>
+<td>加入 <strong>created_at</strong> 和 <strong>updated_at</strong> 欄位</td>
+</tr>
+<tr>
+<td><code>$table-&gt;rememberToken();</code></td>
+<td>加入 <code>remember_token</code> 使用 VARCHAR(100) NULL</td>
+</tr>
+<tr>
+<td><code>-&gt;nullable()</code></td>
+<td>標示此欄位允許 NULL</td>
+</tr>
+<tr>
+<td><code>-&gt;default($value)</code></td>
+<td>宣告此欄位的預設值</td>
+</tr>
+<tr>
+<td><code>-&gt;unsigned()</code></td>
+<td>設定整數是無分正負</td>
+</tr>
+</tbody>
+</table>
+<h4>在 MySQL 使用 After 方法</h4>
+<p>若您使用 MySQL 資料庫，您可以使用 <code>after</code> 方法來指定欄位的順序：</p>
+<pre><code>$table-&gt;string('name')-&gt;after('email');</code></pre>
+<p><a name="renaming-columns"></a></p>
+<h2>修改欄位名稱</h2>
+<p>要修改欄位名稱，可在結構生成器內使用 <code>renameColumn</code> 方法，請確認在修改前 <code>composer.json</code> 檔案內已經加入 <code>doctrine/dbal</code>。</p>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;renameColumn('from', 'to');
+});</code></pre>
+<blockquote>
+<p><strong>注意:</strong> <code>enum</code> 欄位型別不支援修改欄位名稱</p>
+</blockquote>
+<p><a name="dropping-columns"></a></p>
+<h2>移除欄位</h2>
+<p>要移除欄位，可在結構生成器內使用 <code>dropColumn</code> 方法，請確認在移除前 <code>composer.json</code> 檔案內已經加入 <code>doctrine/dbal</code>。</p>
+<h4>移除資料表欄位</h4>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;dropColumn('votes');
+});</code></pre>
+<h4>移除資料表多筆欄位</h4>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;dropColumn(array('votes', 'avatar', 'location'));
+});</code></pre>
+<p><a name="checking-existence"></a></p>
+<h2>檢查是否存在</h2>
+<h4>檢查資料表是否存在</h4>
+<p>您可以輕鬆的檢查資料表或欄位是否存在，使用 <code>hasTable</code> 和 <code>hasColumn</code> 方法：</p>
+<pre><code>if (Schema::hasTable('users'))
+{
+    //
+}</code></pre>
+<h4>檢查欄位是否存在</h4>
+<pre><code>if (Schema::hasColumn('users', 'email'))
+{
+    //
+}</code></pre>
+<p><a name="adding-indexes"></a></p>
+<h2>加入索引</h2>
+<p>結構生成器支援多種索引類型，有兩種方法可以加入，方法一，您可以在定義欄位時順道附加上去，或者是分開另外加入：</p>
+<pre><code>$table-&gt;string('email')-&gt;unique();</code></pre>
+<p>或者，您可以獨立一行來加入索引，以下是支援的索引類型：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;primary('id');</code></td>
+<td>加入主鍵</td>
+</tr>
+<tr>
+<td><code>$table-&gt;primary(array('first', 'last'));</code></td>
+<td>加入複合鍵</td>
+</tr>
+<tr>
+<td><code>$table-&gt;unique('email');</code></td>
+<td>加入唯一索引</td>
+</tr>
+<tr>
+<td><code>$table-&gt;index('state');</code></td>
+<td>加入基本索引</td>
+</tr>
+</tbody>
+</table>
+<p><a name="foreign-keys"></a></p>
+<h2>外鍵</h2>
+<p>Laravel 也支援資料表的外鍵約束：</p>
+<pre><code>$table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('users');</code></pre>
+<p>範例中，我們關注欄位 <code>user_id</code> 參照到 <code>users</code> 資料表的 <code>id</code> 欄位。</p>
+<p>您也可以指定選擇在「on delete」和「on update」進行約束動作：</p>
+<pre><code>$table-&gt;foreign('user_id')
+      -&gt;references('id')-&gt;on('users')
+      -&gt;onDelete('cascade');</code></pre>
+<p>要移除外鍵，可使用 <code>dropForeign</code> 方法。外鍵的命名約定如同其他索引：</p>
+<pre><code>$table-&gt;dropForeign('posts_user_id_foreign');</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 當外鍵有參照到自動增量時，記得設定外鍵為 <code>unsigned</code> 型態。</p>
+</blockquote>
+<p><a name="dropping-indexes"></a></p>
+<h2>移除索引</h2>
+<p>要移除索引您必須指定索引名稱，Laravel 預設有脈絡可循的索引名稱。簡單地連結這些資料表與索引的欄位名稱和型別。舉例如下：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;dropPrimary('users_id_primary');</code></td>
+<td>從「users」資料表移除主鍵</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropUnique('users_email_unique');</code></td>
+<td>從「users」資料表移除唯一索引</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropIndex('geo_state_index');</code></td>
+<td>從「geo」資料表移除基本索引</td>
+</tr>
+</tbody>
+</table>
+<p><a name="dropping-timestamps"></a></p>
+<h2>移除時間戳記和軟刪除</h2>
+<p>要移除 <code>timestamps</code>、<code>nullableTimestamps</code> 或 <code>softDeletes</code> 欄位型態，您可以使用以下方法：</p>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;dropTimestamps();</code></td>
+<td>移除 <strong>created_at</strong> 和 <strong>updated_at</strong> 欄位</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropSoftDeletes();</code></td>
+<td>移除 <strong>deleted_at</strong> 欄位</td>
+</tr>
+</tbody>
+</table>
+<p><a name="storage-engines"></a></p>
+<h2>儲存引擎</h2>
+<p>要設定資料表的儲存引擎，可在結構生成器設定 <code>engine</code> 屬性：</p>
+<pre><code>Schema::create('users', function($table)
+{
+    $table-&gt;engine = 'InnoDB';
+
+    $table-&gt;string('email');
+});</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="schema.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="errors.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="errors.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>錯誤與日誌</h1>
+<ul>
+<li><a href="errors.html#configuration">設定檔</a></li>
+<li><a href="errors.html#handling-errors">錯誤處理</a></li>
+<li><a href="errors.html#http-exceptions">HTTP例外</a></li>
+<li><a href="errors.html#handling-404-errors">處理404錯誤</a></li>
+<li><a href="errors.html#logging">日誌</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設定檔</h2>
+<p>日誌處理程序註冊在 <a href="lifecycle.html#start-files">開始設定檔</a> <code>app/start/global.php</code>。日誌預設儲存在單一檔案，你可以依照需求自定。既然 Laravel 使用廣為人用的 Monolog 日誌，你可以利用很多 Monolog 提供的處理器程序。</p>
+<p>例如，如果你想每天使用一個日誌檔案而不是使用單一的龐大檔案，你可以照著下面的範例更改開始設定檔：</p>
+<pre><code>$logFile = 'laravel.log';
+
+Log::useDailyFiles(storage_path().'/logs/'.$logFile);</code></pre>
+<h3>錯誤顯示</h3>
+<p>錯誤顯示預設為開啓，意味著當錯誤發生時，將有錯誤頁面顯示詳細的堆疊追蹤和錯誤訊息。你可以關掉錯誤顯示的選項，把 <code>app/config/app.php</code> 裡的 <code>debug</code> 選項改成 <code>false</code>。</p>
+<blockquote>
+<p><strong>注意：</strong>強烈建議在 production 環境中關掉錯誤顯示。</p>
+</blockquote>
+<p><a name="handling-errors"></a></p>
+<h2>錯誤處理</h2>
+<p><code>app/start/global.php</code> 裡預設有一個處理所有例外的例外處理程序：</p>
+<pre><code>App::error(function(Exception $exception)
+{
+    Log::error($exception);
+});</code></pre>
+<p>這是最基本的例外處理程序，然而你可以依照需求設定更多例外處理程序。例外處理程序會依照例外的型別提示( type-hint )被呼叫。例如，你可以創造一個只處理 <code>RuntimeException</code> 的例外處理程序：</p>
+<pre><code>App::error(function(RuntimeException $exception)
+{
+    // Handle the exception...
+});</code></pre>
+<p>如果例外處理程序回傳一個 response，response 會直接回傳到瀏覽器，而其他例外處理程序將不會被呼叫：</p>
+<pre><code>App::error(function(InvalidUserException $exception)
+{
+    Log::error($exception);
+
+    return 'Sorry! Something is wrong with this account!';
+});</code></pre>
+<p>為了監聽 PHP fetal errors，你可以利用 <code>App::fatal</code> 方法：</p>
+<pre><code>App::fatal(function($exception)
+{
+    //
+});</code></pre>
+<p>如果你有很多例外處理程序，他們應該依照從最通用到最特定的順序被定義。例如，一個對應處理型別為<code>Exception</code>的例外處理程序，應該被定義在一個對應處理自定例外型別，如 <code>Illuminate\Encryption\DecryptException</code>的例外處理程序之前。</p>
+<h3>何處定義例外處理程序</h3>
+<p>預設上沒有註冊例外處理程序的地方。Laravel 可以讓你自由設定。選擇之一是定義程序在 <code>start/global.php</code> 中，一般來說，這是一個讓你方便寫入任何"bootstrapping" 程式碼的地方。如果檔案變得很擁擠，可以建立一個 <code>app/errors.php</code> 檔案，並且在 <code>start/global.php</code> 中引入。第三個選擇是建立 <a href="ioc.html#service-providers">service provider</a> 以註冊程序。再一次地，並沒有正確的答案，選擇一個讓你覺得舒適的地方。</p>
+<p><a name="http-exceptions"></a></p>
+<h2>HTTP 例外處理</h2>
+<p>一些例外處理表示來自伺服器的 HTTP 錯誤碼，例如可能是「找不到頁面」錯誤(404)，未授權錯誤(401)，或甚至是工程師導致的 500 錯誤。使用下列方法以回傳這些回應：</p>
+<pre><code>App::abort(404);</code></pre>
+<p>或是你可以選擇提供一個回應：</p>
+<pre><code>App::abort(403, 'Unauthorized action.');</code></pre>
+<p>你可以在請求回應的生命週期中任何時間點使用這個方法。</p>
+<p><a name="handling-404-errors"></a></p>
+<h2>404錯誤處理</h2>
+<p>你可以註冊一個錯誤處理程序處理所有「404 Not Found」錯誤，讓你可以簡單的回傳自定的 404 錯誤頁面。</p>
+<pre><code>App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});</code></pre>
+<p><a name="logging"></a></p>
+<h2>日誌</h2>
+<p>Laravel 提供一個建立在強大的 <a href="http://github.com/seldaek/monolog">Monolog</a> 上的日誌工具。Laravel 預設設定在應用程式裡建立單一日誌檔案，這個檔案儲存在 <code>app/storage/logs/laravel.log</code>。    你可以像下面這樣寫入訊息：</p>
+<pre><code>Log::info('This is some useful information.');
+
+Log::warning('Something could be going wrong.');
+
+Log::error('Something is really going wrong.');</code></pre>
+<p>日誌工具提供了七種定義在 <a href="http://tools.ietf.org/html/rfc5424">RFC 5424</a> 的級別：<strong>debug</strong>、<strong>info</strong>、<strong>notice</strong>、<strong>warning</strong>、<strong>error</strong>、<strong>critical</strong> 和 <strong>alert</strong></p>
+<p>可以在傳入上下文相關的資料陣列到 log 的方法裡：</p>
+<pre><code>Log::info('Log message', array('context' =&gt; 'Other helpful information'));</code></pre>
+<p>Monolog 提供很多額外的方法可以記錄。若有需要，你可以使用 Laravel 裡使用的 Monolog 實例：</p>
+<pre><code>$monolog = Log::getMonolog();</code></pre>
+<p>你可以註冊事件捕捉所有傳到日誌的訊息：</p>
+<h4>註冊日誌監聽程序</h4>
+<pre><code>Log::listen(function($level, $message, $context)
+{
+    //
+});</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="errors.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

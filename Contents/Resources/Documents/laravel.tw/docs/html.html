@@ -1,0 +1,367 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="html.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="html.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>表單與 HTML</h1>
+<ul>
+<li><a href="html.html#opening-a-form">開啟表單</a></li>
+<li><a href="html.html#csrf-protection">CSRF 保護</a></li>
+<li><a href="html.html#form-model-binding">表單模型綁定</a></li>
+<li><a href="html.html#labels">標籤（Label）</a></li>
+<li><a href="html.html#text">文字欄位（Text）、多行文字欄位（Text Area）、密碼欄位（Password）和隱藏欄位（Hidden Field）</a></li>
+<li><a href="html.html#checkboxes-and-radio-buttons">核取方塊（Checkboxe）和單選按鈕（Radio Button）</a></li>
+<li><a href="html.html#file-input">檔案輸入</a></li>
+<li><a href="html.html#drop-down-lists">下拉式選單</a></li>
+<li><a href="html.html#buttons">按鈕</a></li>
+<li><a href="html.html#custom-macros">自訂巨集（Macro）</a></li>
+<li><a href="html.html#generating-urls">產生 URL</a></li>
+</ul>
+<p><a name="opening-a-form"></a></p>
+<h2>開啟表單</h2>
+<h4>開啟表單</h4>
+<pre><code>{{ Form::open(array('url' =&gt; 'foo/bar')) }}
+    //
+{{ Form::close() }}</code></pre>
+<p>預設表單使用 POST 方法，當然你也可以指定傳送其他表單的方法：</p>
+<pre><code>echo Form::open(array('url' =&gt; 'foo/bar', 'method' =&gt; 'put'))</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 因為 HTML 表單只支援 <code>POST</code> 和 <code>GET</code> 方法，所以在使用 <code>PUT</code> 及 <code>DELETE</code> 的方法時，Laravel 將會自動加入隱藏的 <code>_method</code> 欄位到表單中，來偽裝表單傳送的方法。</p>
+</blockquote>
+<p>你也可以建立指向命名的路由或控制器至表單：</p>
+<pre><code>echo Form::open(array('route' =&gt; 'route.name'))
+
+echo Form::open(array('action' =&gt; 'Controller@method'))</code></pre>
+<p>您也可以傳遞路由參數：</p>
+<pre><code>echo Form::open(array('route' =&gt; array('route.name', $user-&gt;id)))
+
+echo Form::open(array('action' =&gt; array('Controller@method', $user-&gt;id)))</code></pre>
+<p>如果您的表單允許上傳檔案，可以加入 <code>files</code> 選項到參數中:</p>
+<pre><code>echo Form::open(array('url' =&gt; 'foo/bar', 'files' =&gt; true))</code></pre>
+<p><a name="csrf-protection"></a></p>
+<h2>CSRF 保護</h2>
+<h4>添加 CSRF 標記（Token）到表單</h4>
+<p>Laravel 提供簡易的方法，讓你可以保護你的應用程式不受到 CSRF (跨網站請求偽造) 攻擊。首先 Laravel 會自動在使用者的 session 中放置隨機的 token，別擔心這些會自動完成。這個 CSRF 參數會用隱藏欄位的方式自動加到你的表單中，你也可以使用 <code>token</code> 的方法去產生這個隱藏的 CSRF（token）欄位：</p>
+<pre><code>echo Form::token();</code></pre>
+<h4>附加 CSRF 過濾器到路由</h4>
+<pre><code>Route::post('profile', array('before' =&gt; 'csrf', function()
+{
+    //
+}));</code></pre>
+<p><a name="form-model-binding"></a></p>
+<h2>表單模型綁定</h2>
+<h4>開啟模型表單</h4>
+<p>您經常會想要將模型內容加入至表單中，您可以使用 <code>Form::model</code> 方法實現：</p>
+<pre><code>echo Form::model($user, array('route' =&gt; array('user.update', $user-&gt;id)))</code></pre>
+<p>現在當你產生表單元素時，像是 text 欄位，模型的值將會自動比對到欄位名稱，並設定此欄位值，舉例來說，使用者模型的 <code>email</code> 屬性，將會設定到名稱為 <code>email</code> 的 text 欄位的欄位值，不僅如此，當 Session 中有與欄位名稱相符的名稱，Session 的值將會優先於模型的值，而優先順序如下：</p>
+<ol>
+<li>Session 的資料 (舊的輸入值)</li>
+<li>明確傳遞的資料</li>
+<li>模型屬性資料</li>
+</ol>
+<p>這樣可以允許您快速地建立表單，不僅是綁定模型資料，也可以在伺服器端資料驗證錯誤時，輕鬆的回填使用者輸入的舊資料！</p>
+<blockquote>
+<p><strong>注意：</strong> 當使用 <code>Form::model</code> 方法時，必須確保有使用 <code>Form::close</code> 方法來關閉表單！</p>
+</blockquote>
+<p><a name="labels"></a></p>
+<h2>標籤（Label）</h2>
+<h4>產生標籤（Label）元素</h4>
+<pre><code>echo Form::label('email', 'E-Mail Address');</code></pre>
+<h4>指定額外的 HTML 屬性</h4>
+<pre><code>echo Form::label('email', 'E-Mail Address', array('class' =&gt; 'awesome'));</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 在建立標籤時，任何你建立的表單元素名稱與標籤相符時，將會自動在 ID 屬性建立與標籤名稱相同的 ID。</p>
+</blockquote>
+<p><a name="text"></a></p>
+<h2>文字欄位、多行文字欄位、密碼欄位、隱藏欄位</h2>
+<h4>產生文字欄位</h4>
+<pre><code>echo Form::text('username');</code></pre>
+<h4>指定預設值</h4>
+<pre><code>echo Form::text('email', 'example@gmail.com');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> <em>hidden</em> 和 <em>textarea</em> 方法和 <em>text</em> 方法使用屬性參數是相同的。</p>
+</blockquote>
+<h4>產生密碼輸入欄位</h4>
+<pre><code>echo Form::password('password');</code></pre>
+<h4>產生其他輸入欄位</h4>
+<pre><code>echo Form::email($name, $value = null, $attributes = array());
+echo Form::file($name, $attributes = array());</code></pre>
+<p><a name="checkboxes-and-radio-buttons"></a></p>
+<h2>核取方塊和單選項鈕</h2>
+<h4>產生核取方塊或單選按鈕</h4>
+<pre><code>echo Form::checkbox('name', 'value');
+
+echo Form::radio('name', 'value');</code></pre>
+<h4>產生已選取的核取方塊或單選按鈕</h4>
+<pre><code>echo Form::checkbox('name', 'value', true);
+
+echo Form::radio('name', 'value', true);</code></pre>
+<p><a name="file-input"></a></p>
+<h2>檔案輸入</h2>
+<h4>產生檔案輸入</h4>
+<pre><code>echo Form::file('image');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 表單必須已將 <code>files</code> 選項設定為 <code>true</code>。</p>
+</blockquote>
+<p><a name="drop-down-lists"></a></p>
+<h2>下拉式選單</h2>
+<h4>產生下拉式選單</h4>
+<pre><code>echo Form::select('size', array('L' =&gt; 'Large', 'S' =&gt; 'Small'));</code></pre>
+<h4>產生選擇預設值的下拉式選單</h4>
+<pre><code>echo Form::select('size', array('L' =&gt; 'Large', 'S' =&gt; 'Small'), 'S');</code></pre>
+<h4>產生群組清單</h4>
+<pre><code>echo Form::select('animal', array(
+    'Cats' =&gt; array('leopard' =&gt; 'Leopard'),
+    'Dogs' =&gt; array('spaniel' =&gt; 'Spaniel'),
+));</code></pre>
+<h4>產生範圍的下拉式選單</h4>
+<pre><code>echo Form::selectRange('number', 10, 20);</code></pre>
+<h4>產生月份名稱的清單</h4>
+<pre><code>echo Form::selectMonth('month');</code></pre>
+<p><a name="buttons"></a></p>
+<h2>按鈕</h2>
+<h4>產生提交按鈕</h4>
+<pre><code>echo Form::submit('Click Me!');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 需要產生按鈕（Button）元素嗎？可以試著使用 <em>button</em> 方法去產生按鈕（Button）元素，button 方法與 <em>submit</em> 使用屬性參數是相同的。</p>
+</blockquote>
+<p><a name="custom-macros"></a></p>
+<h2>自訂巨集</h2>
+<h4>註冊表單巨集</h4>
+<p>您可以輕鬆的定義你自己的表單類別的輔助方法叫「巨集（macros）」，首先只要註冊巨集（macros），並給預期名稱及封閉函式：</p>
+<pre><code>Form::macro('myField', function()
+{
+    return '&lt;input type="awesome"&gt;';
+});</code></pre>
+<p>現在您可以使用註冊的名稱呼叫您的巨集：</p>
+<h4>呼叫自訂表單巨集</h4>
+<pre><code>echo Form::myField();</code></pre>
+<p><a name="generating-urls"></a></p>
+<h2>產生 URL</h2>
+<p>更多產生 URL 的資訊，請參閱文件 <a href="helpers.html#urls">輔助方法</a>。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="html.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

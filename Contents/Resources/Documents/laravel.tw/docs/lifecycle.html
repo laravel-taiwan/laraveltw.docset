@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="lifecycle.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="lifecycle.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Request 生命週期</h1>
+<ul>
+<li><a href="lifecycle.html#overview">概覽</a></li>
+<li><a href="lifecycle.html#request-lifecycle">Request 生命週期</a></li>
+<li><a href="lifecycle.html#start-files">啟動文件</a></li>
+<li><a href="lifecycle.html#application-events">應用程式事件</a></li>
+</ul>
+<p><a name="overview"></a></p>
+<h2>概覽</h2>
+<p>在「真實世界」裡使用任何工具，只要你了解該工具的運作原理，你將會很順手。應用程式開發上也是相同的。當你了解開發工具的功能，你使用上會更得心應手。而這份文件的目的就是要給予你一個優良、高層次的 Laravel 框架運作概覽。隨著了解整個框架越多，你就不會覺得很「奇妙」且更容易去建構你的應用程式。除了關於 request 生命週期的高層次概覽外，我們也會介紹「啟動」檔案和應用程式事件。</p>
+<p>如果你對許多東西不明白，不用擔心。只要了解個基本的原理，隨著探索其他文件，你將會得到更多的知識。</p>
+<p><a name="request-lifecycle"></a></p>
+<h2>請求的生命週期</h2>
+<p>對你的應用程式的所有請求，都會被導到 <code>public/index.php</code> 程式去。如果使用 Apache，Laravel 的 <code>.htaccess</code> 會將所有的請求都讓 <code>index.php</code> 來做處理。從這裡開始，Laravel 就會進行處理請求跟回應給客戶端的流程。了解 Laravel 引導過程的總體思路是有幫助的。</p>
+<p>至此，了解 Laravel 的引導過程一個要把握的最重要概念就是<strong>服務提供商</strong>。你可以在你的 <code>app/config/app.php</code> 設定中找到 <code>providers</code> 的陣列，條列出所有的服務提供商。這些提供商作為 Laravel 的主要引導機制。但在深入探討服務提供商之前，我們先回到 <code>index.php</code>。在一個請求進入到你的 <code>index.php</code> 後，<code>bootstrap/start.php</code> 檔案將接著被載入。這檔案創建一個新的 Laravel <code>Application</code> 物件，並也作為一個 <a href="ioc.html">IoC 容器</a>。</p>
+<p>在創建 <code>Application</code> 物件之後，少部分的物件路徑將被設定且進行 <a href="configuration.html#environment-configuration">偵測運行環境</a>。然後，一個內部的 Laravel 引導腳本將會被呼叫。這個檔案深藏在 Laravel 的程式碼中，並且依據你的設定檔做一些相關設定，如：時區、錯誤回報等等。但除了這些設定與瑣碎的配置選項外，他也做一些比較重要的事情：註冊所有你應用程式中設定的服務提供商。</p>
+<p>比較簡單的服務提供商僅含有一個方法：<code>register</code>。此方法用於應用程式物件註冊服務提供商時，應用程式會透過所屬的 <code>register</code> 方法來呼叫服務提供商的 <code>register</code> 方法。此方法中，服務提供商註冊 <a href="ioc.html">IoC 容器</a>。本質上來說，每個服務提供商會綁定一個以上容器中的 <a href="http://us3.php.net/manual/en/functions.anonymous.php">封包</a>，讓你可以在應用程式中存取這些綁定服務。所以例如，<code>QueueServiceProvider</code> 註冊封包來處理多個 <a href="queues.html">隊列</a>相關類別。當然，服務提供商註冊可以被使用在任何引導任務上，不只是註冊在容器中的事情。服務提供商亦可以註冊事件監聽器，view composers、artisan 命令，等等。</p>
+<p>在所有的事件提供者都被註冊後，你的 <code>app/start</code> 檔案將會被載入。最後，你的 <code>app/routes.php</code> 檔案才會被載入。一旦你的 <code>routes.php</code> 檔案被載入後，請求物件將會被送至應用程式中，如此他才能被指派至其中一個路由。</p>
+<p>好，讓我們來總結一下：</p>
+<ol>
+<li>請求進入 <code>public/index.php</code> 檔案中。</li>
+<li><code>bootstrap/start.php</code> 檔案創建應用程式和偵測運行環境。</li>
+<li>內部 <code>framework/start.php</code> 檔案配置設定和載入服務提供商。</li>
+<li>應用程式 <code>app/start</code> 檔案被載入。</li>
+<li>應用程式 <code>app/routes.php</code> 檔案被載入。</li>
+<li>請求物件傳入應用程式中，回傳回應物件。</li>
+<li>回應物件回傳客戶端。</li>
+</ol>
+<p>現在你對於 Laravel 如何處理一個請求有個比較好的了解，讓我們更近些了解「起始檔案」！</p>
+<p><a name="start-files"></a></p>
+<h2>起始檔案</h2>
+<p>你的應用程式的起始檔案被儲存在 <code>app/start</code> 目錄下。預設下，三個檔案被包含在你的應用程式中：<code>global.php</code>、<code>local.php</code> 和 <code>artisan.php</code>。關於 <code>artisan.php</code> 更多的資訊可以參考 <a href="commands.html#registering-commands">Artisan 命令列</a> 文件。</p>
+<p><code>global.php</code> 起始檔預設包含了一些基本項目，如 <a href="errors.html">日誌</a> 的註冊和包含你的 <code>app/filters.php</code> 檔案。然而，你可以自由添加任何你想添加的東西至此。不管何種運行環境，他都會自動被包含進去在每個_請求_裡。另一方面，<code>local.php</code> 檔僅會在 <code>local</code> 環境下才會被執行。更多關於運行環境的資訊，請參照 <a href="configuration.html">設定</a> 文件。</p>
+<p>當然，除了 <code>local</code> 外你還有其他的運行環境，你一樣可以為這些運行環境創建起始檔案。當應用程式運行在該運行環境時將會自動載入對應檔案。所以例如，如果你在 <code>bootstrap/environment.php</code> 中設定了一個 <code>development</code> 運行環境，你可以創建 <code>app/start/development.php</code> 檔案，當應用程式在該運行環境中接收請求時會自動載入該檔案。</p>
+<h3>起始檔案中要放什麼</h3>
+<p>起始檔案作為一個簡單的地方來放置任何「引導程序」。例如，你可以註冊一個 View composer，配置你的日誌喜好或是一些 PHP 設置等等。完全取決與你。當然，把你的所有的引導程式碼都丟在起始檔中也會造成混亂，建議將一些引導程式碼放置到 <a href="ioc.html#service-providers">服務提供商</a> 中。</p>
+<p><a name="application-events"></a></p>
+<h2>應用程式事件</h2>
+<h4>註冊應用程式事件</h4>
+<p>你可以註冊 <code>before</code>、<code>after</code>、<code>finish</code> 和 <code>shutdown</code> 應用程式事件，來對請求前或請求後做處理：</p>
+<pre><code>App::before(function($request)
+{
+    //
+});
+
+App::after(function($request, $response)
+{
+    //
+});</code></pre>
+<p>監聽器將會對你的應用程式在每次請求執行 <code>before</code> 和 <code>after</code> 函式。這些事件對於全域篩選或是全域修改回應上很有幫助。你可以將他們註冊在你的其中一個「起始檔」中或者是 <a href="ioc.html#service-providers">服務提供商</a> 中。</p>
+<p>你也可以註冊一個監聽器在「匹配」的事件上，當傳入的請求以備匹配到一個路由，但該路由尚未被執行的情況下，該事件將會被觸發：</p>
+<pre><code>Route::matched(function($route, $request)
+{
+    //
+});</code></pre>
+<p><code>finish</code> 事件在你的應用程式回應給客戶端之後會被呼叫。這是非常好的一個地方去放置你應用程最後要做的事項。<code>shutdown</code> 是在所有 <code>finish</code> 事件處理器都結束之後立即被呼叫，他也是最後一個在程式終結前最後可以做些什麼的機會。最有可能狀況下，你可以能不需要用到任何一個事件。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="lifecycle.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

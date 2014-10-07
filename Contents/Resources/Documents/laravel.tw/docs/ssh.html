@@ -1,0 +1,421 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="ssh.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="ssh.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>SSH</h1>
+<ul>
+<li><a href="ssh.html#configuration">設定檔</a></li>
+<li><a href="ssh.html#basic-usage">基本用法</a></li>
+<li><a href="ssh.html#tasks">任務</a></li>
+<li><a href="ssh.html#sftp-downloads">SFTP 下載</a></li>
+<li><a href="ssh.html#sftp-uploads">SFTP 上傳</a></li>
+<li><a href="ssh.html#tailing-remote-logs">編輯遠端日誌</a></li>
+<li><a href="ssh.html#envoy-task-runner">Envoy 任務執行</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設定檔</h2>
+<p>Laravel 可以簡單的 SSH 到遠端伺服器以及執行指令，讓你可以簡單在遠端執行的建立 Artisan 任務。<code>SSH</code> facade 提供了使用方式讓你連線到遠端伺服器並執行指令。</p>
+<p>設定檔位在 <code>app/config/remote.php</code>，包含所有你需要設定的遠端連線設定，<code>connections</code> 陣列裡有以遠端伺服器名稱作為鍵值的列表。只要在 <code>connections</code> 陣列設定好認證，你就準備好可以執行遠端任務了。記得 <code>SSH</code> 可以經由密碼或 SSH key 認證。</p>
+<blockquote>
+<p><strong>提示：</strong> 需要再遠端伺服器執行很多任務嗎？瞧瞧 <a href="ssh.html#envoy-task-runner">Envoy 任務執行</a>！</p>
+</blockquote>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<h4>在在預設伺服器執行指令</h4>
+<p>使用 <code>SSH::run</code> 方法，在預設的遠端伺服器執行指令：</p>
+<pre><code>SSH::run(array(
+    'cd /var/www',
+    'git pull origin master',
+));</code></pre>
+<h4>在特定伺服器執行指令</h4>
+<p>你也可以使用 <code>into</code> 方法在特定的伺服器上執行指令：</p>
+<pre><code>SSH::into('staging')-&gt;run(array(
+    'cd /var/www',
+    'git pull origin master',
+));</code></pre>
+<h4>捕捉指令的輸出</h4>
+<p>你可以經由傳入閉合函數到 <code>run</code> 方法，捕捉遠端指令的即時輸出：</p>
+<pre><code>SSH::run($commands, function($line)
+{
+    echo $line.PHP_EOL;
+});</code></pre>
+<h2>任務</h2>
+<p><a name="tasks"></a></p>
+<p>如果你需要定義一組一起執行的指令，你可以用 <code>define</code> 方法定義一個「任務」：</p>
+<pre><code>SSH::into('staging')-&gt;define('deploy', array(
+    'cd /var/www',
+    'git pull origin master',
+    'php artisan migrate',
+));</code></pre>
+<p>你可以用 <code>task</code> 方法執行定義過的任務：</p>
+<pre><code>SSH::into('staging')-&gt;task('deploy', function($line)
+{
+    echo $line.PHP_EOL;
+});</code></pre>
+<p><a name="sftp-downloads"></a></p>
+<h2>SFTP 下載</h2>
+<p><code>SSH</code> 類別裡有簡單的方式可以下載檔案，使用 <code>get</code> 和 <code>getString</code> 方法：</p>
+<pre><code>SSH::into('staging')-&gt;get($remotePath, $localPath);
+
+$contents = SSH::into('staging')-&gt;getString($remotePath);</code></pre>
+<p><a name="sftp-uploads"></a></p>
+<h2>SFTP 上傳</h2>
+<p><code>SSH</code> 類別裡也有簡單的方式可以上傳檔案或甚至是字串到遠端伺服器，使用 <code>put</code> 和 <code>putString</code> 方法：</p>
+<pre><code>SSH::into('staging')-&gt;put($localFile, $remotePath);
+
+SSH::into('staging')-&gt;putString($remotePath, 'Foo');</code></pre>
+<p><a name="tailing-remote-logs"></a></p>
+<h2>編輯遠端日誌</h2>
+<p>Laravel 有一個有用的指令可以讓你在任何遠端伺服器的 <code>laravel.log</code> 尾端附加日誌內容。使用 Artisan 的 <code>tail</code> 指令以及指定遠端連線的伺服器名稱：</p>
+<pre><code>php artisan tail staging
+
+php artisan tail staging --path=/path/to/log.file</code></pre>
+<p><a name="envoy-task-runner"></a></p>
+<h2>Envoy 任務執行</h2>
+<ul>
+<li><a href="ssh.html#envoy-installation">安裝</a></li>
+<li><a href="ssh.html#envoy-running-tasks">執行任務</a></li>
+<li><a href="ssh.html#envoy-multiple-servers">多伺服器</a></li>
+<li><a href="ssh.html#envoy-parallel-execution">平行執行</a></li>
+<li><a href="ssh.html#envoy-task-macros">任務巨集</a></li>
+<li><a href="ssh.html#envoy-notifications">提醒通知</a></li>
+<li><a href="ssh.html#envoy-updating-envoy">更新 Envoy</a></li>
+</ul>
+<p>Laravel Envoy 提供了簡潔，輕量的語法，定義在遠端伺服器執行的共同任務。使用 <a href="templates.html#blade-templating">Blade</a> 風格的語法，你可以簡單的設置部署任務，執行 Artisan 指令或是更多。</p>
+<blockquote>
+<p><strong>提醒:</strong> Envoy 需要 PHP 5.4 或更高的版本，並且只能在 Mac / Linux 作業系統下執行。</p>
+</blockquote>
+<p><a name="envoy-installation"></a></p>
+<h3>安裝</h3>
+<p>首先，使用 Composer <code>global</code> 指令安裝 Envoy：</p>
+<pre><code>composer global require "laravel/envoy=~1.0"</code></pre>
+<p>記得將 <code>~/.composer/vendor/bin</code> 路徑加入 PATH，如此在終端機執行 <code>envoy</code> 指令時才找得到。</p>
+<p>再來，在專案根目錄建立 <code>Envoy.blade.php</code> 檔案。這裡有個範例可以讓你作為起頭：</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('foo', ['on' =&gt; 'web'])
+    ls -la
+@endtask</code></pre>
+<p>如你所見，<code>@servers</code> 陣列建立在檔案的起始。你可以在宣告任務時，在 <code>on</code> 選項裡參照這些伺服器。在你的 <code>@task</code> 宣告裡，寫入想要在遠端伺服器執行的 Bash code。</p>
+<p><code>init</code> 指令可以簡單的建立一個基本的 Envoy 檔：</p>
+<pre><code>envoy init user@192.168.1.1</code></pre>
+<p><a name="envoy-running-tasks"></a></p>
+<h3>執行任務</h3>
+<p>以 envoy 的 <code>run</code> 指令去執行你設定的任務：</p>
+<pre><code>envoy run foo</code></pre>
+<p>如有需要，你可以傳遞指令列參數到 Envoy 檔案：</p>
+<pre><code>envoy run deploy --branch=master</code></pre>
+<p>你也可以經由你所熟悉的 Blade 語法使用這些參數：</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('deploy', ['on' =&gt; 'web'])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask</code></pre>
+<h4>Bootstrapping</h4>
+<p>你可以在 Envoy 檔案裡使用 <code>@setup</code> 語法宣告 PHP 變數和執行一般的 PHP 程式碼：</p>
+<pre><code>@setup
+    $now = new DateTime();
+
+    $environment = isset($env) ? $env : "testing";
+@endsetup</code></pre>
+<p>你也可以使用 <code>@include</code> 引入 PHP 檔案：</p>
+<pre><code>@include('vendor/autoload.php');</code></pre>
+<p><a name="envoy-multiple-servers"></a></p>
+<h3>多伺服器</h3>
+<p>你可以簡單的在多個伺服器執行任務。只要在任務宣告裡列出伺服器名稱：</p>
+<pre><code>@servers(['web-1' =&gt; '192.168.1.1', 'web-2' =&gt; '192.168.1.2'])
+
+@task('deploy', ['on' =&gt; ['web-1', 'web-2']])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask</code></pre>
+<p>預設任務會循序的在每個伺服器上執行。意味著任務會在第一個伺服器執行完後才會換到下一個。</p>
+<p><a name="envoy-parallel-execution"></a></p>
+<h3>平行執行</h3>
+<p>如果你想在多個伺服器上同時執行任務，只要簡單的在任務宣告裡加上 <code>parallel</code> 選項：</p>
+<pre><code>@servers(['web-1' =&gt; '192.168.1.1', 'web-2' =&gt; '192.168.1.2'])
+
+@task('deploy', ['on' =&gt; ['web-1', 'web-2'], 'parallel' =&gt; true])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask</code></pre>
+<p><a name="envoy-task-macros"></a></p>
+<h3>任務巨集</h3>
+<p>巨集讓你可以使用一個指令就循序執行一組任務。例如：</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@macro('deploy')
+    foo
+    bar
+@endmacro
+
+@task('foo')
+    echo "HELLO"
+@endtask
+
+@task('bar')
+    echo "WORLD"
+@endtask</code></pre>
+<p>現在 <code>deploy</code> 巨集可以經由一個簡單的指令執行：</p>
+<pre><code>envoy run deploy</code></pre>
+<p><a name="envoy-notifications"></a>
+<a name="envoy-hipchat-notifications"></a></p>
+<h3>提醒通知</h3>
+<h4>HipChat</h4>
+<p>你可能想要在執行完任務後，發送通知到團隊的 HipChat 聊天室，使用簡單的 <code>@hipchat</code> 宣告：</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('foo', ['on' =&gt; 'web'])
+    ls -la
+@endtask
+
+@after
+    @hipchat('token', 'room', 'Envoy')
+@endafter</code></pre>
+<p>你也可以自定發送到 hipchat 聊天室的訊息，任何在 <code>@setup</code> 裡宣告，或是經由 <code>@include</code> 引入的變數都可以使用在訊息裡：</p>
+<pre><code>@after
+    @hipchat('token', 'room', 'Envoy', "$task ran on [$environment]")
+@endafter</code></pre>
+<p>這是一個令人驚豔的簡單方式，讓你的團隊保持通知在伺服器執行的任務。</p>
+<h4>Slack</h4>
+<p>下面的語法可以發送通知到 <a href="https://slack.com">Slack</a>：</p>
+<pre><code>@after
+    @slack('team', 'token', 'channel')
+@endafter</code></pre>
+<p><a name="envoy-updating-envoy"></a></p>
+<h3>更新 Envoy</h3>
+<p>簡單的執行 <code>self-update</code> 指令即可更新 Envoy：</p>
+<pre><code>envoy self-update</code></pre>
+<p>如果你的 Envoy 安裝在 <code>/usr/local/bin</code>，你可能需要加上 <code>sudo</code>：</p>
+<pre><code>sudo envoy self-update</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="ssh.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

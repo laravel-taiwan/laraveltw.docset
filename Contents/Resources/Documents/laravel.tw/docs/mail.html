@@ -1,0 +1,326 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="mail.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="mail.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Mail</h1>
+<ul>
+<li><a href="mail.html#configuration">設定</a></li>
+<li><a href="mail.html#basic-usage">基本用法</a></li>
+<li><a href="mail.html#embedding-inline-attachments">內嵌附件</a></li>
+<li><a href="mail.html#queueing-mail">郵件佇列</a></li>
+<li><a href="mail.html#mail-and-local-development">郵件與本地開發</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設定</h2>
+<p>Laravel 利用一個熱門的函式庫 <a href="http://swiftmailer.org">SwiftMailer</a> 來建立一個乾淨簡單的 API。郵件設定檔為 <code>app/config/mail.php</code>，裏面有些選項，可以讓你更改你的 SMTP 連接埠、憑證以及可以為透過此函式庫寄出的所有信件，設定一個全域的寄件者 <code>from</code>。你可以使用任何的 SMTP 伺服器。如果你想要使用 PHP 內建的 <code>mail</code> 函式來寄送郵件，你可以將設定檔中的 <code>driver</code> 改為 <code>mail</code> 即可。<code>sendmail</code> 的驅動一樣可以使用。</p>
+<h3>第三方郵件服務 API 驅動</h3>
+<p>Laravel 也包含了 Mailgun 和 Mandrill 服務的 HTTP API 的驅動方式。這些 API 比使用 SMTP 伺服器更簡單快速。這些驅動都需要在你的應用程式裡預先安裝 Guzzle 4 HTTP 函式庫。你可以透過在你的 <code>composer.json</code> 檔中增加一行如下，來將 Guzzle 4 安裝到你的專案中：</p>
+<pre><code>"guzzlehttp/guzzle": "~4.0"</code></pre>
+<h4>Mailgun 驅動</h4>
+<p>使用 Mailgun 驅動前，先在 <code>app/config/mail.php</code> 設定檔中將 <code>driver</code> 設定為 <code>mailgun</code>。再來，如果你的專案中沒有 <code>app/config/services.php</code> 請先建立他。並確定它包含了如下的內容：</p>
+<pre><code>'mailgun' =&gt; array(
+    'domain' =&gt; 'your-mailgun-domain',
+    'secret' =&gt; 'your-mailgun-key',
+),</code></pre>
+<h4>Mandrill 驅動</h4>
+<p>使用 Mandrill 驅動前，先在 <code>app/config/mail.php</code> 設定檔中將 <code>driver</code> 設定為 <code>mandrill</code>。再來，如果你的專案中沒有 <code>app/config/services.php</code> 請先建立他。並確定它包含了如下的內容：</p>
+<pre><code>'mandrill' =&gt; array(
+    'secret' =&gt; 'your-mandrill-key',
+),</code></pre>
+<h3>Log 驅動</h3>
+<p>如果你的 <code>app/config/mail.php</code> 設定檔的 <code>driver</code> 被設定為 <code>log</code> 時，所有的郵件將會被寫進日誌中，且並不會真的被寄出。這主要用在快速本地除錯和內容驗證上。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p><code>Mail::send</code> 方法是用來寄送電子郵件：</p>
+<pre><code>Mail::send('emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});</code></pre>
+<p><code>send</code> 方法的第一個參數為郵件內容的視圖名稱，第二個參數 <code>$data</code> 為傳遞至視圖的變數，而第三個參數為一個閉包讓你可以指定更多寄送電子郵件的訊息選項。</p>
+<blockquote>
+<p><strong>注意:</strong> 變數預設被傳遞進郵件的視圖中，且允許內嵌復健。所以最好避免傳遞名為 <code>message</code> 的變數至你的視圖中造成重疊。</p>
+</blockquote>
+<p>除了使用 HTML 視圖外，你也可以指定一個純文字的視圖：</p>
+<pre><code>Mail::send(array('html.view', 'text.view'), $data, $callback);</code></pre>
+<p>或者你也可以指定視圖類別為 <code>html</code> 或 <code>text</code>：</p>
+<pre><code>Mail::send(array('text' =&gt; 'view'), $data, $callback);</code></pre>
+<p>你也可以為電子郵件訊息指定其他選項如附加檔案或是任何的副本收件者：</p>
+<pre><code>Mail::send('emails.welcome', $data, function($message)
+{
+    $message-&gt;from('us@example.com', 'Laravel');
+
+    $message-&gt;to('foo@example.com')-&gt;cc('bar@example.com');
+
+    $message-&gt;attach($pathToFile);
+});</code></pre>
+<p>當附加檔案到一個電子郵件，你也可以指定一個 MIME type 及 / 或一個顯示名稱：</p>
+<pre><code>$message-&gt;attach($pathToFile, array('as' =&gt; $display, 'mime' =&gt; $mime));</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 在 <code>Mail::send</code> 的閉包中使用 SwiftMailer 的 message 擴充實例，允許你可以呼叫任何類別中的方法來建立你的電子郵件。</p>
+</blockquote>
+<p><a name="embedding-inline-attachments"></a></p>
+<h2>內嵌附件</h2>
+<p>內嵌圖片到郵件中通常是一件很麻煩的事，然而 Laravel 提供一個便利的方式讓你內嵌圖片到你的電子郵件當中且接收相對應的 CID。</p>
+<h4>內嵌圖片到電子郵件的視圖中</h4>
+<pre><code>&lt;body&gt;
+    Here is an image:
+
+    &lt;img src="&lt;?php echo $message-&gt;embed($pathToFile); ?&gt;"&gt;
+&lt;/body&gt;</code></pre>
+<h4>內嵌資料到電子郵件的視圖中</h4>
+<pre><code>&lt;body&gt;
+    Here is an image from raw data:
+
+    &lt;img src="&lt;?php echo $message-&gt;embedData($data, $name); ?&gt;"&gt;
+&lt;/body&gt;</code></pre>
+<p>注意 <code>$message</code> 這個變數一定會被 <code>Mail</code> 類別傳遞到電子郵件的視圖當中。</p>
+<p><a name="queueing-mail"></a></p>
+<h2>郵件佇列</h2>
+<h4>加入一個郵件到佇列中</h4>
+<p>寄送電子郵件會大幅的延長你應用程式的反應時間，許多開發者選擇讓電子郵件放進隊列中，並在背景(非即時)寄送。Laravel 使用內建的 <a href="queues.html">unified queue API</a> 讓你可以方便的將要寄送的電子郵件加入到隊列之中，只要使用 <code>Mail</code> 類別的 <code>queue</code> 方法：</p>
+<pre><code>Mail::queue('emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});</code></pre>
+<p>你也可以透過使用 <code>later</code> 方法來指定寄送電子郵件的延遲秒數：</p>
+<pre><code>Mail::later(5, 'emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});</code></pre>
+<p>假如你想要指定一個特別的隊列或管道來發送郵件，你可以使用 <code>queueOn</code> 和 <code>laterOn</code> 方法：</p>
+<pre><code>Mail::queueOn('queue-name', 'emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});</code></pre>
+<p><a name="mail-and-local-development"></a></p>
+<h2>郵件與本地開發</h2>
+<p>在開發應用程式的寄信功能時，通常會希望在本地或是開發環境中關閉寄送功能。你可以呼叫 <code>Mail::pretend</code> 方法，或是在 <code>app/config/mail.php</code> 設定檔的 <code>pretend</code> 為 <code>true</code> 可以達到。當在 <code>pretend</code> 模式開啟下，郵件將會被寫到你的應用程式日誌中取代實際寄出信件。</p>
+<h4>開啟「Pretend」寄送模式</h4>
+<pre><code>Mail::pretend();</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="mail.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

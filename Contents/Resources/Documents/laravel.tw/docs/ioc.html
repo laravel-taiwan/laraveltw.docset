@@ -1,0 +1,364 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="ioc.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="ioc.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>IoC 容器</h1>
+<ul>
+<li><a href="ioc.html#introduction">介紹</a></li>
+<li><a href="ioc.html#basic-usage">基本用法</a></li>
+<li><a href="ioc.html#where-to-register">何處註冊綁定</a></li>
+<li><a href="ioc.html#automatic-resolution">自動解析</a></li>
+<li><a href="ioc.html#practical-usage">應用</a></li>
+<li><a href="ioc.html#service-providers">服務提供者</a></li>
+<li><a href="ioc.html#container-events">容器事件</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Laravel 的依賴反轉 ( IoC, inversion of control ) 容器是管理類別依賴的強力工具。 依賴注入 ( Dependency injection ) 是一種移除 hard-coded 類別依賴的方式。相較之下，在執行的時候才注入依賴，
+可以擁有更好的彈性，在替換依賴實體時相當容易。</p>
+<p>理解 Laravel IoC 容器對於建立強力且大型的應用程式，以及改進 Laravel 核心是很重要的。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<h4>綁定型別到容器</h4>
+<p>IoC 容器有兩種解析依賴的方式：經由閉合函數或自動解析。我們將先探索閉合函數的用法。首先，綁定一個「型別」到容器：</p>
+<pre><code>App::bind('foo', function($app)
+{
+    return new FooBar;
+});</code></pre>
+<h4>從容器解析型別</h4>
+<pre><code>$value = App::make('foo');</code></pre>
+<p>當 <code>App::make</code> 方法被呼叫，綁定的閉合函數會被呼叫並返回結果。</p>
+<h4>綁定「共享」的型別到容器</h4>
+<p>有時候，你可能希望綁定到容器的型別只會被解析一次，之後的呼叫都返回相同的實例：</p>
+<pre><code>App::singleton('foo', function()
+{
+    return new FooBar;
+});</code></pre>
+<h4>綁定已存在的實例到容器</h4>
+<p>你也可以使用 <code>instance</code> 方法，綁定一個已經存在的實例到容器：</p>
+<pre><code>$foo = new Foo;
+
+App::instance('foo', $foo);</code></pre>
+<p><a name="where-to-register"></a></p>
+<h2>何處註冊綁定</h2>
+<p>IoC 綁定跟「註冊事件處理」或是「註冊路由」一樣，通常稱為「起始碼」。換句話說，IoC 綁定後等待請求，在路由或控制器呼叫時才實際執行。像其他的「起始碼」一樣，<code>start</code> 檔案總是註冊 IoC 綁定的一個選擇。或者，你可以建立一個 <code>app/ioc.php</code> 檔案（檔名不重要），並且從 <code>start</code> 檔案引入。</p>
+<p>如果你的應用程式有很多 IoC 綁定，或是想要分門別類，在不同檔案組織綁定，你可以註冊綁定在 <a href="ioc.html#service-providers">服務提供者</a>。</p>
+<p><a name="automatic-resolution"></a></p>
+<h2>自動解析</h2>
+<p>在很多情境下，IoC 容器不需要額外設定就有能力自動解析類別。例如：</p>
+<pre><code>class FooBar {
+
+    public function __construct(Baz $baz)
+    {
+        $this-&gt;baz = $baz;
+    }
+
+}
+
+$fooBar = App::make('FooBar');</code></pre>
+<p>雖然我們沒有註冊 FooBar 類別綁定到容器，它還是可以解析類別，甚至自動注入 <code>Baz</code>！</p>
+<p>如果容器裡沒有找到對應的型別綁定，容器會利用 PHP 的 Reflection 檢查類別，並且解讀傳入建構子的型別提示。利用這些資訊，讓容器可以自動建立類別實例。</p>
+<h4>綁定實例的介面</h4>
+<p>然而，有些時候，一個類別可能需要依賴介面，而不是一個「具體的型別」。這些情況下，<code>App::bind</code> 方法用來通知容器要注入哪個介面實例：</p>
+<pre><code>App::bind('UserRepositoryInterface', 'DbUserRepository');</code></pre>
+<p>考慮以下的控制器：</p>
+<pre><code>class UserController extends BaseController {
+
+    public function __construct(UserRepositoryInterface $users)
+    {
+        $this-&gt;users = $users;
+    }
+
+}</code></pre>
+<p>既然我們已經綁定 <code>UserRepositoryInterface</code> 到一個具體型別，<code>DbUserRepository</code> 會在控制器建立時自動注入。</p>
+<p><a name="practical-usage"></a></p>
+<h2>應用</h2>
+<p>在 Laravel 裡，很多時候使用 IoC 容器，可以增加應用程式的彈性與可測試性。一個基本的範例是用在解析控制器。所有的控制器都會經由 IoC 容器解析，意味著你可以在控制器的建構子注入型別提示依賴，之後依賴就會自動被注入。</p>
+<h4>注入型別提示 ( Type-Hinting ) 依賴到控制器</h4>
+<pre><code>class OrderController extends BaseController {
+
+    public function __construct(OrderRepository $orders)
+    {
+        $this-&gt;orders = $orders;
+    }
+
+    public function getIndex()
+    {
+        $all = $this-&gt;orders-&gt;all();
+
+        return View::make('orders', compact('all'));
+    }
+
+}</code></pre>
+<p>在這個範例裡，<code>OrderRepository</code> 類別會自動被注入到控制器。意味著在 <a href="testing.html">單元測試</a> 時，可以綁定一個「mock」的 <code>OrderRepository</code> 到容器裡，之後被注入到 控制器，讓你不用在測試時一定要和資料庫層互動。</p>
+<h4>其他 Ioc 應用範例</h4>
+<p><a href="routing.html#route-filters">Filters</a>、<a href="responses.html#view-composers">composers</a> 和 <a href="events.html#using-classes-as-listeners">事件處理</a> 也可以使用 IoC 容器解析。只要在註冊的時候設定要使用的類別名稱：</p>
+<pre><code>Route::filter('foo', 'FooFilter');
+
+View::composer('foo', 'FooComposer');
+
+Event::listen('foo', 'FooHandler');</code></pre>
+<p><a name="service-providers"></a></p>
+<h2>服務提供者（ Service Provider ）</h2>
+<p>使用服務提供者是一個很好的方式，可以把相關的 IoC 註冊放到到同一個地方。可以將服務提供者想像成是一個在應用程式裡啟動元件的方式。你可以在裡面註冊自定的會員認證，綁定應用程式的儲存庫類別到 IoC 容器，或甚至設定自定的 Artisan 指令。</p>
+<p>事實上，大部份的 Laravel 核心元件都有服務提供者，所有被註冊的服務提供者都列在 <code>app/config/app.php</code> 設定檔的 <code>providers</code> 陣列裡。</p>
+<h4>定義一個服務提供者</h4>
+<p>要建立一個服務提供者，只要繼承 <code>Illuminate\Support\ServiceProvider</code> 類別，然後在裡面定義一個 <code>register</code> 方法：</p>
+<pre><code>use Illuminate\Support\ServiceProvider;
+
+class FooServiceProvider extends ServiceProvider {
+
+    public function register()
+    {
+        $this-&gt;app-&gt;bind('foo', function()
+        {
+            return new Foo;
+        });
+    }
+
+}</code></pre>
+<p>注意，在 <code>register</code> 方法裡，經由 <code>$this-&gt;app</code> 使用 IoC 容器。當你建立了一個服務 而且準備要註冊到你的應用程式裡時，只要把它加到你的 <code>app</code> 設定檔的 <code>providers</code> 陣列裡即可。</p>
+<h4>在執行期間註冊服務提供者</h4>
+<p>你也可以使用 <code>App::register</code> 在執行期間註冊服務提供者：</p>
+<pre><code>App::register('FooServiceProvider');</code></pre>
+<p><a name="container-events"></a></p>
+<h2>容器事件</h2>
+<h4>註冊解析事件的監聽</h4>
+<p>每當容器解析一個物件時就會觸發事件，你可以使用 <code>resolving</code> 方法監聽這個事件：</p>
+<pre><code>App::resolvingAny(function($object)
+{
+    //
+});
+
+App::resolving('foo', function($foo)
+{
+    //
+});</code></pre>
+<p>注意，被解析的物件會被傳到閉合函式。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="ioc.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

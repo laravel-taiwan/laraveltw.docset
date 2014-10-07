@@ -1,0 +1,622 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="validation.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="validation.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>驗證</h1>
+<ul>
+<li><a href="validation.html#basic-usage">基本用法</a></li>
+<li><a href="validation.html#working-with-error-messages">使用錯誤訊息</a></li>
+<li><a href="validation.html#error-messages-and-views">錯誤訊息 &amp; 視圖</a></li>
+<li><a href="validation.html#available-validation-rules">使用驗證規則</a></li>
+<li><a href="validation.html#conditionally-adding-rules">有條件新增規則</a></li>
+<li><a href="validation.html#custom-error-messages">自訂錯誤訊息</a></li>
+<li><a href="validation.html#custom-validation-rules">自訂驗證規則</a></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p>Laravel 透過 <code>Validation</code> 類別讓你可以簡單、方便的驗證資料正確性及查看驗證的錯誤訊息。</p>
+<h4>基本驗證範例</h4>
+<pre><code>$validator = Validator::make(
+    array('name' =&gt; 'Dayle'),
+    array('name' =&gt; 'required|min:5')
+);</code></pre>
+<p>我們透過 <code>make</code> 這個方法來的第一個參數設定該被驗證資料名稱，然後第二個參數我們定義該資料可被接受的規則。</p>
+<h4>使用陣列來定義規則</h4>
+<p>多個規則可以使用「|」符號分隔，或是單一陣列作為單獨的元素分隔。</p>
+<pre><code>$validator = Validator::make(
+    array('name' =&gt; 'Dayle'),
+    array('name' =&gt; array('required', 'min:5'))
+);</code></pre>
+<h4>驗證多個欄位</h4>
+<pre><code>$validator = Validator::make(
+    array(
+        'name' =&gt; 'Dayle',
+        'password' =&gt; 'lamepassword',
+        'email' =&gt; 'email@example.com'
+    ),
+    array(
+        'name' =&gt; 'required',
+        'password' =&gt; 'required|min:8',
+        'email' =&gt; 'required|email|unique:users'
+    )
+);</code></pre>
+<p>當一個 <code>Validator</code> 實例被建立，<code>fails</code>（或 <code>passes</code>）這二個方法就可以在驗證時使用，如下：</p>
+<pre><code>if ($validator-&gt;fails())
+{
+    // The given data did not pass validation
+}</code></pre>
+<p>假如驗證失敗，您可以從驗證器中接收錯誤資訊。</p>
+<pre><code>$messages = $validator-&gt;messages();</code></pre>
+<p>您可能不需要錯誤訊息，只想取得無法通過驗證的規則，您可以使用「failed」方法：</p>
+<pre><code>$failed = $validator-&gt;failed();</code></pre>
+<h4>驗證檔案</h4>
+<p><code>Validator</code> 類別提供了一些規則用來驗證檔案，例如 <code>size</code>、<code>mimes</code> 等等。當需要驗證檔案時，你僅需將它們和你其他的資料一同送給驗證器即可。</p>
+<p><a name="working-with-error-messages"></a></p>
+<h2>使用錯誤訊息</h2>
+<p>當你呼叫一個 <code>Validator</code> 實例的 <code>messages</code> 方法後，你會得到一個 <code>MessageBag</code> 的變數，裡面有許多方便的方法讓你取得錯誤訊息。</p>
+<h4>查看一個欄位的第一個錯誤訊息</h4>
+<pre><code>echo $messages-&gt;first('email');</code></pre>
+<h4>查看一個欄位的所有錯誤訊息</h4>
+<pre><code>foreach ($messages-&gt;get('email') as $message)
+{
+    //
+}</code></pre>
+<h4>查看所有欄位的所有錯誤訊息</h4>
+<pre><code>foreach ($messages-&gt;all() as $message)
+{
+    //
+}</code></pre>
+<h4>判斷一個欄位是否有錯誤訊息</h4>
+<pre><code>if ($messages-&gt;has('email'))
+{
+    //
+}</code></pre>
+<h4>錯誤訊息格式化輸出</h4>
+<pre><code>echo $messages-&gt;first('email', '&lt;p&gt;:message&lt;/p&gt;');</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 預設錯誤訊息以 Bootstrap 相容語法輸出。</p>
+</blockquote>
+<h4>查看所有錯誤訊息並以格式化輸出</h4>
+<pre><code>foreach ($messages-&gt;all('&lt;li&gt;:message&lt;/li&gt;') as $message)
+{
+    //
+}</code></pre>
+<p><a name="error-messages-and-views"></a></p>
+<h2>錯誤訊息 &amp; 視圖</h2>
+<p>當你開始進行驗證，你將會需要一個簡易的方法去取得錯誤訊息並回傳到你的視圖中，在 Laravel 你可以很方便的處理這些事，你可以透過下面的路由例子來了解：</p>
+<pre><code>Route::get('register', function()
+{
+    return View::make('user.register');
+});
+
+Route::post('register', function()
+{
+    $rules = array(...);
+
+    $validator = Validator::make(Input::all(), $rules);
+
+    if ($validator-&gt;fails())
+    {
+        return Redirect::to('register')-&gt;withErrors($validator);
+    }
+});</code></pre>
+<p>記得當驗證失敗後，我們會使用 <code>withErrors</code> 方法來將 <code>Validator</code> 實例進行重新導向。這方法會將錯誤訊息存入 session 中，這樣才能在下個請求中被使用。</p>
+<p>然而，我們並不需要特別去將錯誤訊息綁定在我們 GET 路由的視圖中。因為 Laravel 會確認在 Session 資料中是否有錯誤訊息，並且自動將它們綁定至視圖中。<strong>所以請注意，<code>$errors</code> 變數存在於所有的視圖中，所有的請求裡，</strong>讓你可以直接假設 <code>$errors</code> 變數已被定義且可以安全地使用。<code>$errors</code> 變數是 <code>MessageBag</code> 類別的一個實例。</p>
+<p>所以，重新導向之後，你可以自然的在視圖中使用 <code>$errors</code> 變數：</p>
+<pre><code>&lt;?php echo $errors-&gt;first('email'); ?&gt;</code></pre>
+<h3>命名錯誤清單</h3>
+<p>假如你在一個頁面中有許多的表單，你可能希望為錯誤命名一個 <code>MessageBag</code>。這將讓你針對特定的表單查看其錯誤訊息，我們只要簡單的在 <code>withErrors</code> 的第二個參數設定名稱即可：</p>
+<pre><code>return Redirect::to('register')-&gt;withErrors($validator, 'login');</code></pre>
+<p>接著你可以從一個 <code>$errors</code> 變數中取得已命名的 <code>MessageBag</code> 實例：</p>
+<pre><code>&lt;?php echo $errors-&gt;login-&gt;first('email'); ?&gt;</code></pre>
+<p><a name="available-validation-rules"></a></p>
+<h2>既存的驗證規則</h2>
+<p>以下是既存的驗證規則清單與他們的函式名稱：</p>
+<ul>
+<li><a href="validation.html#rule-accepted">Accepted</a></li>
+<li><a href="validation.html#rule-active-url">Active URL</a></li>
+<li><a href="validation.html#rule-after">After (Date)</a></li>
+<li><a href="validation.html#rule-alpha">Alpha</a></li>
+<li><a href="validation.html#rule-alpha-dash">Alpha Dash</a></li>
+<li><a href="validation.html#rule-alpha-num">Alpha Numeric</a></li>
+<li><a href="validation.html#rule-array">Array</a></li>
+<li><a href="validation.html#rule-before">Before (Date)</a></li>
+<li><a href="validation.html#rule-between">Between</a></li>
+<li><a href="validation.html#rule-boolean">Boolean</a></li>
+<li><a href="validation.html#rule-confirmed">Confirmed</a></li>
+<li><a href="validation.html#rule-date">Date</a></li>
+<li><a href="validation.html#rule-date-format">Date Format</a></li>
+<li><a href="validation.html#rule-different">Different</a></li>
+<li><a href="validation.html#rule-digits">Digits</a></li>
+<li><a href="validation.html#rule-digits-between">Digits Between</a></li>
+<li><a href="validation.html#rule-email">E-Mail</a></li>
+<li><a href="validation.html#rule-exists">Exists (Database)</a></li>
+<li><a href="validation.html#rule-image">Image (File)</a></li>
+<li><a href="validation.html#rule-in">In</a></li>
+<li><a href="validation.html#rule-integer">Integer</a></li>
+<li><a href="validation.html#rule-ip">IP Address</a></li>
+<li><a href="validation.html#rule-max">Max</a></li>
+<li><a href="validation.html#rule-mimes">MIME Types</a></li>
+<li><a href="validation.html#rule-min">Min</a></li>
+<li><a href="validation.html#rule-not-in">Not In</a></li>
+<li><a href="validation.html#rule-numeric">Numeric</a></li>
+<li><a href="validation.html#rule-regex">Regular Expression</a></li>
+<li><a href="validation.html#rule-required">Required</a></li>
+<li><a href="validation.html#rule-required-if">Required If</a></li>
+<li><a href="validation.html#rule-required-with">Required With</a></li>
+<li><a href="validation.html#rule-required-with-all">Required With All</a></li>
+<li><a href="validation.html#rule-required-without">Required Without</a></li>
+<li><a href="validation.html#rule-required-without-all">Required Without All</a></li>
+<li><a href="validation.html#rule-same">Same</a></li>
+<li><a href="validation.html#rule-size">Size</a></li>
+<li><a href="validation.html#rule-timezone">Timezone</a></li>
+<li><a href="validation.html#rule-unique">Unique (Database)</a></li>
+<li><a href="validation.html#rule-url">URL</a></li>
+</ul>
+<p><a name="rule-accepted"></a></p>
+<h4>accepted</h4>
+<p>欄位值為 <em>yes</em>、<em>on</em> 或是 <em>1</em> 時，驗證才會通過。這在確認「服務條款」是否同意時很有用。</p>
+<p><a name="rule-active-url"></a></p>
+<h4>active_url</h4>
+<p>欄位值透過 PHP 函式 <code>checkdnsrr</code> 來驗證是否為一個有效的網址。</p>
+<p><a name="rule-after"></a></p>
+<h4>after:<em>date</em></h4>
+<p>驗證欄位是否是在指定日期之後。這個日期將會使用 PHP <code>strtotime</code> 函式驗證。</p>
+<p><a name="rule-alpha"></a></p>
+<h4>alpha</h4>
+<p>欄位僅全數為字母字元時通過驗證。</p>
+<p><a name="rule-alpha-dash"></a></p>
+<h4>alpha_dash</h4>
+<p>欄位值僅允許字母、數字、破折號（-）以及底線（_）</p>
+<p><a name="rule-alpha-num"></a></p>
+<h4>alpha_num</h4>
+<p>欄位值僅允許字母、數字</p>
+<p><a name="rule-array"></a></p>
+<h4>array</h4>
+<p>欄位值僅允許為陣列</p>
+<p><a name="rule-before"></a></p>
+<h4>before:<em>date</em></h4>
+<p>驗證欄位是否是在指定日期之前。這個日期將會使用 PHP <code>strtotime</code> 函式驗證。</p>
+<p><a name="rule-between"></a></p>
+<h4>between:<em>min</em>,<em>max</em></h4>
+<p>欄位值需介於指定的 <em>min</em> 和 <em>max</em> 值之間。字串、數值或是檔案都是用同樣的方式來進行驗證。</p>
+<p><a name="rule-confirmed"></a></p>
+<h4>confirmed</h4>
+<p>欄位值需與對應的欄位值 <code>foo_confirmation</code> 相同。例如，如果驗證的欄位是 <code>password</code>，那對應的欄位 <code>password_confirmation</code> 就必須存在且與 <code>password</code> 欄位相符。</p>
+<p><a name="rule-date"></a></p>
+<h4>date</h4>
+<p>欄位值透過 PHP <code>strtotime</code> 函式驗證是否為一個合法的日期。</p>
+<p><a name="rule-date-format"></a></p>
+<h4>date_format:<em>format</em></h4>
+<p>欄位值透過 PHP <code>date_parse_from_format</code> 函式驗證符合 <em>format</em> 制定格式的日期是否為合法日期。</p>
+<p><a name="rule-different"></a></p>
+<h4>different:<em>field</em></h4>
+<p>欄位值需與指定的欄位 <em>field</em> 值不同。</p>
+<p><a name="rule-digits"></a></p>
+<h4>digits:<em>value</em></h4>
+<p>欄位值需為數字且長度需為 <em>value</em>。</p>
+<p><a name="rule-digits-between"></a></p>
+<h4>digits_between:<em>min</em>,<em>max</em></h4>
+<p>欄位值需為數字，且長度需介於 <em>min</em> 與 <em>max</em> 之間。</p>
+<p><a name="rule-boolean"></a></p>
+<h4>boolean</h4>
+<p>欄位必須可以轉換成布林值，可接受的值為 <code>true</code>、<code>false</code>、<code>1</code>、<code>0</code>、<code>"1"</code>、<code>"0"</code>。</p>
+<p><a name="rule-email"></a></p>
+<h4>email</h4>
+<p>欄位值需符合 email 格式。</p>
+<p><a name="rule-exists"></a></p>
+<h4>exists:<em>table</em>,<em>column</em></h4>
+<p>欄位值需與存在於資料庫 <em>table</em> 中的 <em>column</em> 欄位值其一相同。</p>
+<h4>Exists 規則的基本使用方法</h4>
+<pre><code>'state' =&gt; 'exists:states'</code></pre>
+<h4>指定一個自訂的欄位名稱</h4>
+<pre><code>'state' =&gt; 'exists:states,abbreviation'</code></pre>
+<p>你可以指定更多條件且那些條件將會被新增至「where」查詢裡：</p>
+<pre><code>'email' =&gt; 'exists:staff,email,account_id,1'
+/* 這個驗證規則為 email 需存在於 staff 這個資料表中 email 欄位中且 account_id=1 */</code></pre>
+<p>透過 <code>NULL</code> 搭配「where」的縮寫寫法去檢查資料庫的是否為 <code>NULL</code></p>
+<pre><code>'email' =&gt; 'exists:staff,email,deleted_at,NULL'</code></pre>
+<p><a name="rule-image"></a></p>
+<h4>image</h4>
+<p>檔案必需為圖片(jpeg、png、bmp 或 gif)</p>
+<p><a name="rule-in"></a></p>
+<h4>in:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值需符合事先給予的清單的其中一個值</p>
+<p><a name="rule-integer"></a></p>
+<h4>integer</h4>
+<p>欄位值需為一個整數值</p>
+<p><a name="rule-ip"></a></p>
+<h4>ip</h4>
+<p>欄位值需符合 IP 位址格式。</p>
+<p><a name="rule-max"></a></p>
+<h4>max:<em>value</em></h4>
+<p>欄位值需小於等於 <em>value</em>。字串、數字和檔案則是判斷 <code>size</code> 大小。</p>
+<p><a name="rule-mimes"></a></p>
+<h4>mimes:<em>foo</em>,<em>bar</em>,...</h4>
+<p>檔案的 MIME 類別需在給定清單中的列表中才能通過驗證。</p>
+<h4>MIME規則基本用法</h4>
+<pre><code>'photo' =&gt; 'mimes:jpeg,bmp,png'</code></pre>
+<p><a name="rule-min"></a></p>
+<h4>min:<em>value</em></h4>
+<p>欄位值需大於等於 <em>value</em>。字串、數字和檔案則是判斷 <code>size</code> 大小。</p>
+<p><a name="rule-not-in"></a></p>
+<h4>not_in:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值不得為給定清單中其一。</p>
+<p><a name="rule-numeric"></a></p>
+<h4>numeric</h4>
+<p>欄位值需為數字。</p>
+<p><a name="rule-regex"></a></p>
+<h4>regex:<em>pattern</em></h4>
+<p>欄位值需符合給定的正規表示式。</p>
+<p><strong>注意:</strong> 當使用 <code>regex</code> 模式時，你必須使用陣列來取代「|」作為分隔，尤其是當正規表示式中含有「|」字元。</p>
+<p><a name="rule-required"></a></p>
+<h4>required</h4>
+<p>欄位值為必填。</p>
+<p><a name="rule-required-if"></a></p>
+<h4>required_if:<em>field</em>,<em>value</em></h4>
+<p>欄位值在 <em>field</em> 欄位值為 <em>value</em> 時為必填。</p>
+<p><a name="rule-required-with"></a></p>
+<h4>required_with:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值 <em>僅在</em> 任一指定欄位有值情況下為必填。</p>
+<p><a name="rule-required-with-all"></a></p>
+<h4>required_with_all:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值 <em>僅在</em> 所有指定欄位皆有值情況下為必填。</p>
+<p><a name="rule-required-without"></a></p>
+<h4>required_without:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值 <em>僅在</em> 任一指定欄位沒有值情況下為必填。</p>
+<p><a name="rule-required-without-all"></a></p>
+<h4>required_without_all:<em>foo</em>,<em>bar</em>,...</h4>
+<p>欄位值 <em>僅在</em> 所有指定欄位皆沒有值情況下為必填。</p>
+<p><a name="rule-same"></a></p>
+<h4>same:<em>field</em></h4>
+<p>欄位值需與指定欄位 <em>field</em> 等值。</p>
+<p><a name="rule-size"></a></p>
+<h4>size:<em>value</em></h4>
+<p>欄位值的尺寸需符合給定 <em>value</em> 值。對於字串來說，<em>value</em> 為需符合的字元長度。對於數字來說，<em>value</em> 為需符合的整數值。對於檔案來說，<em>value</em> 為需符合的檔案大小（單位 kb)。</p>
+<p><a name="rule-timezone"></a></p>
+<h4>timezone</h4>
+<p>欄位值透過 PHP <code>timezone_identifiers_list</code> 函式來驗證是否為有效的時區。</p>
+<p><a name="rule-unique"></a></p>
+<h4>unique:<em>table</em>,<em>column</em>,<em>except</em>,<em>idColumn</em></h4>
+<p>欄位值在給定的資料庫中需為唯一值。如果 <code>column（欄位）</code> 選項沒有指定，將會使用欄位名稱。</p>
+<h4>唯一(Unique)規則的基本用法</h4>
+<pre><code>'email' =&gt; 'unique:users'</code></pre>
+<h4>指定一個自訂的欄位名稱</h4>
+<pre><code>'email' =&gt; 'unique:users,email_address'</code></pre>
+<h4>強制唯一規則忽略指定的 ID</h4>
+<pre><code>'email' =&gt; 'unique:users,email_address,10'</code></pre>
+<h4>增加額外的 Where 條件</h4>
+<p>你也可以指定更多的條件式到「where」查詢語句中：</p>
+<pre><code>'email' =&gt; 'unique:users,email_address,NULL,id,account_id,1'</code></pre>
+<p>上述規則為只有 <code>account_id</code> 為 <code>1</code> 的資料列會做唯一規則的驗證。</p>
+<p><a name="rule-url"></a></p>
+<h4>url</h4>
+<p>欄位值需符合 URL 的格式。</p>
+<blockquote>
+<p><strong>注意:</strong> 此函式會使用 PHP <code>filter_var</code> 方法驗證。</p>
+</blockquote>
+<p><a name="conditionally-adding-rules"></a></p>
+<h2>有條件新增規則</h2>
+<p>某些情況下，你可能 <strong>只想</strong> 當欄位有值時，才進行驗證。只要增加 <code>sometimes</code> 條件進條件列表中，就可以快速達成：</p>
+<pre><code>$v = Validator::make($data, array(
+    'email' =&gt; 'sometimes|required|email',
+));</code></pre>
+<p>在上述範例中，<code>email</code> 欄位只會在當其在 <code>$data</code> 陣列中有值的情況下才會被驗證。</p>
+<h4>複雜的條件式驗證</h4>
+<p>有時，你可以希望給定欄位在其他欄位有超過 100 時為必填。或者你希望兩個欄位，當其一欄位有值時，另一欄位將會有一個給定的值。增加這樣的驗證條件並不痛苦。首先，利用你尚未更動的 <em>靜態規則</em> 創建一個 <code>Validator</code> 實例：</p>
+<pre><code>$v = Validator::make($data, array(
+    'email' =&gt; 'required|email',
+    'games' =&gt; 'required|numeric',
+));</code></pre>
+<p>假設我們的網頁應用程式是專為遊戲收藏家所設計。如果遊戲收藏家收藏超過一百款遊戲，我們希望他們說明為什麼他們擁有這麼多遊戲。像是，可能他們經營一家二手遊戲商店，或是他們可能只是享受收集的樂趣。有條件的加入此需求，我們可以在 <code>Validator</code> 實例中使用 <code>sometimes</code> 方法。</p>
+<pre><code>$v-&gt;sometimes('reason', 'required|max:500', function($input)
+{
+    return $input-&gt;games &gt;= 100;
+});</code></pre>
+<p>傳遞至 <code>sometimes</code> 方法的第一個參數是我們要條件式認證的欄位名稱。第二個參數是我們想加入驗證規則。<code>閉包（Closure）</code> 作為第三個參數傳入，如果回傳值為 <code>true</code> 那該規則就會被加入。這個方法可以輕而易舉的建立複雜的條件式驗證。你也可以一次對多個欄位增加條件式驗證：</p>
+<pre><code>$v-&gt;sometimes(array('reason', 'cost'), 'required', function($input)
+{
+    return $input-&gt;games &gt;= 100;
+});</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 傳遞至你的 <code>Closure</code> 的 <code>$input</code> 參數為 <code>Illuminate\Support\Fluent</code> 的實例且用來作為存取你的輸入及檔案的物件。</p>
+</blockquote>
+<p><a name="custom-error-messages"></a></p>
+<h2>自訂錯誤訊息</h2>
+<p>如果需要，你可以為驗證自訂錯誤訊息取代預設錯誤訊息。這裏有幾個方式可以設定客制訊息。</p>
+<h4>傳遞客制訊息進驗證器</h4>
+<pre><code>$messages = array(
+    'required' =&gt; 'The :attribute field is required.',
+);
+
+$validator = Validator::make($input, $rules, $messages);</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 在驗證中，<code>:attribute</code> 佔位符會被欄位的實際名稱給取代。你也可以在驗證訊息中使用其他的佔位符。</p>
+</blockquote>
+<h4>其他的驗證佔位符</h4>
+<pre><code>$messages = array(
+    'same'    =&gt; 'The :attribute and :other must match.',
+    'size'    =&gt; 'The :attribute must be exactly :size.',
+    'between' =&gt; 'The :attribute must be between :min - :max.',
+    'in'      =&gt; 'The :attribute must be one of the following types: :values',
+);</code></pre>
+<h4>為特定屬性給予一個客制化訊息</h4>
+<p>有時你只想為一個特定欄位指定一個客制錯誤訊息：</p>
+<pre><code>$messages = array(
+    'email.required' =&gt; 'We need to know your e-mail address!',
+);</code></pre>
+<p><a name="localization"></a></p>
+<h4>在語言檔中指定客制訊息</h4>
+<p>某些狀況下，你可能希望在語言檔中設定你的客制訊息，而非直接將他們傳遞給 <code>Validator</code>。要達到目的，將你的訊息增加至 <code>app/lang/xx/validation.php</code> 檔案的 <code>custom</code> 陣列中。</p>
+<pre><code>'custom' =&gt; array(
+    'email' =&gt; array(
+        'required' =&gt; 'We need to know your e-mail address!',
+    ),
+),</code></pre>
+<p><a name="custom-validation-rules"></a></p>
+<h2>自訂驗證規則</h2>
+<h4>註冊自訂驗證規則</h4>
+<p>Laravel 提供了各種有用的驗證規則，但是，你可能希望可以設定一些自己專用的。註冊自訂的驗證規則的方法之一就是使用 <code>Validator::extend</code> 方法：</p>
+<pre><code>Validator::extend('foo', function($attribute, $value, $parameters)
+{
+    return $value == 'foo';
+});</code></pre>
+<p>客制驗證器閉包接收三個參數：要被驗證的 <code>$attribute(屬性)</code> 的名稱，屬性的值 <code>$value</code>，傳遞至驗證規則的 <code>$parameters</code> 陣列。</p>
+<p>你同樣可以傳遞一個類別和方法到 <code>extend</code> 方法中，取代原本的閉包：</p>
+<pre><code>Validator::extend('foo', 'FooValidator@validate');</code></pre>
+<p>注意，你同時需要為你的自訂規則訂立一個錯誤訊息。你可以使用行內自訂訊息陣列或是在認證語言檔裡新增。</p>
+<h4>擴展 Validator 類別</h4>
+<p>除了使用閉包回呼(Closure callbacks)來擴展 Validator 外，你一樣可以直接擴展 Validator 類別。你可以寫一個擴展自 <code>Illuminate\Validation\Validator</code> 的驗證器類別。你也可以增加驗證方法到以 <code>validate</code> 為開頭的類別中：</p>
+<pre><code>&lt;?php
+
+class CustomValidator extends Illuminate\Validation\Validator {
+
+    public function validateFoo($attribute, $value, $parameters)
+    {
+        return $value == 'foo';
+    }
+
+}</code></pre>
+<h4>Registering A Custom Validator Resolver</h4>
+<p>接下來，你需要註冊你自訂驗證器擴展：</p>
+<pre><code>Validator::resolver(function($translator, $data, $rules, $messages)
+{
+    return new CustomValidator($translator, $data, $rules, $messages);
+});</code></pre>
+<p>當創建自訂驗證規則時，你可能有時需要為錯誤訊息定義客制化的佔位符。你可以如上所述創建一個自訂的驗證器，然後增加 <code>replaceXXX</code> 函式進驗證器中。</p>
+<pre><code>protected function replaceFoo($message, $attribute, $rule, $parameters)
+{
+    return str_replace(':foo', $parameters[0], $message);
+}</code></pre>
+<p>如果你想要增加一個自訂訊息「replacer」但不擴展 <code>Validator</code> 類別，你可以使用 <code>Validator::replacer</code> 方法：</p>
+<pre><code>Validator::replacer('rule', function($message, $attribute, $rule, $parameters)
+{
+    //
+});</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="validation.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

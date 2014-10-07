@@ -1,0 +1,313 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="commands.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="commands.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Artisan 開發</h1>
+<ul>
+<li><a href="commands.html#introduction">簡介</a></li>
+<li><a href="commands.html#building-a-command">自訂指令</a></li>
+<li><a href="commands.html#registering-commands">註冊指令</a></li>
+<li><a href="commands.html#calling-other-commands">呼叫其它指令</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>簡介</h2>
+<p>除了 Artisan 本身提供的指令之外，您也可以建立與您的應用程式相關的指令，這些自建指令將會存放在 <code>app/commands</code> 目錄底下；然而，您可以任意選擇存放位置，只要您的指令能夠被 composer.json 給自動載入。</p>
+<p><a name="building-a-command"></a></p>
+<h2>自訂指令</h2>
+<h3>生成類</h3>
+<p>要創建一個新的指令，您可以使用 command:make 這個 Artisan 指令，這將產生一個指令存根協助您開始：</p>
+<h4>產生一個新的指令類</h4>
+<pre><code>php artisan command:make FooCommand</code></pre>
+<p>預設情況下，生成的指令將被儲存在 <code>app/commands</code> 目錄；然而，您可以指定自訂路徑或命名空間：</p>
+<pre><code>php artisan command:make FooCommand --path=app/classes --namespace=Classes</code></pre>
+<p>在創建指令時，加上 <code>--command</code> 這個選項，將可以指定這個指令的名稱：</p>
+<pre><code>php artisan command:make AssignUsers --command=users:assign</code></pre>
+<h3>撰寫自訂指令</h3>
+<p>當自訂指令生成後，您需在填寫指令的 <code>名稱</code> 與 <code>描述</code>，這部份將會顯示在指令列表清單的畫面上。</p>
+<p>當您的自訂指令被執行時，將會呼叫 <code>fire</code> 方法，您可以在此加入任何的邏輯判斷。</p>
+<h3>參數與選項</h3>
+<p><code>getArguments</code> 與 <code>getOptions</code> 方法是用來接收要傳入您的自訂指令的地方，這兩個方法都會回傳一組指令陣列，並由選項陣列清單所組成。</p>
+<p>當定義 <code>arguments</code> 時，該陣列對應的值表示如下：</p>
+<pre><code>array($name, $mode, $description, $defaultValue)</code></pre>
+<p>參數 <code>mode</code> 可以是下列其中一項： <code>InputArgument::REQUIRED</code> 或 <code>InputArgument::OPTIONAL</code>.</p>
+<p>當定義 <code>options</code> 時，該陣列對應的值表示如下：</p>
+<pre><code>array($name, $shortcut, $mode, $description, $defaultValue)</code></pre>
+<p>對選項而言，參數 <code>mode</code> 可以是下列其中一項：<code>InputOption::VALUE_REQUIRED</code>、<code>InputOption::VALUE_OPTIONAL</code>、<code>InputOption::VALUE_IS_ARRAY</code>、<code>InputOption::VALUE_NONE</code>。</p>
+<p>該 <code>VALUE_IS_ARRAY</code> 模式表示呼叫指令時可以傳入多筆數值：</p>
+<pre><code>php artisan foo --option=bar --option=baz</code></pre>
+<p>該 <code>VALUE_NONE</code> 模式表示將選項當作是「開關」</p>
+<pre><code>php artisan foo --option</code></pre>
+<h3>取得輸入</h3>
+<p>當您的指令執行時，您需要讓您的應用程式可以存取到這些參數和選項的值，要做到這一點，您可以使用 <code>argument</code> 和 <code>option</code> 方法：</p>
+<h4>取得自訂指令的輸入參數</h4>
+<pre><code>$value = $this-&gt;argument('name');</code></pre>
+<h4>取得所有自訂指令的輸入參數</h4>
+<pre><code>$arguments = $this-&gt;argument();</code></pre>
+<h4>取得自訂指令的輸入選項</h4>
+<pre><code>$value = $this-&gt;option('name');</code></pre>
+<h4>取得所有自訂指令的輸入選項</h4>
+<pre><code>$options = $this-&gt;option();</code></pre>
+<h3>產生輸出</h3>
+<p>顯示資訊到終端上，您可以使用 <code>info</code>、<code>comment</code>、<code>question</code> 和 <code>error</code> 方法，每一種方法將會對應到一個 ANSI 顏色。</p>
+<h4>顯示訊息到終端</h4>
+<pre><code>$this-&gt;info('Display this on the screen');</code></pre>
+<h4>顯示錯誤訊息到終端</h4>
+<pre><code>$this-&gt;error('Something went wrong!');</code></pre>
+<h3>詢問式輸入</h3>
+<p>您也可以使用 <code>ask</code> 和 <code>confirm</code> 方法來提示使用者進行輸入：</p>
+<h4>提示使用者進行輸入</h4>
+<pre><code>$name = $this-&gt;ask('What is your name?');</code></pre>
+<h4>提示使用者進行加密輸入</h4>
+<pre><code>$password = $this-&gt;secret('What is the password?');</code></pre>
+<h4>提示使用者進行確認</h4>
+<pre><code>if ($this-&gt;confirm('Do you wish to continue? [yes|no]'))
+{
+    //
+}</code></pre>
+<p>您也可以指定一個預設值給 <code>confirm</code> 方法，可以是 <code>true</code> 或 <code>false</code>：</p>
+<pre><code>$this-&gt;confirm($question, true);</code></pre>
+<p><a name="registering-commands"></a></p>
+<h2>註冊指令</h2>
+<h4>註冊一個 Artisan 指令</h4>
+<p>當您的自訂指令完成後，您需要向 Artisan 註冊才能使用，通常是在 <code>app/start/artisan.php</code>，在此檔案內，你可以使用 <code>Artisan::add</code> 方法註冊該指令：</p>
+<pre><code>Artisan::add(new CustomCommand);</code></pre>
+<h4>在 IoC Container 內註冊指令</h4>
+<p>如果您的自訂指令是在應用程式 <a href="ioc.html">IoC container</a> 內註冊，您需要使用 <code>Artisan::resolve</code> 方法讓 Artisan 可以使用：</p>
+<pre><code>Artisan::resolve('binding.name');</code></pre>
+<h4>在 Service Provider 內註冊指令</h4>
+<p>如果您需要從 service provider 註冊指令，您應該在 provider 的 <code>boot</code> 方法內呼叫 <code>commands</code> 方法，傳入 IoC container 綁定此指令：</p>
+<pre><code>public function boot()
+{
+    $this-&gt;commands('command.binding');
+}</code></pre>
+<p><a name="calling-other-commands"></a></p>
+<h2>呼叫其它指令</h2>
+<p>有時候您可能希望在您的指令內部呼叫其它指令，此時您可以使用 <code>call</code> 方法：</p>
+<pre><code>$this-&gt;call('command:name', array('argument' =&gt; 'foo', '--option' =&gt; 'bar'));</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="commands.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

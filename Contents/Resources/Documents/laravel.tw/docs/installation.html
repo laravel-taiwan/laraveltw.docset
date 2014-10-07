@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="installation.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="installation.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>安裝</h1>
+<ul>
+<li><a href="installation.html#install-composer">安裝 Composer</a></li>
+<li><a href="installation.html#install-laravel">安裝 Laravel</a></li>
+<li><a href="installation.html#server-requirements">伺服器環境需求</a></li>
+<li><a href="installation.html#configuration">設定</a></li>
+<li><a href="installation.html#pretty-urls">優雅鏈結</a></li>
+</ul>
+<p><a name="install-composer"></a></p>
+<h2>安裝 Composer</h2>
+<p>Laravel 框架使用 <a href="http://getcomposer.org">Composer</a> 來管理其相依性。首先，下載一份 <code>composer.phar</code> 下來。之後，你可以把它放在本地端的專案目錄，或者是搬移至 <code>/usr/local/bin</code> 讓全站皆可使用。在 Windows 下，你可以使用 Composer <a href="https://getcomposer.org/Composer-Setup.exe">Windows 安裝工具</a>。</p>
+<p><a name="install-laravel"></a></p>
+<h2>安裝 Laravel</h2>
+<h3>透過 Laravel 安裝工具</h3>
+<p>首先，使用 <code>Composer</code> 下載 Laravel 安裝包：</p>
+<pre><code>composer global require "laravel/installer=~1.1"</code></pre>
+<p>請確定把 <code>~/.composer/vendor/bin</code> 路徑放置於您的 <code>PATH</code> 裡，這樣 <code>laravel</code> 執行檔才可以被找到，以後就可以在終端機下直接使用 <code>laravel</code> 指令。</p>
+<p>一旦安裝完成後，就可以使用 <code>laravel new</code> 指令建立一份全新安裝的 <code>Laravel</code> 專案，例如：<code>laravel new blog</code> 將會在當前目錄下建立一個叫 <code>blog</code> 的目錄，此目錄裡面存放着全新安裝的 Laravel 相關程式碼，此方法跟其他方法不一樣的地方在於是提前安裝好所有相關程式碼，您無需再透過 <code>composer install</code> 安裝，速度一下子提高了很多。</p>
+<h3>透過 Composer Create-Project</h3>
+<p>你一樣可以透過 Composer 在命令列執行 <code>create-project</code> 來安裝 laravel：</p>
+<pre><code>composer create-project laravel/laravel --prefer-dist</code></pre>
+<h3>透過下載</h3>
+<p>Composer 安裝完成後，下載 <a href="https://github.com/laravel/laravel/archive/master.zip">最新版</a> 的 Laravel 框架並且解壓縮到伺服器上的一個目錄中。接著，在 Laravel 應用程式的根目錄下，執行 <code>php composer.phar install</code>（或者是 <code>composer install</code>）來將所有框架所需的相依套件安裝完成。為了能夠成功完成安裝，您必須在伺服器上安裝好 Git。</p>
+<p>如果你想要更新 Laravel 框架，你需要在命令列執行 <code>php composer.phar update</code> 來更新。</p>
+<p><a name="server-requirements"></a></p>
+<h2>伺服器環境需求</h2>
+<p>Laravel 框架有一些系統需求：</p>
+<ul>
+<li>PHP >= 5.4</li>
+<li>MCrypt PHP 套件</li>
+</ul>
+<p>PHP 5.5 之後，一些作業系統需要手動安裝 PHP JSON 套件。如果你使用的是 Ubuntu，可以透過 <code>apt-get install php5-json</code> 來直接安裝。</p>
+<p><a name="configuration"></a></p>
+<h2>設定</h2>
+<p>Laravel 幾乎無需設定即可馬上使用。你可以自由的開始開發。然而，你可以查看 <code>app/config/app.php</code> 檔案和他的文件。它包含了數個你的應用程式所想要更動的選項如 <code>時區（timezone）</code> 和 <code>語系（locale）</code>。</p>
+<p>一旦 Laravel 安裝完成，你應該同時 <a href="configuration.html#environment-configuration">設定本地環境</a>。當你在你的本機上部署時，可以讓你得到更詳細的錯誤訊息。預設在你的正式環境裡詳細的錯誤訊息是被關掉的。</p>
+<blockquote>
+<p><strong>附註:</strong> 你不應該在正式環境中將 <code>app.debug</code> 設為 <code>true</code>。絕對！千萬不要！</p>
+</blockquote>
+<p><a name="permissions"></a></p>
+<h3>權限</h3>
+<p>Laravel 框架有一個目錄需要額外設置權限：app/storage 需要讓網頁伺服器有寫入的權限。</p>
+<p><a name="paths"></a></p>
+<h3>路徑</h3>
+<p>一些框架的目錄路徑是可以被設定配置的。如果要更改這些目錄的位置，請查看 <code>bootstrap/paths.php</code> 檔案。</p>
+<p><a name="pretty-urls"></a></p>
+<h2>優雅鏈結</h2>
+<h3>Apache</h3>
+<p>Laravel 框架透過 <code>public/.htaccess</code> 檔案來讓網址中不需要 <code>index.php</code>。如果你網頁伺服器是使用 Apache 的話，請確認你有開啟 'mod_rewrite` 模組。</p>
+<p>如果框架附帶的 <code>.htaccess</code> 檔在 Apache 中無法作用，請嘗試下面的版本：</p>
+<pre><code>Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]</code></pre>
+<h3>Nginx</h3>
+<p>在 Nginx，在你的網站設定中增加下面的設定將可以開啟「優雅連結」：</p>
+<pre><code>location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="installation.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

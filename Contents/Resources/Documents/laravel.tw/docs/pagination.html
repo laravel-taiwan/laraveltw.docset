@@ -1,0 +1,327 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="pagination.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="pagination.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>分頁</h1>
+<ul>
+<li><a href="pagination.html#configuration">設置</a></li>
+<li><a href="pagination.html#usage">使用</a></li>
+<li><a href="pagination.html#appending-to-pagination-links">加入分頁連結</a></li>
+<li><a href="pagination.html#converting-to-json">轉換至 JSON</a></li>
+<li><a href="pagination.html#custom-presenters">自定表示器（Presenter）</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設置</h2>
+<p>在其他的框架中，實作分頁是令人感到苦惱的事，但是 Laravel 令它實作起來變得輕鬆。在 <code>app/config/view.php</code> 檔案中有設置選項可以設定，<code>pagination</code> 選項需要指定用哪個視圖來建立分頁，而 Laravel 預設包含兩種視圖。</p>
+<p><code>pagination::slider</code> 視圖將會基於現在的頁面智慧的顯示「範圍」的頁數連結，<code>pagination::simple</code> 視圖將僅顯示「上一頁」和「下一頁」的按鈕。<strong>兩種視圖都相容 Twitter Bootstrap 框架</strong></p>
+<p><a name="usage"></a></p>
+<h2>使用</h2>
+<p>有幾種方法來分頁項目。最簡單的是在搜尋建立器或 Eloquent 模型使用 <code>paginate</code> 方法。</p>
+<h4>對資料庫結果分頁</h4>
+<pre><code>$users = DB::table('users')-&gt;paginate(15);</code></pre>
+<h4>對 Eloquent 模型分頁</h4>
+<p>您也可以對 <a href="eloquent.html">Eloquent</a> 模型分頁：</p>
+<pre><code>$allUsers = User::paginate(15);
+
+$someUsers = User::where('votes', '&gt;', 100)-&gt;paginate(15);</code></pre>
+<p>傳送給 <code>paginate</code> 方法的參數是您希望每頁要顯示的項目選項數目，只要您取得查詢結果後，您可以在視圖中顯示，並使用 <code>links</code> 方法去建立分頁連結：</p>
+<pre><code>&lt;div class="container"&gt;
+    &lt;?php foreach ($users as $user): ?&gt;
+        &lt;?php echo $user-&gt;name; ?&gt;
+    &lt;?php endforeach; ?&gt;
+&lt;/div&gt;
+
+&lt;?php echo $users-&gt;links(); ?&gt;</code></pre>
+<p>這就是所有建立分頁系統的步驟了！您會注意到我們還沒有告知 Laravel 我們目前的頁面是哪一頁，這個資訊 Laravel 會自動幫您做好。</p>
+<p>如果您想要指定自訂的視圖來使用分頁，您可以透過 <code>links</code> 方法至視圖：</p>
+<pre><code>&lt;?php echo $users-&gt;links('view.name'); ?&gt;</code></pre>
+<p>您也可以透過以下方法獲得額外的分頁資訊：</p>
+<ul>
+<li><code>getCurrentPage</code></li>
+<li><code>getLastPage</code></li>
+<li><code>getPerPage</code></li>
+<li><code>getTotal</code></li>
+<li><code>getFrom</code></li>
+<li><code>getTo</code></li>
+<li><code>count</code></li>
+</ul>
+<h4>「簡單分頁」</h4>
+<p>如果您只是要在您的分頁視圖顯示「上一頁」和「下一頁」連結，您有個選項 <code>simplePaginate</code> 方法來執行更高效率的搜尋。當您不需要精準的顯示頁碼在視圖上時，這個方法在較大的資料集非常有用：</p>
+<pre><code>$someUsers = User::where('votes', '&gt;', 100)-&gt;simplePaginate(15);</code></pre>
+<h4>手動建立分頁</h4>
+<p>有的時候您可能會想要從陣列中項目手動建立分頁實例。您可以使用 <code>Paginator::make</code> 方法：</p>
+<pre><code>$paginator = Paginator::make($items, $totalItems, $perPage);</code></pre>
+<h4>自訂分頁 URL</h4>
+<p>您還可以透過 <code>setBaseUrl</code> 方法自訂使用的 URL：</p>
+<pre><code>$users = User::paginate();
+
+$users-&gt;setBaseUrl('custom/url');</code></pre>
+<p>上面的範例將建立 URL，類似以下內容： <a href="http://example.com/custom/url?page=2">http://example.com/custom/url?page=2</a></p>
+<p><a name="appending-to-pagination-links"></a></p>
+<h2>加入分頁連結</h2>
+<p>您可以使用 <code>appends</code> 方法增加搜尋字串到分頁連結中：</p>
+<pre><code>&lt;?php echo $users-&gt;appends(array('sort' =&gt; 'votes'))-&gt;links(); ?&gt;</code></pre>
+<p>這樣會產生類似下列的連結：</p>
+<pre><code>http://example.com/something?page=2&amp;sort=votes</code></pre>
+<p>如果您想要將「雜湊片段」加到分頁的 URL，您可以使用 <code>fragment</code> 方法：</p>
+<pre><code>&lt;?php echo $users-&gt;fragment('foo')-&gt;links(); ?&gt;</code></pre>
+<p>此方法呼叫後將產生 Url，看起來像這樣：</p>
+<pre><code>http://example.com/something?page=2#foo</code></pre>
+<p><a name="converting-to-json"></a></p>
+<h2>轉換至 JSON</h2>
+<p><code>Paginator</code> 類別實作 <code>Illuminate\Support\Contracts\JsonableInterface</code> 介面的 <code>toJson</code> 公開方法。由路由返回的值，您可能將 <code>Paginator</code> 實例傳換成 JSON。JSON 表單的實例會包含一些「後設」資訊，例如 <code>total</code>、<code>current_page</code>、<code>last_page</code>、<code>from</code>、<code>to</code>。該實例資料將可透過在 JSON 陣列中 <code>data</code> 的鍵取得。</p>
+<p><a name="custom-presenters"></a></p>
+<h2>自訂表示器（Presenter）</h2>
+<p>預設的分頁表示器是相容 Bootstarp 的。不過，您也可以自訂表示器（presenter）。</p>
+<h3>擴展抽象表示器（Presenter）</h3>
+<p>實作 <code>Illuminate\Pagination\Presenter</code> 類別的抽象方法。Zurb Foundation 的表示器（presenter）範例如下：</p>
+<pre><code>class ZurbPresenter extends Illuminate\Pagination\Presenter {
+
+    public function getActivePageWrapper($text)
+    {
+        return '&lt;li class="current"&gt;&lt;a href=""&gt;'.$text.'&lt;/a&gt;&lt;/li&gt;';
+    }
+
+    public function getDisabledTextWrapper($text)
+    {
+        return '&lt;li class="unavailable"&gt;&lt;a href=""&gt;'.$text.'&lt;/a&gt;&lt;/li&gt;';
+    }
+
+    public function getPageLinkWrapper($url, $page)
+    {
+        return '&lt;li&gt;&lt;a href="'.$url.'"&gt;'.$page.'&lt;/a&gt;&lt;/li&gt;';
+    }
+
+}</code></pre>
+<h3>使用自訂表示器（Presenter）</h3>
+<p>首先，在 <code>app/views</code> 建立新的視圖，這將會作為您的自定表示器（presenter）。並且用新的視圖取代 <code>app/config/view.php</code> 的 <code>pagination</code> 設定。最後，類似下方的程式碼會放在您的自定表示器（presenter）視圖中。</p>
+<pre><code>&lt;ul class="pagination"&gt;
+    &lt;?php echo with(new ZurbPresenter($paginator))-&gt;render(); ?&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="pagination.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

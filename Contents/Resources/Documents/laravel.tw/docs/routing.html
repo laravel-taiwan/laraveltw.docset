@@ -1,0 +1,490 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="routing.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="routing.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>路由</h1>
+<ul>
+<li><a href="routing.html#basic-routing">基本路由</a></li>
+<li><a href="routing.html#route-parameters">路由參數</a></li>
+<li><a href="routing.html#route-filters">路由篩選</a></li>
+<li><a href="routing.html#named-routes">指名路由</a></li>
+<li><a href="routing.html#route-groups">路由群組</a></li>
+<li><a href="routing.html#sub-domain-routing">子網域路由</a></li>
+<li><a href="routing.html#route-prefixing">前綴路由</a></li>
+<li><a href="routing.html#route-model-binding">路由模型綁定</a></li>
+<li><a href="routing.html#throwing-404-errors">404 錯誤</a></li>
+<li><a href="routing.html#routing-to-controllers">控制器路由</a></li>
+</ul>
+<p><a name="basic-routing"></a></p>
+<h2>基本路由</h2>
+<p>應用程式大多數的路由都會被定義在 <code>app/routes.php</code> 中。最簡單的一個路由是由一個 URI 和閉包回調(Closure callback)。</p>
+<h4>基本 GET 路由</h4>
+<pre><code>Route::get('/', function()
+{
+    return 'Hello World';
+});</code></pre>
+<h4>基本 POST 路由</h4>
+<pre><code>Route::post('foo/bar', function()
+{
+    return 'Hello World';
+});</code></pre>
+<h4>在一個路由中註冊多個動作</h4>
+<pre><code>Route::match(array('GET', 'POST'), '/', function()
+{
+    return 'Hello World';
+});</code></pre>
+<h4>在一個路由中回應所有 HTTP 動作</h4>
+<pre><code>Route::any('foo', function()
+{
+    return 'Hello World';
+});</code></pre>
+<h4>強制路由走 HTTPS</h4>
+<pre><code>Route::get('foo', array('https', function()
+{
+    return 'Must be over HTTPS';
+}));</code></pre>
+<p>通常情況下，你需要產生 URLs 到你的路由上，你可以使用 <code>URL::to</code> 方法來達成：</p>
+<pre><code>$url = URL::to('foo');</code></pre>
+<p><a name="route-parameters"></a></p>
+<h2>路由參數</h2>
+<pre><code>Route::get('user/{id}', function($id)
+{
+    return 'User '.$id;
+});</code></pre>
+<h4>選用路由參數</h4>
+<pre><code>Route::get('user/{name?}', function($name = null)
+{
+    return $name;
+});</code></pre>
+<h4>帶預設值的選用路由參數</h4>
+<pre><code>Route::get('user/{name?}', function($name = 'John')
+{
+    return $name;
+});</code></pre>
+<h4>正規表示式路由</h4>
+<pre><code>Route::get('user/{name}', function($name)
+{
+    //
+})
+-&gt;where('name', '[A-Za-z]+');
+
+Route::get('user/{id}', function($id)
+{
+    //
+})
+-&gt;where('id', '[0-9]+');</code></pre>
+<h4>傳遞陣列使用 Where 篩選</h4>
+<p>當然，如果需要你可以傳遞限制條件的陣列：</p>
+<pre><code>Route::get('user/{id}/{name}', function($id, $name)
+{
+    //
+})
+-&gt;where(array('id' =&gt; '[0-9]+', 'name' =&gt; '[a-z]+'))</code></pre>
+<h4>定義全域樣式</h4>
+<p>如果你有常用的限制正規標示式樣式，你可以使用 <code>pattern</code> 方法：</p>
+<pre><code>Route::pattern('id', '[0-9]+');
+
+Route::get('user/{id}', function($id)
+{
+    // Only called if {id} is numeric.
+});</code></pre>
+<h4>存取路由參數值</h4>
+<p>如果你要在路由之外存取路由參數值，你可以使用 <code>Route::input</code> 方法：</p>
+<pre><code>Route::filter('foo', function()
+{
+    if (Route::input('id') == 1)
+    {
+        //
+    }
+});</code></pre>
+<p><a name="route-filters"></a></p>
+<h2>路由篩選器</h2>
+<p>路由篩選器提供一個便捷的方式對於一個給定的路由做出限制訪問，這對於你的站台需要認證的情況下非常有用。在 Laravel 框架中包含了數個篩選器，像是 <code>auth</code>、<code>auth.basic</code>、<code>guest</code> 和 <code>csrf</code> 篩選器。他們都放在 <code>app/filters.php</code> 中。</p>
+<h4>定義一個路由篩選器</h4>
+<pre><code>Route::filter('old', function()
+{
+    if (Input::get('age') &lt; 200)
+    {
+        return Redirect::to('home');
+    }
+});</code></pre>
+<p>如果篩選器傳回了回應，這個會應將會直接被視為該請求的回應，且路由將不會繼續被執行，任何路由的 <code>after</code> 篩選器將直接被取消。</p>
+<h4>對路由加上篩選器</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'old', function()
+{
+    return 'You are over 200 years old!';
+}));</code></pre>
+<h4>對控制器動作加上篩選器</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'old', 'uses' =&gt; 'UserController@showProfile'));</code></pre>
+<h4>對單一路由加上多個篩選器</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'auth|old', function()
+{
+    return 'You are authenticated and over 200 years old!';
+}));</code></pre>
+<h4>透過陣列加上多個篩選器</h4>
+<pre><code>Route::get('user', array('before' =&gt; array('auth', 'old'), function()
+{
+    return 'You are authenticated and over 200 years old!';
+}));</code></pre>
+<h4>指定篩選器參數</h4>
+<pre><code>Route::filter('age', function($route, $request, $value)
+{
+    //
+});
+
+Route::get('user', array('before' =&gt; 'age:200', function()
+{
+    return 'Hello World';
+}));</code></pre>
+<p>在篩選器接收到一個 <code>$response</code> 會被當成第三個參數傳遞進篩選器：</p>
+<pre><code>Route::filter('log', function($route, $request, $response)
+{
+    //
+});</code></pre>
+<h4>篩選器樣式</h4>
+<p>你可以依據路由符合的 URI 來指定其篩選器：</p>
+<pre><code>Route::filter('admin', function()
+{
+    //
+});
+
+Route::when('admin/*', 'admin');</code></pre>
+<p>在上面的範例中，<code>admin</code> 篩選器將會套用在所有以 <code>admin/</code> 開頭的路由中。星號通常用作通配符，他會匹配任何的字元組合。</p>
+<p>你一樣可以篩選指定的 HTTP 動作：</p>
+<pre><code>Route::when('admin/*', 'admin', array('post'));</code></pre>
+<h4>篩選器類別</h4>
+<p>進階的篩選，你可以使用類別來取代閉包。因為篩選器類別被解析出應用程式 <a href="ioc.html">IoC 容器</a>，你將會可以在這些篩選器中利用依賴注入來得到更好的可測試性。</p>
+<h4>註冊基於類別的篩選器</h4>
+<pre><code>Route::filter('foo', 'FooFilter');</code></pre>
+<p>預設下，<code>FooFilter</code> 類別的 <code>filter</code> 方法將會被呼叫：</p>
+<pre><code>class FooFilter {
+
+    public function filter()
+    {
+        // Filter logic...
+    }
+
+}</code></pre>
+<p>如果你不希望使用 <code>filter</code> 方法，只要指定其他方法即可：</p>
+<pre><code>Route::filter('foo', 'FooFilter@foo');</code></pre>
+<p><a name="named-routes"></a></p>
+<h2>指名路由</h2>
+<p>指名路由在產生重導與 URLs 至路由時更為方便。你可以指定一個名稱給指定的路由：</p>
+<pre><code>Route::get('user/profile', array('as' =&gt; 'profile', function()
+{
+    //
+}));</code></pre>
+<p>你一樣可以為控制器動作指定一個路由名稱：</p>
+<pre><code>Route::get('user/profile', array('as' =&gt; 'profile', 'uses' =&gt; 'UserController@showProfile'));</code></pre>
+<p>現在你可以在產生 URLs 或重導時使用該路由名稱：</p>
+<pre><code>$url = URL::route('profile');
+
+$redirect = Redirect::route('profile');</code></pre>
+<p>你一樣可以透過 <code>currentRouteName</code> 方法來取得正在執行中的路由名稱：</p>
+<pre><code>$name = Route::currentRouteName();</code></pre>
+<p><a name="route-groups"></a></p>
+<h2>路由群組</h2>
+<p>有時候你需要套用篩選器到一個群組的路由上。不需要為每個路由去套用篩選器，你只需使用路由群組：</p>
+<pre><code>Route::group(array('before' =&gt; 'auth'), function()
+{
+    Route::get('/', function()
+    {
+        // Has Auth Filter
+    });
+
+    Route::get('user/profile', function()
+    {
+        // Has Auth Filter
+    });
+});</code></pre>
+<p>你一樣可以在 <code>group</code> 陣列中使用 <code>namespace</code> 參數，指定在這 group 中的控制器都有一個共同的命名空間：</p>
+<pre><code>Route::group(array('namespace' =&gt; 'Admin'), function()
+{
+    //
+});</code></pre>
+<p><a name="sub-domain-routing"></a></p>
+<h2>子網域路由</h2>
+<p>Laravel 路由一樣可以處理通配的子網域，並且從網域中傳遞你的通配符參數：</p>
+<h4>註冊子網域路由</h4>
+<pre><code>Route::group(array('domain' =&gt; '{account}.myapp.com'), function()
+{
+
+    Route::get('user/{id}', function($account, $id)
+    {
+        //
+    });
+
+});</code></pre>
+<p><a name="route-prefixing"></a></p>
+<h2>前綴路由</h2>
+<p>群組路由可以透過群組的描述陣列中使用 <code>prefix</code> 選項，將群組內的路由加上前綴：</p>
+<pre><code>Route::group(array('prefix' =&gt; 'admin'), function()
+{
+
+    Route::get('user', function()
+    {
+        //
+    });
+
+});</code></pre>
+<p><a name="route-model-binding"></a></p>
+<h2>路由模型綁定</h2>
+<p>模型綁定提供一個方便的方式將模型實體注入到你的路由中。例如，要注入一個使用者 ID 你可以注入符合給定 ID 的整個使用者模型實體。首先，使用 <code>Route::model</code> 方法可以指定作為參數的模型：</p>
+<h4>綁定參數至模型</h4>
+<pre><code>Route::model('user', 'User');</code></pre>
+<p>接著，定義一個路由並包括一個 <code>{user}</code> 參數：</p>
+<pre><code>Route::get('profile/{user}', function(User $user)
+{
+    //
+});</code></pre>
+<p>既然我們綁定了 <code>{user}</code> 參數到 <code>User</code> 模型，則 <code>User</code> 實體就會被注入到路由內。因此，假定有一個請求送至 <code>profile/1</code> 則會注入一個 ID 為 1 的 <code>User</code> 實體。</p>
+<blockquote>
+<p><strong>注意：</strong> 假如在資料庫內沒有任何一個模型實體符合，則會拋出 404 錯誤。</p>
+</blockquote>
+<p>假如您希望指定您自定的「找不到」錯誤行為，你可以在 <code>model</code> 方法裡的第三個參數指定一個 Closure：</p>
+<pre><code>Route::model('user', 'User', function()
+{
+    throw new NotFoundHttpException;
+});</code></pre>
+<p>在某些情況下，您可能會希望可以使用您自定的路由綁定方式。這時您可以使用 <code>Route::bind</code> 方法來達成：</p>
+<pre><code>Route::bind('user', function($value, $route)
+{
+    return User::where('name', $value)-&gt;first();
+});</code></pre>
+<p><a name="throwing-404-errors"></a></p>
+<h2>404 錯誤</h2>
+<p>有兩種方式可以在路由內手動觸發 404 錯誤。第一種是呼叫 <code>App::abort</code> 方法：</p>
+<pre><code>App::abort(404);</code></pre>
+<p>第二種，你可以拋出一個 <code>Symfony\Component\HttpKernel\Exception\NotFoundHttpException</code> 實體。</p>
+<p>有關如何處理 404 例外狀況和自定回應的詳細資訊，可以參考 <a href="errors.html#handling-404-errors">錯誤</a> 章節內的說明。</p>
+<p><a name="routing-to-controllers"></a></p>
+<h2>控制器路由</h2>
+<p>Laravel 允許您不止可以路由至 Closures，也可以路由至控制器類別，甚至可以路由至 <a href="controllers.html#resource-controllers">資源控制器</a>。</p>
+<p>更多詳細資訊可參考 <a href="controllers.html">控制器</a> 一節內的說明。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="routing.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

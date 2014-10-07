@@ -1,0 +1,456 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="controllers.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="controllers.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>控制器 (Controllers)</h1>
+<ul>
+<li><a href="controllers.html#basic-controllers">基本控制器</a></li>
+<li><a href="controllers.html#controller-filters">控制器過濾器(Controller filters)</a></li>
+<li><a href="controllers.html#restful-controllers">RESTful 控制器</a></li>
+<li><a href="controllers.html#resource-controllers">資源控制器</a></li>
+<li><a href="controllers.html#handling-missing-methods">對應遺漏的方法</a></li>
+</ul>
+<p><a name="basic-controllers"></a></p>
+<h2>基本 Controllers</h2>
+<p>除了在單一 <code>routes.php</code> 檔中定義所有路由層邏輯外，你可能也想利用控制器類別來整合這些行為模式。控制器可以統合相關的路由邏輯到同一個類別中，並且利用更先進的框架特性的優勢，如自動的 <a href="ioc.html">依賴注入</a>。</p>
+<p>控制器一般存放在 <code>app/controllers</code> 目錄下，這個目錄已預設註冊在 <code>composer.json</code> 的 <code>classmap</code> 中。然而，技術上控制器可以放在任何目錄或是子目錄。路由宣告與控制器類別存放在哪個位址並無關係。所以，只要 Composer 知道如何自動載入控制器類別，你就可以放在任何你想要的地方。</p>
+<p>下面是一個基本的控制器類別例子：</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * Show the profile for the given user.
+     */
+    public function showProfile($id)
+    {
+        $user = User::find($id);
+
+        return View::make('user.profile', array('user' =&gt; $user));
+    }
+
+}</code></pre>
+<p>所有的控制器都應該繼承自 <code>BaseController</code> 類別。<code>BaseController</code> 也放在 <code>app/controllers</code> 目錄下，<code>BaseController</code> 可以作為放置共同控制器邏輯的地方。<code>BaseController</code> 繼承了框架的 <code>Controller</code> 類別。現在，我們可以像這樣將請求從路由導至控制器行為中：</p>
+<pre><code>Route::get('user/{id}', 'UserController@showProfile');</code></pre>
+<p>如果你選擇使用 PHP 命名空間來分層或整合你的控制器，只要在定義路由時使用完整的類別名稱：</p>
+<pre><code>Route::get('foo', 'Namespace\FooController@method');</code></pre>
+<blockquote>
+<p><strong>注意：</strong>既然我們使用 <a href="http://getcomposer.org">Composer</a> 自動載入 PHP 類別，控制器可以放在檔案系統的任何地方，只要 Composer 知道如何載入他們。對你的應用程式而言，控制器目錄並沒有強制使用怎樣目錄結構。路由至控制器是完全與檔案系統脫鉤的。</p>
+</blockquote>
+<p>你可以為控制器路由指定名稱：</p>
+<pre><code>Route::get('foo', array('uses' =&gt; 'FooController@method',
+                                        'as' =&gt; 'name'));</code></pre>
+<p>你可以使用 <code>URL::action</code> 方法或者是 <code>action</code> 輔助方法來產生到控制器行為的 URL：</p>
+<pre><code>$url = URL::action('FooController@method');
+
+$url = action('FooController@method');</code></pre>
+<p>你可以利用 <code>currentRouteAction</code> 方法取得正在執行的控制器行為名稱：</p>
+<pre><code>$action = Route::currentRouteAction();</code></pre>
+<p><a name="controller-filters"></a></p>
+<h2>控制器過濾器</h2>
+<p><a href="routing.html#route-filters">過濾器(Filter)</a> 在控制器路由中宣告方式，如同「一般」的路由一樣。</p>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth',
+            'uses' =&gt; 'UserController@showProfile'));</code></pre>
+<p>然而，你也可以在控制器中指定過濾器：</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * Instantiate a new UserController instance.
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter('auth', array('except' =&gt; 'getLogin'));
+
+        $this-&gt;beforeFilter('csrf', array('on' =&gt; 'post'));
+
+        $this-&gt;afterFilter('log', array('only' =&gt;
+                            array('fooAction', 'barAction')));
+    }
+
+}</code></pre>
+<p>你可以在控制器裡使用閉合函式定義過濾器：</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * Instantiate a new UserController instance.
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter(function()
+        {
+            //
+        });
+    }
+
+}</code></pre>
+<p>如果你想使用控制器裡的方法當做過濾器，你可以使用 <code>@</code> 語法定義過濾器：</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * Instantiate a new UserController instance.
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter('@filterRequests');
+    }
+
+    /**
+     * Filter the incoming requests.
+     */
+    public function filterRequests($route, $request)
+    {
+        //
+    }
+
+}</code></pre>
+<p><a name="restful-controllers"></a></p>
+<h2>RESTful 控制器</h2>
+<p>Laravel 讓你可以簡單的經由定義一個路由規則來處理控制器裡的所有遵照 REST 命名規範的行為。首先，使用 <code>Route::controller</code> 方法定義路由：</p>
+<pre><code>Route::controller('users', 'UserController');</code></pre>
+<p><code>controller</code> 方法可以接收兩個參數，第一個是控制器對應的基本 URI，第二個是控制器的類別名稱。接下來，只要把對應的 HTTP 請求動詞前綴加在控制器方法前：</p>
+<pre><code>class UserController extends BaseController {
+
+    public function getIndex()
+    {
+        //
+    }
+
+    public function postProfile()
+    {
+        //
+    }
+
+    public function anyLogin()
+    {
+        //
+    }
+
+}</code></pre>
+<p><code>index</code> 方法會對應到 controller 的根 URI，以上面的例子來說，就是 <code>users</code>。</p>
+<p>若你的控制器方法包含很多單字，你可以在 URI 使用「破折號(-)」來對應方法。例如 <code>UserController</code> 中，如下的方法會對應到 <code>users/admin-profile</code> URI：</p>
+<pre><code>public function getAdminProfile() {}</code></pre>
+<p><a name="resource-controllers"></a></p>
+<h2>資源控制器</h2>
+<p>資源控制器可以簡單的建立跟資源相關的 RESTful 控制器。例如，你可能想要建立控制器管理應用程式裡儲存的照片。透過 Artisan 命令列工具裡的 <code>controller:make</code> 以及使用 <code>Route::resource</code> 方法，可以很快的建立 控制器。</p>
+<p>從命令列執行下列命令建立控制器：</p>
+<pre><code>php artisan controller:make PhotoController</code></pre>
+<p>然後我們可以註冊一個資源化路由至控制器上：</p>
+<pre><code>Route::resource('photo', 'PhotoController');</code></pre>
+<p>此單一路由宣告創建了處理一系列對圖片資源的 RESTful 行為路由。同樣的，剛才產生的控制器對這些動作已經有預建的對應方法，以及註解告知對應的 URI 和所處理的請求動作。</p>
+<h4>資源控制器對應的動作</h4>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Path</th>
+<th>Action</th>
+<th>Route Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/resource</td>
+<td>index</td>
+<td>resource.index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/resource/create</td>
+<td>create</td>
+<td>resource.create</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/resource</td>
+<td>store</td>
+<td>resource.store</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/resource/{resource}</td>
+<td>show</td>
+<td>resource.show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/resource/{resource}/edit</td>
+<td>edit</td>
+<td>resource.edit</td>
+</tr>
+<tr>
+<td>PUT/PATCH</td>
+<td>/resource/{resource}</td>
+<td>update</td>
+<td>resource.update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/resource/{resource}</td>
+<td>destroy</td>
+<td>resource.destroy</td>
+</tr>
+</tbody>
+</table>
+<p>有時你可能只需要對應部分的資源的動作：</p>
+<pre><code>php artisan controller:make PhotoController --only=index,show
+
+php artisan controller:make PhotoController --except=index</code></pre>
+<p>你也可以在路由宣告時指定需要對應的動作：</p>
+<pre><code>Route::resource('photo', 'PhotoController',
+                array('only' =&gt; array('index', 'show')));
+
+Route::resource('photo', 'PhotoController',
+                array('except' =&gt; array('create', 'store', 'update', 'destroy')));</code></pre>
+<p>預設所有的資源控制器動作都有路由名稱，然而，你可以在選項傳入 <code>names</code> 陣列，覆寫這些名稱：</p>
+<pre><code>Route::resource('photo', 'PhotoController',
+                array('names' =&gt; array('create' =&gt; 'photo.build')));</code></pre>
+<h4>處理巢狀資源控制器</h4>
+<p>為了使用巢狀資源控制器，在路由宣告時使用「點」表示法：</p>
+<pre><code>Route::resource('photos.comments', 'PhotoCommentController');</code></pre>
+<p>這個路由規則會註冊一個「巢狀」資源，可以對應如下的 URLs：<code>photos/{photoResource}/comments/{commentResource}</code>。</p>
+<pre><code>class PhotoCommentController extends BaseController {
+
+    public function show($photoId, $commentId)
+    {
+        //
+    }
+
+}</code></pre>
+<h4>增加額外路由規則到 Resource Controller</h4>
+<p>你果你需要增加額外的 route 規則到預設的 resource controller，你應該在宣告 <code>Route::resource</code> 之前宣告這些規則：</p>
+<pre><code>Route::get('photos/popular');
+Route::resource('photos', 'PhotoController');</code></pre>
+<p><a name="handling-missing-methods"></a></p>
+<h2>對應遺漏的方法</h2>
+<p>可以定義一個 catch-all 方法，當 controller 找不到對應的方法就會被呼叫，這個方法應該宣告為 <code>missingMethod</code>，會傳入請求的方法和參數陣列：</p>
+<h4>定義一個 Catch-All 方法</h4>
+<pre><code>public function missingMethod($parameters = array())
+{
+    //
+}</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="controllers.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

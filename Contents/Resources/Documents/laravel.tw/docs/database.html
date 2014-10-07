@@ -1,0 +1,321 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="database.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="database.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>資料庫基本用法</h1>
+<ul>
+<li><a href="database.html#configuration">設定</a></li>
+<li><a href="database.html#read-write-connections">讀取 / 寫入 連線</a></li>
+<li><a href="database.html#running-queries">資料庫操作</a></li>
+<li><a href="database.html#database-transactions">資料庫交易</a></li>
+<li><a href="database.html#accessing-connections">存取連線</a></li>
+<li><a href="database.html#query-logging">資料庫操作紀錄</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>設定</h2>
+<p>Laravel 讓資料庫連線與執行查詢語句變得相當簡單。資料庫設定檔位在 <code>app/config/database.php</code>。您可以在此定義所需的資料庫連線，也可以指定哪一個連線是預設的。所有支援的資料庫類型與範例皆在檔案內說明。</p>
+<p>目前為止 Laravel 支援 4 種資料庫系統：MySQL、Postgres、SQLite 和 SQL Server。</p>
+<p><a name="read-write-connections"></a></p>
+<h2>讀取 / 寫入 連線</h2>
+<p>有時候您會需要使用一個資料庫進行查詢操作，另一個資料庫負責新增、修改和刪除操作。Laravel 使這件事變得輕而易舉，且會自動使用適當的連線，不論您是使用原生查詢、query builder 或是 Eloquent ORM。</p>
+<p>要了解如何設定 讀取 / 寫入 連線，請看以下範例：</p>
+<pre><code>'mysql' =&gt; array(
+    'read' =&gt; array(
+        'host' =&gt; '192.168.1.1',
+    ),
+    'write' =&gt; array(
+        'host' =&gt; '196.168.1.2'
+    ),
+    'driver'    =&gt; 'mysql',
+    'database'  =&gt; 'database',
+    'username'  =&gt; 'root',
+    'password'  =&gt; '',
+    'charset'   =&gt; 'utf8',
+    'collation' =&gt; 'utf8_unicode_ci',
+    'prefix'    =&gt; '',
+),</code></pre>
+<p>注意到有兩個鍵值 <code>read</code> 和 <code>write</code> 已經被加到設定陣列中。這兩個鍵值都包含一個關鍵數值組 <code>host</code>。而資料庫 <code>read</code> 和 <code>write</code> 的其他選項將會併入 <code>mysql</code> 的主要陣列值內。所以，我們只需要取代 <code>read</code> 和 <code>write</code> 陣列，如果我們想要複寫主要陣列的值。因此，以這個範例來看 <code>192.168.1.1</code> 將會被當作 <code>讀取</code> 連線，<code>192.168.1.2</code> 將會被當作 <code>寫入</code> 連線。該資料庫的憑證、前綴詞、字元集和所有其他在 <code>mysql</code> 陣列內的選項將會被兩個連線內共享。</p>
+<p><a name="running-queries"></a></p>
+<h2>資料庫操作</h2>
+<p>一但完成資料庫連線設定後，即可使用 <code>DB</code> 類別進行資料庫操作。</p>
+<h4>查詢操作</h4>
+<pre><code>$results = DB::select('select * from users where id = ?', array(1));</code></pre>
+<p>方法 <code>select</code> 總是回傳陣列值。</p>
+<h4>新增操作</h4>
+<pre><code>DB::insert('insert into users (id, name) values (?, ?)', array(1, 'Dayle'));</code></pre>
+<h4>修改操作</h4>
+<pre><code>DB::update('update users set votes = 100 where name = ?', array('John'));</code></pre>
+<h4>刪除操作</h4>
+<pre><code>DB::delete('delete from users');</code></pre>
+<blockquote>
+<p><strong>注意：</strong>  <code>修改</code> 和 <code>刪除</code> 會回傳該次操作影響到的筆數。</p>
+</blockquote>
+<h4>一般性操作</h4>
+<pre><code>DB::statement('drop table users');</code></pre>
+<h4>聆聽資料庫操作事件</h4>
+<p>您可以使用 <code>DB::listen</code> 方法來聆聽資料庫操作事件：</p>
+<pre><code>DB::listen(function($sql, $bindings, $time)
+{
+    //
+});</code></pre>
+<p><a name="database-transactions"></a></p>
+<h2>資料庫交易</h2>
+<p>執行資料庫交易中的一組操作，您可以使用 <code>transaction</code> 方法：</p>
+<pre><code>DB::transaction(function()
+{
+    DB::table('users')-&gt;update(array('votes' =&gt; 1));
+
+    DB::table('posts')-&gt;delete();
+});</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 在 <code>交易</code> 閉包內拋出的任何錯誤皆會導致交易自動回復上一步。</p>
+</blockquote>
+<p>有時候您需要自行初始化一筆交易：</p>
+<pre><code>DB::beginTransaction();</code></pre>
+<p>您可以使用 <code>rollback</code> 方法來將交易回復到上一步：</p>
+<pre><code>DB::rollback();</code></pre>
+<p>最後，您可以藉由 <code>commit</code> 方法來提交一筆交易：</p>
+<pre><code>DB::commit();</code></pre>
+<p><a name="accessing-connections"></a></p>
+<h2>存取連線</h2>
+<p>當使用多筆連線時，您可以藉由 <code>DB::connection</code> 方法存取它們：</p>
+<pre><code>$users = DB::connection('foo')-&gt;select(...);</code></pre>
+<p>您也可以在底層 PDO 實體化之下存取原生查詢，</p>
+<pre><code>$pdo = DB::connection()-&gt;getPdo();</code></pre>
+<p>有時候您會需要重新連線至某個資料庫：</p>
+<pre><code>DB::reconnect('foo');</code></pre>
+<p>由於執行底層 PDO 實體化的 <code>最大連線數</code> 限制，若需要從某個資料庫斷開時，您可以使用 <code>disconnect</code> 方法：</p>
+<pre><code>DB::disconnect('foo');</code></pre>
+<p><a name="query-logging"></a></p>
+<h2>資料庫操作紀錄</h2>
+<p>預設之下，Laravel 將現有連線請求的所有操作紀錄存放在記憶體中，然而，在某些情況下，像是插入一組大量紀錄時，這可能會導致應用程式使用內存過量。要將紀錄關閉，您可以使用 <code>disableQueryLog</code> 方法：</p>
+<pre><code>DB::connection()-&gt;disableQueryLog();</code></pre>
+<p>要得到執行過的操作紀錄陣列，您可以使用 <code>getQueryLog</code> 方法：</p>
+<pre><code>$queries = DB::getQueryLog();</code></pre>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="database.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

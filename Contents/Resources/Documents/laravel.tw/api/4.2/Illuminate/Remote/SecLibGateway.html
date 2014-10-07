@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Illuminate\Remote\SecLibGateway | Laravel API</title>
+                    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../classes.html">Classes</a></li>
+                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../traits.html">Traits</a></li>
+            <li><a href="../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Laravel API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../Illuminate/Remote.html">Illuminate\Remote</a>\SecLibGateway</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>SecLibGateway</strong>        implements
+        <a href="../../Illuminate/Remote/GatewayInterface.html"><abbr title="Illuminate\Remote\GatewayInterface">GatewayInterface</abbr></a></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(string $host, array $auth, <a href="../../Illuminate/Filesystem/Filesystem.html"><abbr title="Illuminate\Filesystem\Filesystem">Filesystem</abbr></a> $files)
+                    <p>Create a new gateway implementation.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_connect">connect</a>(string $username)
+                    <p>Connect to the SSH server.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_connected">connected</a>()
+                    <p>Determine if the gateway is connected.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_run">run</a>(string $command)
+                    <p>Run a command against the server (non-blocking).</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_get">get</a>(string $remote, string $local)
+                    <p>Download the contents of a remote file.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getString">getString</a>(string $remote)
+                    <p>Get the contents of a remote file.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_put">put</a>(string $local, string $remote)
+                    <p>Upload a local file to the server.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_putString">putString</a>(string $remote, string $contents)
+                    <p>Upload a string to to the given file on the server.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string|null
+                </td>
+                <td class="last">
+                    <a href="#method_nextLine">nextLine</a>()
+                    <p>Get the next line of output from the server.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="System_SSH_Agent">System_SSH_Agent</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getAgent">getAgent</a>()
+                    <p>Get a new SSH Agent instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Crypt_RSA">Crypt_RSA</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getNewKey">getNewKey</a>()
+                    <p>Get a new RSA key instance.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int|bool
+                </td>
+                <td class="last">
+                    <a href="#method_status">status</a>()
+                    <p>Get the exit status of the last command.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_getHost">getHost</a>()
+                    <p>Get the host used by the gateway.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    int
+                </td>
+                <td class="last">
+                    <a href="#method_getPort">getPort</a>()
+                    <p>Get the port used by the gateway.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Net_SFTP">Net_SFTP</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_getConnection">getConnection</a>()
+                    <p>Get the underlying Net_SFTP connection.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 51</div>
+        <code>                    void
+    <strong>__construct</strong>(string $host, array $auth, <a href="../../Illuminate/Filesystem/Filesystem.html"><abbr title="Illuminate\Filesystem\Filesystem">Filesystem</abbr></a> $files)</code>
+    </h3>
+    <div class="details">
+        <p>Create a new gateway implementation.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$auth</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Illuminate/Filesystem/Filesystem.html"><abbr title="Illuminate\Filesystem\Filesystem">Filesystem</abbr></a></td>
+                <td>$files</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_connect">
+        <div class="location">at line 84</div>
+        <code>                    bool
+    <strong>connect</strong>(string $username)</code>
+    </h3>
+    <div class="details">
+        <p>Connect to the SSH server.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_connected">
+        <div class="location">at line 94</div>
+        <code>                    bool
+    <strong>connected</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Determine if the gateway is connected.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_run">
+        <div class="location">at line 105</div>
+        <code>                    void
+    <strong>run</strong>(string $command)</code>
+    </h3>
+    <div class="details">
+        <p>Run a command against the server (non-blocking).</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_get">
+        <div class="location">at line 117</div>
+        <code>                    void
+    <strong>get</strong>(string $remote, string $local)</code>
+    </h3>
+    <div class="details">
+        <p>Download the contents of a remote file.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$remote</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$local</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getString">
+        <div class="location">at line 128</div>
+        <code>                    string
+    <strong>getString</strong>(string $remote)</code>
+    </h3>
+    <div class="details">
+        <p>Get the contents of a remote file.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$remote</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_put">
+        <div class="location">at line 140</div>
+        <code>                    void
+    <strong>put</strong>(string $local, string $remote)</code>
+    </h3>
+    <div class="details">
+        <p>Upload a local file to the server.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$local</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$remote</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_putString">
+        <div class="location">at line 152</div>
+        <code>                    void
+    <strong>putString</strong>(string $remote, string $contents)</code>
+    </h3>
+    <div class="details">
+        <p>Upload a string to to the given file on the server.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$remote</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contents</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_nextLine">
+        <div class="location">at line 162</div>
+        <code>                    string|null
+    <strong>nextLine</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the next line of output from the server.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getAgent">
+        <div class="location">at line 264</div>
+        <code>                    <abbr title="System_SSH_Agent">System_SSH_Agent</abbr>
+    <strong>getAgent</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get a new SSH Agent instance.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="System_SSH_Agent">System_SSH_Agent</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getNewKey">
+        <div class="location">at line 274</div>
+        <code>                    <abbr title="Crypt_RSA">Crypt_RSA</abbr>
+    <strong>getNewKey</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get a new RSA key instance.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Crypt_RSA">Crypt_RSA</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_status">
+        <div class="location">at line 284</div>
+        <code>                    int|bool
+    <strong>status</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the exit status of the last command.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int|bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getHost">
+        <div class="location">at line 294</div>
+        <code>                    string
+    <strong>getHost</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the host used by the gateway.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getPort">
+        <div class="location">at line 304</div>
+        <code>                    int
+    <strong>getPort</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the port used by the gateway.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getConnection">
+        <div class="location">at line 314</div>
+        <code>                    <abbr title="Net_SFTP">Net_SFTP</abbr>
+    <strong>getConnection</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the underlying Net_SFTP connection.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Net_SFTP">Net_SFTP</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

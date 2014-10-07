@@ -1,0 +1,391 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="testing.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="testing.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>單元測試</h1>
+<ul>
+<li><a href="testing.html#introduction">介紹</a></li>
+<li><a href="testing.html#defining-and-running-tests">定義並執行測試</a></li>
+<li><a href="testing.html#test-environment">測試環境</a></li>
+<li><a href="testing.html#calling-routes-from-tests">從測試呼叫路由</a></li>
+<li><a href="testing.html#mocking-facades">模擬 Facades</a></li>
+<li><a href="testing.html#framework-assertions">框架 Assertions</a></li>
+<li><a href="testing.html#helper-methods">輔助方法</a></li>
+<li><a href="testing.html#refreshing-the-application">重置應用程式</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介紹</h2>
+<p>Laravel 在建立時就有考慮到單元測試。事實上，它支援立即使用被引入的 PHPUnit 做測試，而且已經為你的應用程式建立了 <code>phpunit.xml</code> 檔案。除了 PHPUnit 以外，Laravel 也利用 Symfony HttpKernel、 DomCrawler 和 BrowserKit 元件讓你在測試的時候模擬為一個網頁瀏覽器，來檢查和處理你的視圖。</p>
+<p>在 <code>app/tests</code> 資料夾有提供一個測試範例。在安裝新 Laravel 應用程式之後，只要在命令列上執行 <code>phpunit</code> 來進行測試流程。</p>
+<p><a name="defining-and-running-tests"></a></p>
+<h2>定義並執行測試</h2>
+<p>要建立一個測試案例，只要在 <code>app/tests</code> 資料夾建立新的測試檔案。測試類別必須繼承自 <code>TestCase</code>，接著你可以如你平常使用 PHPUnit 一般去定義測試方法。</p>
+<h4>測試類別範例</h4>
+<pre><code>class FooTest extends TestCase {
+
+    public function testSomethingIsTrue()
+    {
+        $this-&gt;assertTrue(true);
+    }
+
+}</code></pre>
+<p>你可以從終端機執行 <code>phpunit</code> 命令來執行應用程式的所有測試。</p>
+<blockquote>
+<p><strong>注意:</strong> 如果你定義自己的 <code>setUp</code> 方法， 請記得呼叫 <code>parent::setUp</code>。</p>
+</blockquote>
+<p><a name="test-environment"></a></p>
+<h2>測試環境</h2>
+<p>當執行單元測試的時候，Laravel 會自動將環境設置在 <code>testing</code>。另外 Laravel 會在測試環境匯入 <code>session</code> 和 <code>cache</code> 的設定檔案。當在測試環境裡這兩個驅動會被設定為 <code>array</code> (空陣列)，代表在測試的時候沒有 session 或 cache 資料將會被保留。視情況你可以任意的建立你需要的測試環境設定。</p>
+<p><a name="calling-routes-from-tests"></a></p>
+<h2>從測試呼叫路由</h2>
+<h4>從單一測試中呼叫路由</h4>
+<p>你可以使用 <code>call</code> 方法，輕易地呼叫你的其中一個路由來測試：</p>
+<pre><code>$response = $this-&gt;call('GET', 'user/profile');
+
+$response = $this-&gt;call($method, $uri, $parameters, $files, $server, $content);</code></pre>
+<p>接著你可以檢查 <code>Illuminate\Http\Response</code> 物件：</p>
+<pre><code>$this-&gt;assertEquals('Hello World', $response-&gt;getContent());</code></pre>
+<h4>從測試呼叫控制器</h4>
+<p>你也可以從測試呼叫控制器：</p>
+<pre><code>$response = $this-&gt;action('GET', 'HomeController@index');
+
+$response = $this-&gt;action('GET', 'UserController@profile', array('user' =&gt; 1));</code></pre>
+<p><code>getContent</code> 方法會回傳求值後的字串內容回應。如果你的路由回傳一個 <code>View</code>，你可以透過 <code>original</code> 屬性存取它：</p>
+<pre><code>$view = $response-&gt;original;
+
+$this-&gt;assertEquals('John', $view['name']);</code></pre>
+<p>你可以使用 <code>callSecure</code> 方法去呼叫 HTTPS 路由:</p>
+<pre><code>$response = $this-&gt;callSecure('GET', 'foo/bar');</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 在測試環境中，路由篩選器是被禁用的。如果要啟用它們，必須增加 <code>Route::enableFilters()</code> 到你的測試。</p>
+</blockquote>
+<h3>DOM 撈取器</h3>
+<p>你也可以透過呼叫路由來取得 DOM 撈取器實例來檢查內容：</p>
+<pre><code>$crawler = $this-&gt;client-&gt;request('GET', '/');
+
+$this-&gt;assertTrue($this-&gt;client-&gt;getResponse()-&gt;isOk());
+
+$this-&gt;assertCount(1, $crawler-&gt;filter('h1:contains("Hello World!")'));</code></pre>
+<p>如果需要更多如何使用撈取器的資訊，請參考它的 <a href="http://symfony.com/doc/master/components/dom_crawler.html">官方文件</a>。</p>
+<p><a name="mocking-facades"></a></p>
+<h2>模擬 Facades</h2>
+<p>當測試的時候，你或許常會想要模擬呼叫 Laravel 靜態 facade。舉個例子，思考下面的控制器行為：</p>
+<pre><code>public function getIndex()
+{
+    Event::fire('foo', array('name' =&gt; 'Dayle'));
+
+    return 'All done!';
+}</code></pre>
+<p>我們可以在 facade 上使用 <code>shouldReceive</code> 方法，模擬呼叫 <code>Event</code> 類別，它將會回傳一個 <a href="https://github.com/padraic/mockery">Mockery</a> mock 物件實例。</p>
+<h4>模擬 Facade</h4>
+<pre><code>public function testGetIndex()
+{
+    Event::shouldReceive('fire')-&gt;once()-&gt;with('foo', array('name' =&gt; 'Dayle'));
+
+    $this-&gt;call('GET', '/');
+}</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 你不應該模擬 <code>Request</code> facade。取而代之，當執行你的測試，傳遞想要的輸入資料進去 <code>call</code> 方法。</p>
+</blockquote>
+<p><a name="framework-assertions"></a></p>
+<h2>框架 Assertions</h2>
+<p>Laravel 附帶幾個 <code>assert</code> 方法，讓測試更簡單一點：</p>
+<h4>Assert 回應為 OK</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertResponseOk();
+}</code></pre>
+<h4>Assert 回應狀態碼</h4>
+<pre><code>$this-&gt;assertResponseStatus(403);</code></pre>
+<h4>Assert 回應為重新導向</h4>
+<pre><code>$this-&gt;assertRedirectedTo('foo');
+
+$this-&gt;assertRedirectedToRoute('route.name');
+
+$this-&gt;assertRedirectedToAction('Controller@method');</code></pre>
+<h4>Assert 回應帶資料的視圖</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertViewHas('name');
+    $this-&gt;assertViewHas('age', $value);
+}</code></pre>
+<h4>Assert 回應帶資料的 Session</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertSessionHas('name');
+    $this-&gt;assertSessionHas('age', $value);
+}</code></pre>
+<h4>Assert 回應帶錯誤資訊的 Session</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertSessionHasErrors();
+
+    // Asserting the session has errors for a given key...
+    $this-&gt;assertSessionHasErrors('name');
+
+    // Asserting the session has errors for several keys...
+    $this-&gt;assertSessionHasErrors(array('name', 'age'));
+}</code></pre>
+<h4>Assert 回應帶資料的舊輸入內容</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertHasOldInput();
+}</code></pre>
+<p><a name="helper-methods"></a></p>
+<h2>輔助方法</h2>
+<p><code>TestCase</code> 類別包含幾個輔助方法讓應用程式的測試更為簡單。</p>
+<h4>從測試裏設定和刷新 Sessions</h4>
+<pre><code>$this-&gt;session(['foo' =&gt; 'bar']);
+
+$this-&gt;flushSession();</code></pre>
+<h4>設定目前經過驗證的使用者</h4>
+<p>你可以使用 <code>be</code> 方法設定目前經過驗證的使用者：</p>
+<pre><code>$user = new User(array('name' =&gt; 'John'));
+
+$this-&gt;be($user);</code></pre>
+<p>你可以從測試中使用 <code>seed</code> 方法重新填充你的資料庫：</p>
+<h4>從測試中重新填充資料庫</h4>
+<pre><code>$this-&gt;seed();
+
+$this-&gt;seed($connection);</code></pre>
+<p>更多建立填充資料的資訊可以在文件的 <a href="migrations.html#database-seeding">遷移與資料填充</a> 部分找到。</p>
+<p><a name="refreshing-the-application"></a></p>
+<h2>重置應用程式</h2>
+<p>你可能已經知道，你可以透過 <code>$this-&gt;app</code> 在任何測試方法中存取你的 Laravel <code>應用程式本體</code> / IoC 容器。這個應用程式物件實例會在每個測試類別被重置。如果你希望在給定的方法手動強制重置應用程式，你可以從你的測試方法使用 <code>refreshApplication</code> 方法。這將會重置任何額外的綁定， 例如那些從測試案例執行開始被放到 IoC 容器的 mocks。</p>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="testing.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>

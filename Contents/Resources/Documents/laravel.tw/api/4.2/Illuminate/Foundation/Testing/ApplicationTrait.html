@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Illuminate\Foundation\Testing\ApplicationTrait | Laravel API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../classes.html">Classes</a></li>
+                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../traits.html">Traits</a></li>
+            <li><a href="../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Laravel API</div>
+
+            <div class="type">Trait</div>
+    <h1><a href="../../../Illuminate/Foundation/Testing.html">Illuminate\Foundation\Testing</a>\ApplicationTrait</h1>
+    </div>
+        <div class="content">
+                <p>    trait
+    <strong>ApplicationTrait</strong></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_call">call</a>(string $method, string $uri, array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)
+                    <p>Call the given URI and return the Response.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_callSecure">callSecure</a>(string $method, string $uri, array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)
+                    <p>Call the given HTTPS URI and return the Response.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_action">action</a>(string $method, string $action, array $wildcards = array(), array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)
+                    <p>Call a controller action and return the Response.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_route">route</a>(string $method, string $name, array $routeParameters = array(), array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)
+                    <p>Call a named route and return the Response.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_session">session</a>(array $data)
+                    <p>Set the session to the given array.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_flushSession">flushSession</a>()
+                    <p>Flush all of the current session data.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_be">be</a>(<a href="../../../Illuminate/Auth/UserInterface.html"><abbr title="Illuminate\Auth\UserInterface">UserInterface</abbr></a> $user, string $driver = null)
+                    <p>Set the currently logged in user for the application.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    void
+                </td>
+                <td class="last">
+                    <a href="#method_seed">seed</a>(string $class = &#039;DatabaseSeeder&#039;)
+                    <p>Seed a given database connection.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method_call">
+        <div class="location">at line 49</div>
+        <code>                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+    <strong>call</strong>(string $method, string $uri, array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)</code>
+    </h3>
+    <div class="details">
+        <p>Call the given URI and return the Response.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$changeHistory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_callSecure">
+        <div class="location">at line 68</div>
+        <code>                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+    <strong>callSecure</strong>(string $method, string $uri, array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)</code>
+    </h3>
+    <div class="details">
+        <p>Call the given HTTPS URI and return the Response.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$changeHistory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_action">
+        <div class="location">at line 88</div>
+        <code>                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+    <strong>action</strong>(string $method, string $action, array $wildcards = array(), array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)</code>
+    </h3>
+    <div class="details">
+        <p>Call a controller action and return the Response.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$wildcards</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$changeHistory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_route">
+        <div class="location">at line 108</div>
+        <code>                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+    <strong>route</strong>(string $method, string $name, array $routeParameters = array(), array $parameters = array(), array $files = array(), array $server = array(), string $content = null, bool $changeHistory = true)</code>
+    </h3>
+    <div class="details">
+        <p>Call a named route and return the Response.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$routeParameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$changeHistory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_session">
+        <div class="location">at line 121</div>
+        <code>                    void
+    <strong>session</strong>(array $data)</code>
+    </h3>
+    <div class="details">
+        <p>Set the session to the given array.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_flushSession">
+        <div class="location">at line 136</div>
+        <code>                    void
+    <strong>flushSession</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Flush all of the current session data.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_be">
+        <div class="location">at line 163</div>
+        <code>                    void
+    <strong>be</strong>(<a href="../../../Illuminate/Auth/UserInterface.html"><abbr title="Illuminate\Auth\UserInterface">UserInterface</abbr></a> $user, string $driver = null)</code>
+    </h3>
+    <div class="details">
+        <p>Set the currently logged in user for the application.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Illuminate/Auth/UserInterface.html"><abbr title="Illuminate\Auth\UserInterface">UserInterface</abbr></a></td>
+                <td>$user</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_seed">
+        <div class="location">at line 174</div>
+        <code>                    void
+    <strong>seed</strong>(string $class = &#039;DatabaseSeeder&#039;)</code>
+    </h3>
+    <div class="details">
+        <p>Seed a given database connection.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>

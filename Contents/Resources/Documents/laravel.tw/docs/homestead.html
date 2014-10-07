@@ -1,0 +1,317 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <meta name="author" content="Taylor Otwell">
+    <meta name="description" content="Laravel - The PHP framework for web artisans.">
+    <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.png%3Fv=2">
+
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>
+    <script src="http://use.edgefonts.net/source-code-pro.js"></script>
+
+    <!--[if IE]><link href="assets/css/ie.css" rel="stylesheet" type="text/css"><![endif]-->
+
+    <!-- HTML5 elements in less than IE9, yes please! -->
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- If less than IE8 add some JS for the webfont icons -->
+    <!--[if lt IE 8]><script src="assets/js/ie_font.js"></script><![endif]-->
+
+        <script>
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
+        (function(d,t){
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)
+        }(document,'script'));
+    </script>
+    
+</head>
+
+<body id="index" class="page">
+
+    <!--[if lt IE 7]>
+        <p>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+    <![endif]-->
+
+    <div id="wrapper">
+
+    <header id="header" role="header">
+    <div class="boxed">
+        <div id="tagline">
+            <h1>中文文件</h1>
+        </div>
+
+        <div id="version">
+            <ul class="nolist">
+                                    <li class="">
+                        <a href="master.html" title="Dev">Dev</a>
+                    </li>
+                                    <li class="current">
+                        <a href="../docs.1.html" title="4.2">4.2</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.1.html" title="4.1">4.1</a>
+                    </li>
+                                    <li class="">
+                        <a href="4.0.html" title="4.0">4.0</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</header>
+
+<nav id="primary">
+    <div class="boxed">
+        <div id="logo-head">
+            <a href="../index.html"><img src="../assets/img/logo-head.png" alt="Laravel"></a>
+        </div>
+        <ul class="primary-nav-ul">
+            <li><a href="../index.html">歡迎</a></li>
+            <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+            <li><a href="http://laracasts.com">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+        </ul>
+        <a href="homestead.html#" class="show-primary-nav">選單</a>
+    </div>
+</nav>
+
+<div id="content">
+
+    <section id="documentation">
+        <article class="boxed">
+
+            <ul class="version-picker--mobile nolist">
+                                <li class="">
+                    <a href="master.html" title="Dev">Dev</a>
+                </li>
+                                <li class="current">
+                    <a href="../docs.1.html" title="4.2">4.2</a>
+                </li>
+                                <li class="">
+                    <a href="4.1.html" title="4.1">4.1</a>
+                </li>
+                                <li class="">
+                    <a href="4.0.html" title="4.0">4.0</a>
+                </li>
+                            </ul>
+            <a href="homestead.html#" class="docs-show" data-show-text="目錄導覽" data-hide-text="關閉">目錄導覽</a>
+
+            <nav id="docs">
+                <ul>
+<li>前言
+<ul>
+<li><a href="introduction.html">介紹</a></li>
+<li><a href="quick.html">快速開始</a></li>
+<li><a href="releases.html">發行說明</a></li>
+<li><a href="upgrade.html">升級導引</a></li>
+</ul></li>
+<li>開始學習
+<ul>
+<li><a href="installation.html">安裝</a></li>
+<li><a href="configuration.html">設定</a></li>
+<li><a href="homestead.html">莊園(封裝)</a></li>
+<li><a href="lifecycle.html">請求的生命週期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">請求與輸入</a></li>
+<li><a href="responses.html">視圖與回應</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">錯誤與日誌</a></li>
+</ul></li>
+<li>深度體驗
+<ul>
+<li><a href="security.html">認證</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">快取</a></li>
+<li><a href="extending.html">核心擴展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表單與 HTML</a></li>
+<li><a href="helpers.html">輔助方法</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">在地化</a></li>
+<li><a href="mail.html">郵件</a></li>
+<li><a href="packages.html">資源包開發</a></li>
+<li><a href="pagination.html">分頁</a></li>
+<li><a href="queues.html">隊列</a></li>
+<li><a href="security.html">安全性</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">單元測試</a></li>
+<li><a href="validation.html">驗證</a></li>
+</ul></li>
+<li>資料庫
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查詢架構器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">結構生成器</a></li>
+<li><a href="migrations.html">遷移與資料填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul></li>
+<li>Artisan 命令列工具
+<ul>
+<li><a href="artisan.html">概覽</a></li>
+<li><a href="commands.html">開發</a></li>
+</ul></li>
+</ul>
+            </nav>
+
+            <div id="docs-content">
+                <h1>Laravel Homestead</h1>
+<ul>
+<li><a href="homestead.html#introduction">導覽</a></li>
+<li><a href="homestead.html#included-software">內建軟體</a></li>
+<li><a href="homestead.html#installation-and-setup">安裝與設定</a></li>
+<li><a href="homestead.html#daily-usage">常見用法</a></li>
+<li><a href="homestead.html#ports">連接埠</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>導覽</h2>
+<p>Laravel 致力於讓 PHP 開發體驗更愉快，也包含你的本地開發環境。<a href="http://vagrantup.com">Vagrant</a> 一個簡單、優雅的方式來管理與供應虛擬機器。</p>
+<p>Laravel Homestead 是一個官方預載的 Vagrant「封裝包」，提供你一個美好的開發環境，不需要你在你的本機端安裝 PHP、網頁伺服器或任何伺服器軟體。不用擔心搞亂你的系統！Vagrant 封裝包完全搞定。如果有什麼地方爛掉了，你只要砍掉重來即可。</p>
+<p>Homestead 可以在任何 Windows、Mac 或 Linux 上面運行，裏面包含了 Nginx 網頁伺服器、PHP 5.6、MySQL、Postgres、Redis、Memcached 還有所有你要開發精彩的 Laravel 應用程式所需的軟體。</p>
+<p>Homestead 建置且測試於 Vagrant 1.6 上。</p>
+<p><a name="included-software"></a></p>
+<h2>內建軟體</h2>
+<ul>
+<li>Ubuntu 14.04</li>
+<li>PHP 5.6</li>
+<li>Nginx</li>
+<li>MySQL</li>
+<li>Postgres</li>
+<li>Node (With Bower, Grunt, and Gulp)</li>
+<li>Redis</li>
+<li>Memcached</li>
+<li>Beanstalkd</li>
+<li><a href="ssh.html#envoy-task-runner">Laravel Envoy</a></li>
+<li>Fabric + HipChat Extension</li>
+</ul>
+<p><a name="installation-and-setup"></a></p>
+<h2>安裝與設定</h2>
+<h3>安裝 VirtualBox 與 Vagrant</h3>
+<p>在啟動你的 Homestead 環境之前，你必須先安裝 <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> 和 <a href="http://www.vagrantup.com/downloads.html">Vagrant</a>. 兩套軟體在各平台都有提供易用的視覺化安裝程式。</p>
+<h3>增加 Vagrant 封裝包</h3>
+<p>當 VirtualBox 和 Vagrant 安裝完成後，你可以在終端機以下列命令將 'laravel/homestead' 封裝包安裝進你的 Vagrant 安裝程式中。下載封裝包會花你一點時間，看你的網路速度決定：</p>
+<pre><code>vagrant box add laravel/homestead</code></pre>
+<h3>複製 Homestead 程式源</h3>
+<p>一旦封裝包已經被加進你的 Vagrant 安裝程式後，你必須複製並下載該程式源並放置於一個集中的 <code>Homestead</code> 目錄中，目錄中放置所有你的 Laravel 專案，如此 homestead 封裝包就可以運行你所有的 Laravel（和 PHP）專案。</p>
+<pre><code>git clone https://github.com/laravel/homestead.git Homestead</code></pre>
+<h3>設定你的 SSH 金鑰</h3>
+<p>再來你要編輯在程式源里的 <code>Homestead.yaml</code>。你可以在檔案中設定你的 SSH 公開金鑰，以及你主要機器與 Homestead 虛擬機器之間的共享目錄。</p>
+<p>你沒有 SSH 金鑰？在 Mac 和 Linux 下，你可以利用下面的指令來創建一個 SSH 金鑰組:</p>
+<pre><code>ssh-keygen -t rsa -C "your@email.com"</code></pre>
+<p>在 Windows 下，你需要安裝 <a href="http://git-scm.com/">Git</a> 並且使用包含在 Git 裏的 <code>Git Bash</code> 來執行上述的指令。另外你也可以使用 <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a> 和 <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTYgen</a>。</p>
+<p>一旦你創建了一個 SSH 金鑰，記得在你的 <code>Homestead.yaml</code> 檔案中的 <code>authorize</code> 屬性指明金鑰路徑。</p>
+<h3>設定你的共享資料夾</h3>
+<p><code>Homestead.yaml</code> 檔案中的 <code>folders</code> 屬性列出所有你想跟你的 Homestead 環境共享的資料夾列表。這些資料夾中的檔案若有更動，他們將會同步在你的本機與 Homestead 環境裡。你可以將你需要的共享資料夾都設定進去。</p>
+<h3>設定你的 Nginx 站台</h3>
+<p>對 Nginx 不熟悉？沒關係。<code>sites</code> 屬性允許你簡單的對應一個 <code>網域</code> 到一個你 homestead 環境中的目錄。一個範例的站台設定被在 <code>Homestead.yaml</code> 檔案中。同樣的，你可以加任何你需要的站台到你的 Homestead 環境中。Homestead 可以作為你進行中專案的一個方便虛擬化環境。</p>
+<h3>Bash Aliases</h3>
+<p>如果要增加 Bash aliases 到你的 Homestead 封裝包中，只要加到 Homestead 目錄最上層的 <code>aliases</code> 檔案中。</p>
+<h3>啟動 Vagrant 封裝包</h3>
+<p>當你根據你的喜好編輯完 <code>Homestead.yaml</code> 後，在終端機裡，從 Homestead 目錄裡執行 <code>vagrant up</code> 指令。Vagrant 將會將虛擬機器開機，並且自動設定你的共享目錄和 Nginx 站台。</p>
+<p>為了你的 Nginx 站台，別忘記在你的機器的 <code>hosts</code> 檔將「網域」加進去。<code>hosts</code> 檔會將你的本地網域的站台請求重導至你的 Homestead 環境中。在 Mac 和 Linux，該檔案放在 <code>/etc/hosts</code>。在 Windows 環境中，它被放置在 <code>C:\Windows\System32\drivers\etc\hosts</code>。你要加進去的內容類似如下：</p>
+<pre><code>127.0.0.1  homestead.app</code></pre>
+<p>一旦你將網域加進你的 <code>hosts</code> 檔案中，你家可以從埠 8000 透過你的瀏覽器存取到你的站台。</p>
+<pre><code>http://homestead.app:8000</code></pre>
+<p>繼續讀下去，你會學到如何連結到你的資料庫。</p>
+<p><a name="daily-usage"></a></p>
+<h2>常見用法</h2>
+<h3>透過 SSH 連接</h3>
+<p>要透過 SSH 連接 Homestead 環境，需要使用設定在 <code>Homestead.yaml</code> 檔案中的 SSH 金鑰連接 <code>127.0.0.1</code> 的連接埠 2222。你也可以輕易的從 <code>Homestead</code> 目錄下執行 <code>vagrant ssh</code> 命令來連接。</p>
+<p>如果想要更簡便，可以將下面的 alias 加到你的 <code>~/.bash_aliases</code> 或是 <code>~/.bash_profile</code> 中：</p>
+<pre><code>alias vm='ssh vagrant@127.0.0.1 -p 2222'</code></pre>
+<h3>連結資料庫</h3>
+<p>在 <code>Homestead</code> 封裝包中，MySQL 與 Postgres 兩套資料庫都已預裝其中。為了更簡便，Laravel 的 <code>local</code> 資料庫設定已經預設將其設定完成。</p>
+<p>如果想要從本機上透過 Navicat 或者是 Sequel Pro 連接 MySQL 或者 Postgres 資料庫，你可以連接 <code>127.0.0.1</code> 的埠 33060 (MySQL) 或 54320 (Postgres)。而帳號密碼分別是 <code>homestead</code> / <code>secret</code>。</p>
+<blockquote>
+<p><strong>附註：</strong> 你應該只能使用這些非標準的連接埠來連接資料庫。因為您將會在本機端使用預設 3306 及 5432 連接埠來連接自己的資料庫。</p>
+</blockquote>
+<h3>增加更多的站台</h3>
+<p>一旦 Homestead 環境上架且運行後，你可能會需要為 Laravel 應用程式增加更多的 Nginx 站台。你可以在單一個 Homestead 環境中運行非常多 Laravel 安裝程式。兩個方式可以達到：第一，可以在 <code>Homestead.yaml</code> 檔案中增加站台然後執行 <code>vagrant provision</code>。</p>
+<p>另外，也可以使用放在 Homestead 環境中的 <code>serve</code> 指令檔。需要 SSH 進入 Homestead 環境中，並執行下列命令：</p>
+<pre><code>serve domain.app /home/vagrant/Code/path/to/public/directory</code></pre>
+<blockquote>
+<p><strong>附註：</strong> 在執行 <code>serve</code> 指令過後，別忘記將新的站台加進本機的 <code>hosts</code> 檔案中。</p>
+</blockquote>
+<p><a name="ports"></a></p>
+<h2>連接埠</h2>
+<p>以下的埠將會被重導至 Homestead 環境：</p>
+<ul>
+<li><strong>SSH:</strong> 2222 -> Forwards To 22</li>
+<li><strong>HTTP:</strong> 8000 -> Forwards To 80</li>
+<li><strong>MySQL:</strong> 33060 -> Forwards To 3306</li>
+<li><strong>Postgres:</strong> 54320 -> Forwards To 5432</li>
+</ul>
+            </div>
+
+        </article>
+    </section>
+
+</div>
+
+<footer id="foot" class="textcenter">
+    <div class="boxed">
+
+        <nav id="secondary">
+            <div id="logo-foot">
+                <a href="../index.html"><img src="../assets/img/logo-foot.png" alt="Laravel"></a>
+            </div>
+            <ul>
+            <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+            <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+            <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="../index.html">歡迎</a></li>
+                <li class="current-item"><a href="../docs.1.html" title="Documentation">文件</a></li>
+                <li><a href="http://laracasts.com">Laracasts</a></li>
+                <li><a href="https://forge.laravel.com">Forge</a></li>
+                <li><a href="../api/4.2.html" title="Laravel Framework API">API</a></li>
+                <li><a href="https://github.com/laravel/laravel" title="Github">Github</a></li>
+                <li><a href="http://twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<div id="top">
+    <a href="homestead.html#index" title="Back to the top">
+        <i class="icon-chevron-up"></i>
+    </a>
+</div>
+
+
+    </div>
+
+    <section id="copyright" class="textcenter">
+        <div class="boxed">
+            <div class="animated slideInLeft">
+                Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
+                Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
+                Website built with &hearts; <a href="http://ikreativ.com/" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
+                responsive by <a href="http://tighten.co/" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="../index.html" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/bundle.js"></script>
+
+</body>
+</html>
